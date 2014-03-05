@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	<meta charset="utf-8">
+	<meta content="initial-scale=1" name="viewport">
+	<link rel="stylesheet" href="css/styles_admin.css">
+	<link type="text/css" rel="stylesheet" href="css/styles_admin_results.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<title>Academic Job Search | My Dashboard</title>
+</head>
+
+<!-- body starts -->
+	<body>
+		<div class="overlay_one">
+		</div>
+		<header>
+			<h1>AcademicJobSearch.com</h1>
+			<a href="index.html"><img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo"></a>
+			
+<!-- gear icons and menu start -->			
+			<ul id="profile_gear">
+				<li id="gear">
+					<img id="first_gear" src="images/gear.png"></img>
+					<img id="second_gear" src="images/gear_dark.png"></img>
+					<ul>
+						<li></li>
+						<li>Profile</li>
+						<li>Edit Profile</li>
+						<li>Settings</li>
+						<li id="logout">Log Out</li>
+					</ul>
+				</li>
+			</ul>
+			
+<!-- folder icons and menu start -->			
+			<ul id="jobs_folder">
+				<li id="folder">
+					<img id="first_folder" src="images/folder.png"></img><span id="alert_number">1</span>
+					<img id="second_folder" src="images/folder_dark.png"></img>
+					<ul>
+						<li></li>
+						<li>Job Alerts<span id="new_alert">1 new</span></li>
+						<li>Saved Jobs</li>
+						<li>Jobs Applied</li>
+						<li>Search Log</li>
+						<li>Resources</li>
+					</ul>
+				</li>
+			</ul>			
+		</header>
+		
+<!-- welcome/manage jobs section starts -->
+	<article>	
+		<section id="welcome_section">
+			<img id = "avatar" src = "images/avatar.png"></img>
+			<p id="admin_welcome">Welcome, Gabriel</p>
+			<p id="manage">Start Managing Your Jobs</p>
+			<a href ="#"><img id="search" class="manage_jobs" src = "images/search_jobs(light).png"></img></a>
+			<a href ="#"><img id="saved" class="manage_jobs" src = "images/job_alert.png"></img></a>
+			<a href ="saved_jobs.html"><img id="alert" class="manage_jobs" src = "images/saved_jobs.png"></img></a>
+			<a href ="#"><img id="applied" class="manage_jobs" src = "images/jobs_applied.png"></img></a>
+		</section>
+
+		
+		<div id='bottom_section'>
+			<section id="section_one">
+				<form id="search_inputs">
+					<p id="call_to_search">Begin your search<span id="close_search">(close this search)</span></p>
+					<input id="key_word" type="text" required="" placeholder=" keyword" name="key_word">
+					<input id="location" type="text" required="" placeholder=" Location" name="location">
+					<input id="submit" type="submit" value="Find Jobs">                             
+				</form>
+				<div id="print_results">
+<!-- results will be printed here -->
+				</div>
+		
+				<div id="dialog-confirm">
+					<p id="dialogue_title">Delete this job?
+					</p>
+					<p>This job will be permanently deleted. Are you sure you want to continue?
+					</p>
+					<hr>
+					<button id="cancel">Cancel</button>
+					<button id="ok">Ok</button>
+				</div>		
+			</section>
+		
+			<section id="sidebar">
+		
+				<h3 id='selected_jobs'>SAVED JOBS</h3>
+		
+				<div id="middle_column">
+					<p id="p_middleColumn">Perform a search and save jobs to this area. Jobs will automatically be saved to your "Saved Jobs" main tab</p>
+				</div>
+			</section>
+		</div>
+	</article>						
+				
+<!-- footer starts -->
+			<footer id='footer'>	
+				<div id="faq"><a href="#">
+					<h3>Faq</h3>
+					<p>Find answers to questions you might have about the website</p></a>
+				</div>
+				<div id="links"><a href="#">
+					<h3>Useful Links</h3>
+					<p>Check out a list of 20+ links we selected for you</p></a>
+				</div>
+				<div id="social_networks"><a href="#">
+					<h3>Social Networks</h3>
+					<p>Connect with us via social media</p></a>
+				</div>
+				<div id="contact_us"><a href="contact.html">
+					<h3>Contact Us</h3>
+					<p>Ask questions or make suggestions</p></a>
+				</div>
+				<div id="terms"><a href="terms.html">
+					<h3>Terms of Use</h3>
+					<p>Learn about our policies</p></a>
+				</div>
+				<p id="copyright">&copy; Copyright Gabriel Ferraz 2014</p>
+			</footer>	
+		<script type ="text/javascript" src= "js/jquery-1.11.0.min.js"></script>
+		<script type ="text/javascript" src= "js/jquery-ui-1.10.4.custom.min.js"></script> 
+		<script type ="text/javascript" src = "js/initial.js"></script>
+	</body>
+</html>

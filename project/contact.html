@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	<meta charset="utf-8">
+	<meta content="initial-scale=1" name="viewport">
+	<link rel="stylesheet" href="css/styles_contact.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<title>Academic Job Search | Registration Form</title>
+</head>
+
+<!-- body starts -->
+	<body>
+		<div class="overlay">
+		</div>
+		<header>
+			<h1>AcademicJobSearch.com</h1>
+			<a href="index.html"><img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo"></a>
+			<p><span id="sign_in"><a href="#">Sign In</a></span><span id="register"><a href="form.html">Sign Up</a></span>
+			</p>
+			
+<!-- form register starts -->
+			<form id="form_register">												
+				<p><label for = "login_name">Login Name</label>
+				<input id ="login_name" type = "text" name = "name" maxlength = "15" required />
+				</p>
+
+				<p><label for = "name">Password</label>
+				<input id ="password" type = "text" name = "password" maxlength = "15" required/>
+				</p>
+				<p id="form_register_forgot"><a href = "#">Forgot login or password</a></p>
+				<p id="btn_register"><input id="register_submit" type = "submit" value ="Sign In"/></p>
+			</form>
+			
+<!-- nav starts -->
+			<nav>
+				<ul>
+					<li id="home">
+						<span class="nav_list">
+							<a href="admin.html">My Dashboard</a>
+						</span>
+					</li>
+					<li>
+						<span class="nav_list">
+							<a href="index.html">Home</a>
+						</span>
+					</li>
+					<li>
+						<span class="nav_list">
+							<a href="#">Membership Benefits</a>
+						</span>
+					</li>
+					<li>
+						<span class="nav_list">
+							<a href="#">How it Works</a>
+						</span>
+					</li>
+					<li>
+						<span class="nav_list">
+							<a href="#">Resources</a>
+						</span>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+<!-- form starts -->
+	<article>	
+		<form>			
+								
+			<h2 class="clear" id="sign_up_header">CONTACT FORM</h2>
+<!-- 	personal info -->
+			<div id="personal">
+				<img src="images/emblem.png">	
+				<p><label for = "name" class="float_left"><span class="red">*&#32;</span>First Name</label>
+				<input id ="name" class = "float_left clear" type = "text" name = "name" maxlength = "30" placeholder ="&#32;30 characters max" required />
+				</p>
+
+				<p><label for = "name" class="float_left clear"><span class="red">*&#32;</span>Second Name</label>
+				<input id ="second_name" class="float_left clear" type = "text" name = "second_name" maxlength = "15" placeholder ="&#32;15 characters max" required />
+				</p>
+
+				<p><label for= "email" class="clear float_left"><span class="red">*&#32;</span>E-mail</label> <input type="text" id="email" class="float_left clear" maxlength = "30" placeholder ="&#32;30 characters max" required  />
+				</p>
+				
+				<p><label for= "tel" class="clear float_left">Telephone</label> <input type="tel" id="tel" class="float_left clear" maxlength = "30" placeholder ="&#32;30 characters max" />
+				</p>
+				<p class="textfield_heading clear float_left"> Please enter your message below</p>
+				<textarea class ="clear float_left" id="textfield" name="comment_field" placeholder="Enter message here"></textarea>
+<!-- submit button starts here -->
+				<p id="btn" class="clear"><input id="submit" type = "submit" value ="Submit"/></p>
+			</div>
+		</form> 
+<!-- section form closes below --> 	
+</article>						
+		
+		
+<!-- footer starts -->
+			<footer>	
+				<div id="faq"><a href="#">
+					<h3>Faq</h3>
+					<p>Find answers to questions you might have about the website</p></a>
+				</div>
+				<div id="links"><a href="#">
+					<h3>Useful Links</h3>
+					<p>Check out a list of 20+ links we selected for you</p></a>
+				</div>
+				<div id="social_networks"><a href="#">
+					<h3>Social Networks</h3>
+					<p>Connect with us via social media</p></a>
+				</div>
+				<div id="contact_us"><a href="#">
+					<h3>Contact Us</h3>
+					<p>Ask questions or make suggestions</p></a>
+				</div>
+				<div id="terms"><a href="terms.html">
+					<h3>Terms of Use</h3>
+					<p>Learn about our policies</p></a>
+				</div>
+				<p id="copyright">&copy; Copyright Gabriel Ferraz 2014</p>
+			</footer>	
+		</footer>
+		<script type ="text/javascript" src= "js/jquery-1.11.0.min.js"></script>
+		<script type ="text/javascript" src = "js/initial.js"></script>
+	</body>
+</html>
