@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	<meta charset="utf-8">
+	<meta content="initial-scale=1" name="viewport">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<title>Academic Job Search | Search Engine for Academic Jobs</title>
+</head>
+
+<!-- body starts -->
+	<body>
+		<div class="overlay">
+		</div>
+		<div class="overlay_dialog">
+		</div>
+		<header>
+		
+<!-- social network figures start -->		
+			<a href ="http://www.facebook.com" target="_blank"><img class="social_networks" id="facebook" src="images/facebook_icon.png" alt="facebook"></a>
+			<a href ="https://plus.google.com" target="_blank"><img class="social_networks" id="google_plus" src="images/google_plus.png" alt="google plus"></a>
+			<a href ="http://twitter.com" target="_blank"><img class="social_networks" id="twitter" src="images/twitter-icon.png" alt="twitter"></a>
+			<a href ="http://www.linkedin.com" target="_blank"><img class="social_networks" id="linkedin" src="images/linkedin-icon.png" alt="linkedin"></a>
+						
+			<h1>AcademicJobSearch.com</h1>
+			<img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo">
+			<p><span id="sign_in"><a href="#">Sign In</a></span><span id="register"><a href="form.html">Sign Up</a></span>
+			</p>
+			
+
+<!-- form search starts -->
+			<form id="search_inputs">
+				<p id="call_to_search">Find positions in Academia</p>
+				<p id="call_to_search_p">AcademicJobSearch.com is the most powerful application to search for academic jobs. <span id="underline">All search options are FREE!</span> You may also choose to <span id="check_membership"><a href="form.html"> become a member</a></span> and take advantage of numerous benefits<span>. Start your search below.</p>
+				<p id="search_boxes">
+					<input id="key_word" type="text" required="" placeholder=" keyword" name="key_word">
+					<input id="location" type="text" required="" placeholder=" Location" name="location">
+					<input id="submit" type="submit" value="Find Jobs">
+				</p>
+			</form>
+
+<!-- form register starts -->
+			<form id="form_register">												
+				<p><label for = "login_name">Login Name</label>
+				<a href="#"><input id ="login_name" type = "text" name = "name" maxlength = "15" required /></a>
+				</p>
+
+				<p><label for = "name">Password</label>
+				<input id ="password" type = "text" name = "password" maxlength = "15" required/>
+				</p>
+				<p id="form_register_forgot"><a href = "#">Forgot login or password</a></p>
+				
+				<p id="btn_register"><input id="register_submit" type = "submit" value ="Sign In"/></p>
+			</form>
+			
+<!-- nav starts -->
+			<nav>
+				<ul>
+					<li id="home">
+						<span class="nav_list">
+							<a href="admin.html">My Dashboard</a>
+						</span>
+					</li>
+					<li>
+						<span class="nav_list">
+							<a href="form.html">Sign Up</a>
+						</span>
+					</li>
+					<li>
+						<span class="nav_list">
+							<a href="#">Membership Benefits</a>
+						</span>
+					</li>
+					<li>
+						<span class="nav_list">
+							<a href="#">How it Works</a>
+						</span>
+					</li>
+					<li>
+						<span class="nav_list">
+							<a href="#">Resources</a>
+						</span>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+<!-- article starts -->
+		<article>
+<!-- section 1 starts -->
+			<section id="section_one">
+				<div id ="search_options">
+					<div id="fields">
+						<h2>Search by Field</h2>
+						<img src="images/diploma.png" alt="diploma icon" style="float: left; margin-left: 35%;">
+						<img src="images/arrow.png" alt="arrow" style="float: left; margin-left: 65px; margin-top: 0; width: 25px;">
+					</div>					
+					<form class="hidden_div1">
+						<div class="search_box_style">
+							<select id="searchByField" class ="dropbox" name = "field" required>
+								//<option> Choose One</option>
+								<option value = "Architecture">Architecture</option>
+								<option value = "Engineering">Engineering</option>
+								<option value = "Law">Law</option>
+								<option value = "Literature">Literature</option>
+								<option value = "Medicine">Medicine</option>
+								<option value = "Music">Music</option>
+								<option value = "Veterinary">Veterinary</option>
+								<option value = "etc">etc</option>
+							</select>
+							<p class="bttn_register" id="btn_test"><input id="register_submit" type = "submit" value ="Find Job"/></p>
+						</div>
+					</form>
+					
+					<div id="universities">
+						<h2>Search by University</h2>
+						<img src="images/university.png" alt="university icon" style="float: left; margin-left: 34%;">
+						<img src="images/arrow.png" alt="arrow" style="float: left; margin-left: 65px; margin-top: 0; width: 25px;">
+					</div>
+					<form class="hidden_div2">
+						<div class="search_box_style">
+							<select class ="dropbox" name = "university" required>
+								<option> Choose One</option>
+								<option value = "Alabama State">Alabama State</option>
+								<option value = "Auburn State">Auburn State</option>
+								<option value = "Arizona State">Arizona State</option>
+								<option value = "Brown">Brown</option>
+								<option value = "Columbia">Columbia</option>
+								<option value = "Princeton">Princeton</option>
+								<option value = "etc">etc</option>
+							</select>
+							<p class="bttn_register"><input id="register_submit" type = "submit" value ="Find Job"/></p>
+						</div>
+					</form>
+					<div id="states">
+						<h2>Search by State</h2>
+						<img src="images/map1.png" alt="state icon" style="float: left; margin-left: 29%;">
+						<img src="images/arrow.png" alt="arrow" style="float: left; margin-left: 40px; margin-top: 0; width: 25px;">
+					</div>
+					
+					<form class="hidden_div3">
+						<div class="search_box_style">
+							<select class ="dropbox" name = "state" required>
+								<option> Choose One</option>
+									<option value="AL">AL</option>
+									<option value="AK">AK</option>
+									<option value="AZ">AZ</option>
+									<option value="AR">AR</option>
+									<option value="CA">CA</option>
+									<option value="CO">CO</option>
+									<option value="CT">CT</option>
+									<option value="DE">DE</option>
+									<option value="DC">DC</option>
+									<option value="FL">FL</option>
+									<option value="GA">GA</option>
+									<option value="HI">HI</option>
+									<option value="ID">ID</option>
+									<option value="IL">IL</option>
+									<option value="IN">IN</option>
+									<option value="IA">IA</option>
+									<option value="KS">KS</option>
+									<option value="KY">KY</option>
+									<option value="LA">LA</option>
+									<option value="ME">ME</option>
+									<option value="MD">MD</option>
+									<option value="MA">MA</option>
+									<option value="MI">MI</option>
+									<option value="MN">MN</option>
+									<option value="MS">MS</option>
+									<option value="MO">MO</option>
+									<option value="MT">MT</option>
+									<option value="NE">NE</option>
+									<option value="NV">NV</option>
+									<option value="NH">NH</option>
+									<option value="NJ">NJ</option>
+									<option value="NM">NM</option>
+									<option value="NY">NY</option>
+									<option value="NC">NC</option>
+									<option value="ND">ND</option>
+									<option value="OH">OH</option>
+									<option value="OK">OK</option>
+									<option value="OR">OR</option>
+									<option value="PA">PA</option>
+									<option value="RI">RI</option>
+									<option value="SC">SC</option>
+									<option value="SD">SD</option>
+									<option value="TN">TN</option>
+									<option value="TX">TX</option>
+									<option value="UT">UT</option>
+									<option value="VT">VT</option>
+									<option value="VA">VA</option>
+									<option value="WA">WA</option>
+									<option value="WV">WV</option>
+									<option value="WI">WI</option>
+									<option value="WY">WY</option>
+							</select>
+							<p class="bttn_register"><input id="register_submit" type = "submit" value ="Find Job"/></p>
+						</div>
+					</form>
+				</div>
+			</section>
+<!-- section 2 starts -->
+			<section id="section_two">
+				<h2 id = "resources_heading">Tips and Tricks</h2>
+				<div id="resources">
+					<div id="cv">
+						<h3>CVs and Resumes</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <a href="#">Read articles</a></p>
+					</div>
+					<div id="cl">
+						<h3>Cover letters</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <a href="#">Read articles</a></p>
+					</div>
+					<div id="tp">
+						<h3>Interviews</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <a href="#">Read articles</a></p>
+					</div>
+				</div>
+
+
+<!-- hidden div "job results" -->
+				<div id="engineering">
+				<h2>Search Results</h2>
+					<div id="jobs">
+						<h3 id="first_h3" style="margin-bottom:10px;"><a href="#">Assistant Professor in Engineering</a> <span> University of Central Florida (Posted 13/02/2014)</span></h3>
+						<div class="accordion_p" style="margin-bottom:0;">
+							<p style="margin-top:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <span class="jobs_links"> <a href="#">See full job description</a> <span class = "save_job_hp">SAVE JOB</span></span>
+								<div class=border_bottom></div>
+							</p>
+						</div>
+						<h3 style="margin-bottom:10px;"><a href="#">Assistant Professor in Mechanical Engineering</a> <span>Rollins College (Posted 11/02/2014)</span></h3>
+						<div class="accordion_p" style="margin-bottom:0;">
+							<p style="margin-top:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <span class="jobs_links"> <a href="#">See full job description</a> <span class = "save_job_hp">SAVE JOB</span></span>
+								<div class=border_bottom></div>
+							</p>
+						</div>
+						<h3 style="margin-bottom:10px;"><a href="#">Full Professor in Engineering</a> <span>University of Florida (Posted 09/02/2014)</span></h3>
+						<div class="accordion_p" style="margin-bottom:0;">
+							<p style="margin-top:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <span class="jobs_links"> <a href="#">See full job description</a> <span class = "save_job_hp">SAVE JOB</span></span>
+								<div class=border_bottom></div>
+							</p>
+						</div>		
+						<h3 style="margin-bottom:10px;"><a href="#">Assistant Professor in Quantum Mechanics</a> <span>Harvard (Posted 07/02/2014)</span></h3>
+						<div class="accordion_p" style="margin-bottom:0;">
+							<p style="margin-top:0; padding-top:0; padding-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...<span class="jobs_links"> <a href="#">See full job description</a> <span class = "save_job_hp">SAVE JOB</span></span>
+								<div class=border_bottom></div>
+							</p>
+						</div>			
+						<h3 style="margin-bottom:10px;"><a href="#">Assistant Professor in Chemical Engineering</a> <span>Princeton (Posted 04/02/2014)</span></h3>
+						<div class="accordion_p" style="margin-bottom:0;">
+							<p style="margin-top:0; padding-top:0; padding-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <span class="jobs_links"> <a href="#">See full job description</a> <span class = "save_job_hp">SAVE JOB</span></span>
+								<div class=border_bottom></div>
+							</p>
+						</div>			
+						<h3 style="margin-bottom:10px;"><a href="#">Assistant Professor in Civil Engineering</a> <span>Stanford (Posted 29/01/2014)</span></h3>
+						<div class="accordion_p" style="margin-bottom:0;">
+							<p style="margin-top:0; padding-top:0; padding-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <span class="jobs_links"> <a href="#">See full job description</a> <span class = "save_job_hp">SAVE JOB</span></span>
+							</p>	
+						</div>
+					</div>
+				</div>
+				
+<!-- dialog box -->					
+				<div id="dialog_membership">
+					<p id="dialogue_header">Become a member and save this job
+					</p>
+					<p>Only site members can save jobs. Would you like to become a member and start saving jobs?
+					</p>
+					<hr>
+					<button id="become_member">Yes!</button>
+					<div id="div_no_membership"><button id="no_membership">Not now</button></div>
+				</div>		
+				
+<!-- div hot searches - sidebar -->		
+				<div id="hot_searches">
+					<h3>Most Searched Fields</h3>
+					<p><a href="#">1. Engineering</a></p>
+					<p><a href="#">2. Chemistry</a></p>
+					<p><a href="#">3. Comparative Literature</a></p>
+					<p><a href="#">4. Music</a></p>
+					<p class="load_more"><a href="#">Load More</a></p>
+					<h3>Most Searched Universities</h3>
+					<p><a href="#">1. Harvard</a></p>
+					<p><a href="#">2. Princeton</a></p>
+					<p><a href="#">3. University of Florida</a></p>
+					<p><a href="#">4. Brown</a></p>
+					<p class="load_more"><a href="#">Load More</a></p>
+				</div>
+			</section>
+		</article>
+		
+<!-- footer starts -->
+			<footer>	
+				<div id="faq"><a href="#">
+					<h3>Faq</h3>
+					<p>Find answers to questions you might have about the website</p></a>
+				</div>
+				<div id="links"><a href="#">
+					<h3>Useful Links</h3>
+					<p>Check out a list of 20+ links we selected for you</p></a>
+				</div>
+				<div id="social_networks"><a href="#">
+					<h3>Social Networks</h3>
+					<p>Connect with us via social media</p></a>
+				</div>
+				<div id="contact_us"><a href="contact.html">
+					<h3>Contact Us</h3>
+					<p>Ask questions or make suggestions</p></a>
+				</div>
+				<div id="terms"><a href="terms.html">
+					<h3>Terms of Use</h3>
+					<p>Learn about our policies</p></a>
+				</div>
+				<p id="copyright">&copy; Copyright Gabriel Ferraz 2014</p>
+			</footer>	
+	</body>
+		
+			<style>
+			.background{
+				background-color:blue;
+			}
+			</style>
+		<script type ="text/javascript" src= "js/jquery-1.11.0.min.js"></script>
+		<script type ="text/javascript" src= "js/jquery-ui-1.10.4.custom.min.js"></script> 
+		<script type ="text/javascript" src = "js/initial.js"></script>
+	</body>
+</html>
