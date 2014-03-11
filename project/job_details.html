@@ -6,31 +6,32 @@
 	<meta charset="utf-8">
 	<meta content="initial-scale=1" name="viewport">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles_contact.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<link rel="shortcut icon" href="images/favicon.ico">
-	<title>Academic Job Search | Contact Form</title>
+	<title>Academic Job Search | Assistant Professor of Engineering, University of Cincinnati</title>
 </head>
 
 <!-- body starts -->
 	<body>
 		<div class="overlay">
 		</div>
-		<header>
+		<header>	
 			<h1>AcademicJobSearch.com</h1>
-			<a href="index.html"><img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo"></a>
-			<p><span id="sign_in"><a href="#">Sign In</a></span><span id="register"><a href="form.html">Sign Up</a></span>
+			<img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo">
+			<p><span id="sign_in"><a href="#">Sign In</a></span> <span id="register"><a href="form.html">Sign Up</a></span>
 			</p>
 			
 <!-- form register starts -->
 			<form id="form_register">												
 				<p><label for = "login_name">Login Name</label>
-				<input id ="login_name" type = "text" name = "name" maxlength = "15" required />
+				<a href="#"><input id ="login_name" type = "text" name = "name" maxlength = "15" required /></a>
 				</p>
 
 				<p><label for = "name">Password</label>
 				<input id ="password" type = "text" name = "password" maxlength = "15" required/>
 				</p>
 				<p id="form_register_forgot"><a href = "#">Forgot login or password</a></p>
+				
 				<p id="btn_register"><input id="register_submit" type = "submit" value ="Sign In"/></p>
 			</form>
 			
@@ -44,7 +45,7 @@
 					</li>
 					<li>
 						<span class="nav_list">
-							<a href="index.html">Home</a>
+							<a href="form.html">Sign Up</a>
 						</span>
 					</li>
 					<li>
@@ -66,36 +67,40 @@
 			</nav>
 		</header>
 		
-<!-- form starts -->
-	<article>	
-		<form>			
-								
-			<h2 class="clear" id="sign_up_header">CONTACT FORM</h2>
-<!-- 	personal info -->
-			<div id="personal">
-				<img src="images/emblem.png">	
-				<p><label for = "name" class="float_left"><span class="red">*&#32;</span>First Name</label>
-				<input id ="name" class = "float_left clear" type = "text" name = "name" maxlength = "30" placeholder ="&#32;30 characters max" required />
-				</p>
+<!-- article starts -->
+		<article>
+			<h2>Assistant Professor of Engineering <br><span>University of Cincinnatti on 03/07/2014</span> </h2><img src="images/views.png"></img>
+			<h3>Job Description</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+			ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			</p>
+			<h3>Qualifications</h3>
+			<p>PhD required, but ABD very near completion will be considered. Demonstrated record of research desired.
+			</p>
+			<h3>Terms of Appointment</h3>
+			<p>100%, Tenure-track contract for academic year beginning August 16, 2014; summer teaching may be available.
+			</p>
+			<h3>Salary</h3>
+			<p>Salary commensurate with credentials, qualifications and experience.  Excellent fringe benefits.
+			</p>
+			<hr>
+			<h3>Application</h3>
+			<p>Submit a letter of application, transcripts, CV, three letters of recommendation, a list of current references, and a representative portfolio of scholarly work to:
+				<address>
+					Dr. Michael J. Fox, Search Committee Chair<br>
+     				Department of Engineering<br>
+     				University of Cincinnatti<br>
+     				Campus Box 1771<br>
+     				Cincinnati, OH, 45201
+				</address>
+			</p>
+			<h3>Deadline</h3>
+			<p>March 27, 2014</p>
+			<h3>Source</h3>
+			<p><a href="http://www.uc.edu/hr.html">University of Cincinnatti Human Resources Website</a></p>
+			
 
-				<p><label for = "name" class="float_left clear"><span class="red">*&#32;</span>Second Name</label>
-				<input id ="second_name" class="float_left clear" type = "text" name = "second_name" maxlength = "15" placeholder ="&#32;15 characters max" required />
-				</p>
-
-				<p><label for= "email" class="clear float_left"><span class="red">*&#32;</span>E-mail</label> <input type="text" id="email" class="float_left clear" maxlength = "30" placeholder ="&#32;30 characters max" required  />
-				</p>
-				
-				<p><label for= "tel" class="clear float_left">Telephone</label> <input type="tel" id="tel" class="float_left clear" maxlength = "30" placeholder ="&#32;30 characters max" />
-				</p>
-				<p class="textfield_heading clear float_left"> Please enter your message below</p>
-				<textarea class ="clear float_left" id="textfield" name="comment_field" placeholder="Enter message here"></textarea>
-<!-- submit button starts here -->
-				<p id="btn" class="clear"><input id="submit" type = "submit" value ="Submit"/></p>
-			</div>
-		</form> 
-<!-- section form closes below --> 	
-</article>						
-		
+		</article>
 		
 <!-- footer starts -->
 			<footer>	
@@ -111,7 +116,7 @@
 					<h3>Social Networks</h3>
 					<p>Connect with us via social media</p></a>
 				</div>
-				<div id="contact_us"><a href="#">
+				<div id="contact_us"><a href="contact.html">
 					<h3>Contact Us</h3>
 					<p>Ask questions or make suggestions</p></a>
 				</div>
@@ -121,8 +126,10 @@
 				</div>
 				<p id="copyright">&copy; Copyright Gabriel Ferraz 2014</p>
 			</footer>	
-		</footer>
+	</body>
+		
 		<script type ="text/javascript" src= "js/jquery-1.11.0.min.js"></script>
+		<script type ="text/javascript" src= "js/jquery-ui-1.10.4.custom.min.js"></script> 
 		<script type ="text/javascript" src = "js/initial.js"></script>
 	</body>
 </html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" sodipodi:docname="FB icon.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" inkscape:version="0.48.3.1 r9886" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="250px" height="250px"
+	 viewBox="0 0 250 250" enable-background="new 0 0 250 250" xml:space="preserve">
+<sodipodi:namedview  id="namedview4" fit-margin-top="0" fit-margin-right="0" pagecolor="#ffffff" showgrid="false" showguides="true" inkscape:zoom="0.70710678" bordercolor="#666666" borderopacity="1" objecttolerance="10" inkscape:pageshadow="2" inkscape:cx="302.53802" guidetolerance="10" inkscape:window-width="1440" inkscape:window-height="876" fit-margin-bottom="0" inkscape:cy="185.66785" fit-margin-left="0" inkscape:pageopacity="0" inkscape:guide-bbox="true" gridtolerance="10" inkscape:window-y="24" inkscape:current-layer="g10" inkscape:window-x="0" inkscape:window-maximized="1">
+	</sodipodi:namedview>
+<g id="g10" transform="matrix(1.25,0,0,-1.25,-154.44141,400.6914)" inkscape:label="ink_ext_XXXXXX" inkscape:groupmode="layer">
+	<g id="Facebook_icon" transform="matrix(0.07494146,0,0,0.07493443,30.960607,30.217322)" inkscape:label="#fbicon">
+		<path id="Square" inkscape:label="#square" inkscape:connector-curvature="0" fill="#3D539F" d="M2309.842,2833.638
+			c-17.519,0-31.707-14.231-31.707-31.799V2288.95c0-17.578,14.188-31.82,31.707-31.82h109.446h165.802h89.591H2809.1h11.999
+			c17.524,0,31.712,14.242,31.712,31.82v512.889c0,17.568-14.188,31.799-31.712,31.799H2309.842z"/>
+		<path id="F" inkscape:label="#f" inkscape:connector-curvature="0" fill="#ECECEE" d="M2696.646,2746.541
+			c31.712,0,58.963-2.351,66.917-3.409v-77.808l-45.932-0.052c-36.007,0-42.95-17.146-42.95-42.35v-55.559h85.87l-11.207-86.983
+			h-74.663V2257.13h-89.591v223.249h-74.877v86.983h74.877v64.155C2585.09,2705.979,2630.417,2746.541,2696.646,2746.541
+			L2696.646,2746.541z"/>
+	</g>
+</g>
+</svg>

@@ -5,6 +5,7 @@
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
 	<meta charset="utf-8">
 	<meta content="initial-scale=1" name="viewport">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<title>Academic Job Search | Search Engine for Academic Jobs</title>
@@ -19,14 +20,16 @@
 		<header>
 		
 <!-- social network figures start -->		
-			<a href ="http://www.facebook.com" target="_blank"><img class="social_networks" id="facebook" src="images/facebook_icon.png" alt="facebook"></a>
-			<a href ="https://plus.google.com" target="_blank"><img class="social_networks" id="google_plus" src="images/google_plus.png" alt="google plus"></a>
-			<a href ="http://twitter.com" target="_blank"><img class="social_networks" id="twitter" src="images/twitter-icon.png" alt="twitter"></a>
-			<a href ="http://www.linkedin.com" target="_blank"><img class="social_networks" id="linkedin" src="images/linkedin-icon.png" alt="linkedin"></a>
+			<ul>
+				<li><a href ="http://www.facebook.com" target="_blank"><img class="social_networks" id="facebook" src="images/facebook_icon.png" alt="facebook"></a></li>
+				<li><a href ="https://plus.google.com" target="_blank"><img class="social_networks" id="google_plus" src="images/google_plus.png" alt="google plus"></a></li>
+				<li><a href ="http://twitter.com" target="_blank"><img class="social_networks" id="twitter" src="images/twitter-icon.png" alt="twitter"></a></li>
+				<li><a href ="http://www.linkedin.com" target="_blank"><img class="social_networks" id="linkedin" src="images/linkedin-icon.png" alt="linkedin"></a></li>
+			</ul>		
 						
 			<h1>AcademicJobSearch.com</h1>
 			<img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo">
-			<p><span id="sign_in"><a href="#">Sign In</a></span><span id="register"><a href="form.html">Sign Up</a></span>
+			<p><span id="sign_in"><a href="#">Sign In</a></span> <span id="register"><a href="form.html">Sign Up</a></span>
 			</p>
 			
 
@@ -94,110 +97,116 @@
 				<div id ="search_options">
 					<div id="fields">
 						<h2>Search by Field</h2>
-						<img src="images/diploma.png" alt="diploma icon" style="float: left; margin-left: 35%;">
+						<img src="images/diploma1.png" alt="diploma icon" style="float: left; margin-left: 35%;">
 						<img src="images/arrow.png" alt="arrow" style="float: left; margin-left: 65px; margin-top: 0; width: 25px;">
 					</div>					
 					<form class="hidden_div1">
-						<div class="search_box_style">
-							<select id="searchByField" class ="dropbox" name = "field" required>
-								//<option> Choose One</option>
-								<option value = "Architecture">Architecture</option>
-								<option value = "Engineering">Engineering</option>
-								<option value = "Law">Law</option>
-								<option value = "Literature">Literature</option>
-								<option value = "Medicine">Medicine</option>
-								<option value = "Music">Music</option>
-								<option value = "Veterinary">Veterinary</option>
-								<option value = "etc">etc</option>
-							</select>
-							<p class="bttn_register" id="btn_test"><input id="register_submit" type = "submit" value ="Find Job"/></p>
-						</div>
+						<fieldset>
+							<div class="search_box_style">
+								<select id="searchByField" class ="dropbox" name = "field" required>
+									<option> Choose One</option>
+									<option value = "Architecture">Architecture</option>
+									<option value = "Engineering">Engineering</option>
+									<option value = "Law">Law</option>
+									<option value = "Literature">Literature</option>
+									<option value = "Medicine">Medicine</option>
+									<option value = "Music">Music</option>
+									<option value = "Veterinary">Veterinary</option>
+									<option value = "etc">etc</option>
+								</select>
+								<p class="bttn_register" id="btn_test"><input id="register_submit" type = "submit" value ="Find Job"/></p>
+							</div>
+						</fieldset>
 					</form>
 					
 					<div id="universities">
 						<h2>Search by University</h2>
-						<img src="images/university.png" alt="university icon" style="float: left; margin-left: 34%;">
+						<img src="images/university_icon.png" alt="university icon" style="float: left; margin-left: 34%;">
 						<img src="images/arrow.png" alt="arrow" style="float: left; margin-left: 65px; margin-top: 0; width: 25px;">
 					</div>
 					<form class="hidden_div2">
-						<div class="search_box_style">
-							<select class ="dropbox" name = "university" required>
-								<option> Choose One</option>
-								<option value = "Alabama State">Alabama State</option>
-								<option value = "Auburn State">Auburn State</option>
-								<option value = "Arizona State">Arizona State</option>
-								<option value = "Brown">Brown</option>
-								<option value = "Columbia">Columbia</option>
-								<option value = "Princeton">Princeton</option>
-								<option value = "etc">etc</option>
-							</select>
-							<p class="bttn_register"><input id="register_submit" type = "submit" value ="Find Job"/></p>
-						</div>
+						<fieldset>
+							<div class="search_box_style">
+								<select class ="dropbox" name = "university" required>
+									<option> Choose One</option>
+									<option value = "Alabama State">Alabama State</option>
+									<option value = "Auburn State">Auburn State</option>
+									<option value = "Arizona State">Arizona State</option>
+									<option value = "Brown">Brown</option>
+									<option value = "Columbia">Columbia</option>
+									<option value = "Princeton">Princeton</option>
+									<option value = "etc">etc</option>
+								</select>
+								<p class="bttn_register"><input id="register_submit" type = "submit" value ="Find Job"/></p>
+							</div>
+						</fieldset>
 					</form>
 					<div id="states">
 						<h2>Search by State</h2>
-						<img src="images/map1.png" alt="state icon" style="float: left; margin-left: 29%;">
+						<img src="images/usa_map_2.png" alt="state icon" style="float: left; margin-left: 29%;">
 						<img src="images/arrow.png" alt="arrow" style="float: left; margin-left: 40px; margin-top: 0; width: 25px;">
 					</div>
 					
 					<form class="hidden_div3">
-						<div class="search_box_style">
-							<select class ="dropbox" name = "state" required>
-								<option> Choose One</option>
-									<option value="AL">AL</option>
-									<option value="AK">AK</option>
-									<option value="AZ">AZ</option>
-									<option value="AR">AR</option>
-									<option value="CA">CA</option>
-									<option value="CO">CO</option>
-									<option value="CT">CT</option>
-									<option value="DE">DE</option>
-									<option value="DC">DC</option>
-									<option value="FL">FL</option>
-									<option value="GA">GA</option>
-									<option value="HI">HI</option>
-									<option value="ID">ID</option>
-									<option value="IL">IL</option>
-									<option value="IN">IN</option>
-									<option value="IA">IA</option>
-									<option value="KS">KS</option>
-									<option value="KY">KY</option>
-									<option value="LA">LA</option>
-									<option value="ME">ME</option>
-									<option value="MD">MD</option>
-									<option value="MA">MA</option>
-									<option value="MI">MI</option>
-									<option value="MN">MN</option>
-									<option value="MS">MS</option>
-									<option value="MO">MO</option>
-									<option value="MT">MT</option>
-									<option value="NE">NE</option>
-									<option value="NV">NV</option>
-									<option value="NH">NH</option>
-									<option value="NJ">NJ</option>
-									<option value="NM">NM</option>
-									<option value="NY">NY</option>
-									<option value="NC">NC</option>
-									<option value="ND">ND</option>
-									<option value="OH">OH</option>
-									<option value="OK">OK</option>
-									<option value="OR">OR</option>
-									<option value="PA">PA</option>
-									<option value="RI">RI</option>
-									<option value="SC">SC</option>
-									<option value="SD">SD</option>
-									<option value="TN">TN</option>
-									<option value="TX">TX</option>
-									<option value="UT">UT</option>
-									<option value="VT">VT</option>
-									<option value="VA">VA</option>
-									<option value="WA">WA</option>
-									<option value="WV">WV</option>
-									<option value="WI">WI</option>
-									<option value="WY">WY</option>
-							</select>
-							<p class="bttn_register"><input id="register_submit" type = "submit" value ="Find Job"/></p>
-						</div>
+						<fieldset>
+							<div class="search_box_style">
+								<select class ="dropbox" name = "state" required>
+									<option> Choose One</option>
+										<option value="AL">AL</option>
+										<option value="AK">AK</option>
+										<option value="AZ">AZ</option>
+										<option value="AR">AR</option>
+										<option value="CA">CA</option>
+										<option value="CO">CO</option>
+										<option value="CT">CT</option>
+										<option value="DE">DE</option>
+										<option value="DC">DC</option>
+										<option value="FL">FL</option>
+										<option value="GA">GA</option>
+										<option value="HI">HI</option>
+										<option value="ID">ID</option>
+										<option value="IL">IL</option>
+										<option value="IN">IN</option>
+										<option value="IA">IA</option>
+										<option value="KS">KS</option>
+										<option value="KY">KY</option>
+										<option value="LA">LA</option>
+										<option value="ME">ME</option>
+										<option value="MD">MD</option>
+										<option value="MA">MA</option>
+										<option value="MI">MI</option>
+										<option value="MN">MN</option>
+										<option value="MS">MS</option>
+										<option value="MO">MO</option>
+										<option value="MT">MT</option>
+										<option value="NE">NE</option>
+										<option value="NV">NV</option>
+										<option value="NH">NH</option>
+										<option value="NJ">NJ</option>
+										<option value="NM">NM</option>
+										<option value="NY">NY</option>
+										<option value="NC">NC</option>
+										<option value="ND">ND</option>
+										<option value="OH">OH</option>
+										<option value="OK">OK</option>
+										<option value="OR">OR</option>
+										<option value="PA">PA</option>
+										<option value="RI">RI</option>
+										<option value="SC">SC</option>
+										<option value="SD">SD</option>
+										<option value="TN">TN</option>
+										<option value="TX">TX</option>
+										<option value="UT">UT</option>
+										<option value="VT">VT</option>
+										<option value="VA">VA</option>
+										<option value="WA">WA</option>
+										<option value="WV">WV</option>
+										<option value="WI">WI</option>
+										<option value="WY">WY</option>
+								</select>
+								<p class="bttn_register"><input id="register_submit" type = "submit" value ="Find Job"/></p>
+							</div>
+						</fieldset>
 					</form>
 				</div>
 			</section>
