@@ -3,10 +3,17 @@
 <html lang="en">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
-	<meta charset="utf-8">
 	<meta content="initial-scale=1" name="viewport">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles_form.css">
+	<meta name="description" content="Academic Job Search Sign Up Page">
+	<meta name="keywords" content="Jobs in Academia, Scholarly Jobs, University Jobs, Academic Job Search.">
+	<meta property="og:title" content="Academic Job Search">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://www.academicjobsearch.com/imges/images/logo_academic_jobs_dark_blue_white_handle1.png">
+	<meta property="og:site_name" content="Academic Job Search">
+	<meta property="og:description" content="Academic Job Search Sign Up Page">
+	<link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<title>Academic Job Search | Registration Form</title>
 </head>
@@ -16,13 +23,13 @@
 		<div class="overlay">
 		</div>
 		<header>
-			<h1>AcademicJobSearch.com</h1>
+	<!-- 		<h1>AcademicJobSearch.com</h1> -->
 			<a href="index.html"><img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo"></a>
-			<p><span id="sign_in"><a href="#">Sign In</a></span><span id="register"><a href="#">Sign Up</a></span>
-			</p>
+		<!-- 	<p><span id="sign_in"><a href="#">Sign In</a></span><span id="register"><a href="#">Sign Up</a></span>
+			</p> -->
 			
 <!-- form register starts -->
-			<form id="form_register">												
+	<!-- 		<form id="form_register">												
 				<p><label for = "login_name">Login Name</label>
 				<input id ="login_name" type = "text" name = "name" maxlength = "15" required />
 				</p>
@@ -32,72 +39,46 @@
 				</p>
 				<p id="form_register_forgot"><a href = "#">Forgot login or password</a></p>
 				<p id="btn_register"><input id="register_submit" type = "submit" value ="Sign In"/></p>
-			</form>
+			</form> -->
 			
 <!-- nav starts -->
-			<nav>
-				<ul>
-					<li id="home">
-						<span class="nav_list">
-							<a href="admin.html">My Dashboard</a>
-						</span>
-					</li>
-					<li>
-						<span class="nav_list">
-							<a href="index.html">Home</a>
-						</span>
-					</li>
-					<li>
-						<span class="nav_list">
-							<a href="#">Membership Benefits</a>
-						</span>
-					</li>
-					<li>
-						<span class="nav_list">
-							<a href="#">How it Works</a>
-						</span>
-					</li>
-					<li>
-						<span class="nav_list">
-							<a href="#">Resources</a>
-						</span>
-					</li>
-				</ul>
-			</nav>
+		
+				<nav class="row">	
+					<ul>	
+						<li id="home" class="small-12 medium-3 large-3 columns">
+							<span class="nav_list">
+								<a href="admin.html">My Dashboard</a>
+							</span>
+						</li>
+						<li class="small-12 medium-3 large-3 columns">
+							<span class="nav_list">
+								<a href="form.html">Sign Up</a>
+							</span>
+						</li>
+						<li class="small-12 medium-3 large-3 columns">
+							<span class="nav_list">
+								<a href="#">Membership Benefits</a>
+							</span>
+						</li>
+						<li class="small-12 medium-3 large-3 columns">
+							<span class="nav_list">
+								<a href="#">How it Works</a>
+							</span>
+						</li>				
+					</ul>		
+				</nav>
 		</header>
 		
 <!-- form starts -->
-	<article>	
-		<form id="formulary">									
+	<article class="row">	
+		<form id="formulary" class="small-8 small-centered columns">									
 			<h2 class="clear" id="sign_up_header">SIGN UP FORM</h2>
-<!-- 	personal info -->
-			<div id="personal">
-				<p class="clear main_paragraphs">Personal Information</p>
-			
-				<p><label for = "name" class="float_left"><span class="red">*&#32;</span>First Name</label>
-				<input id ="name" class = "float_left clear" type = "text" name = "name" maxlength = "30" placeholder ="&#32;30 characters max" required />
-				</p>
-
-				<p><label for = "name" class="float_left clear"><span class="red">*&#32;</span>Second Name</label>
-				<input id ="second_name" class="float_left clear" type = "text" name = "second_name" maxlength = "15" placeholder ="&#32;15 characters max" required />
-				</p>
-
-				<p><label for= "email" class="clear float_left"><span class="red">*&#32;</span>E-mail</label> <input type="text" id="email" class="float_left clear" maxlength = "30" placeholder ="&#32;30 characters max" required  />
-				</p>
-				
-				<p><label class="clear float_left">Birthday</label>
-				<input class="float_left clear" type = "text" placeholder ="&#32;month/day/year" />
-				</p>
-				
-				<p><label for= "tel" class="clear float_left">Telephone</label> <input type="tel" id="phone" class="float_left clear" maxlength = "30" placeholder ="&#32;30 characters max" />
-				</p>
-			</div>
 			
 <!-- login info -->	
 			<div id="login_info" class="clear">						
 				<p class="clear float_left main_paragraphs">Login Information</p>
 			
-				<p><label class="clear float_left"><span class="red">*&#32;</span>Login Name</label><input id ="login" class="float_left clear" type = "text" name = "login" maxlength = "8" placeholder ="&#32;8 characters max" required  />
+				<p><label class="clear float_left"><span class="red">*&#32;</span>E-mail</label><input id ="login" class="float_left clear" type = "text" name = "login" maxlength = "8" placeholder ="&#32;8 characters max" required  />
 				</p>
 			
 				<p><label class="clear float_left"><span class="red">*&#32;</span>Password</label><input id ="form_password" class="float_left clear" type = "text" name = "address" maxlength = "8" placeholder ="&#32;8 characters max" required  />
@@ -107,31 +88,7 @@
 				</p>
 			</div>
 				
-<!-- address info -->				
-			<div id="address" class="clear">
-				<p class="main_paragraphs">Address</p>
-				<p class="float_left clear"><span class="red">*&#32;</span>State</p>
-				<select class="float_left" name = "state" id="state" <!-- style="margin-top:17px; margin-left:5px;" -->>
-					<option> Choose One</option>
-					<option value = "Alabama">Alabama</option>
-					<option value = "Alaska">Alaska</option>
-					<option value = "Arizona">Arizona</option>
-					<option value = "Arkansas">Arkansas</option>
-					<option value = "California">California</option>
-					<option value = "Colorado">Colorado</option>
-					<option value = "Connecticut">Connecticut</option>
-					<option value = "Delaware">Delaware</option>
-					<option value = "Florida">Florida</option>
-					<option value = "Georgia">Georgia</option>
-					<option value = "Georgia">etc</option>
-				</select>
-			
-				<p><label for= "city" class="clear float_left"><span class="red">*&#32;</span>City</label> <input type="text" id="city" class="float_left clear" maxlength = "30" placeholder ="&#32;30 characters max" required  />
-				</p>
-			
-				<p><label for= "zip" class="clear float_left">Zip</label> <input type="text" id="zip" class="float_left clear" maxlength = "9" placeholder ="&#32;9 characters max" required  />
-				</p>	
-			</div>
+
 				<p id = checkbox_terms><input id="terms_checkbox" type="checkbox" name="terms" value="terms" checked>
 					<label for = terms_checkbox> I agree with Academic Job Search's <a href = "terms.html">terms of use<a><span class="red"> *</span></label>
 				</p>
@@ -149,30 +106,32 @@
 		
 		
 <!-- footer starts -->
-			<footer>	
-				<div id="faq"><a href="#">
+			<footer class="row">	
+				<div id="faq" class="medium-3 large-3 columns show-for-medium-up"><a href="#">
 					<h3>Faq</h3>
 					<p>Find answers to questions you might have about the website</p></a>
 				</div>
-				<div id="links"><a href="#">
-					<h3>Useful Links</h3>
-					<p>Check out a list of 20+ links we selected for you</p></a>
-				</div>
-				<div id="social_networks"><a href="#">
+				<div id="social_networks" class="medium-3 large-3 columns show-for-medium-up"><a href="#">
 					<h3>Social Networks</h3>
 					<p>Connect with us via social media</p></a>
 				</div>
-				<div id="contact_us"><a href="contact.html">
+				<div id="contact_us" class="small-6 medium-3 large-3 columns"><a href="contact.html">
 					<h3>Contact Us</h3>
 					<p>Ask questions or make suggestions</p></a>
 				</div>
-				<div id="terms"><a href="terms.html">
+				<div id="terms" class="small-6 medium-3 large-3 columns"><a href="terms.html">
 					<h3>Terms of Use</h3>
 					<p>Learn about our policies</p></a>
 				</div>
-				<p id="copyright">&copy; Copyright Gabriel Ferraz 2014</p>
-			</footer>	
-		<script type ="text/javascript" src= "js/jquery-1.11.0.min.js"></script>
-		<script type ="text/javascript" src = "js/initial.js"></script>
+				<p id="copyright" class="large-12 columns">&copy; Copyright Gabriel Ferraz 2014</p>
+			</footer>
+		</footer>
+		<script src="js/vendor/jquery.js">
+		<script src="js/vendor/fastclick.js">
+		<script src="js/foundation.min.js">
+		<script src="js/initial.js">
+		 <script>
+  			$(document).foundation();
+  		</script>
 	</body>
 </html>

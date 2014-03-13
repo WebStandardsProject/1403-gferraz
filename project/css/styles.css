@@ -9,11 +9,10 @@ html{
 }
 
 body{
-	width:960px;
 	margin: 0 auto;
 	padding-top: 10px;
 	font-family: arial, verdana, sans-serif;
-	font-size:62.5%; /* changes the default to 10px*/
+	font-size:100%;
 }
 
 

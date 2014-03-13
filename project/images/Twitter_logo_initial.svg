@@ -6,9 +6,9 @@
 <g id="Layer_2">
 	<g id="g10" transform="matrix(1.25,0,0,-1.25,-154.44141,400.6914)" inkscape:label="ink_ext_XXXXXX" inkscape:groupmode="layer">
 		<g id="Facebook_icon" transform="matrix(0.07494146,0,0,0.07493443,30.960607,30.217322)" inkscape:label="#fbicon">
-			<path id="Square" inkscape:label="#square" inkscape:connector-curvature="0" fill="#F7F8F9" d="M1240.67,3802.11
-				c-17.519,0-31.707-14.231-31.707-31.799v-512.889c0-17.578,14.188-31.82,31.707-31.82h109.445h165.802h89.591h134.418h11.999
-				c17.524,0,31.713,14.242,31.713,31.82v512.889c0,17.568-14.188,31.799-31.713,31.799H1240.67z"/>
+			<path id="Square" inkscape:label="#square" inkscape:connector-curvature="0" fill="#F7F8F9" d="M1074.764,3802.11
+				c-29.07,0-52.614-14.231-52.614-31.799v-512.889c0-17.578,23.545-31.82,52.614-31.82h181.622h275.138h148.669h223.061h19.911
+				c29.085,0,52.625,14.242,52.625,31.82v512.889c0,17.568-23.539,31.799-52.625,31.799H1074.764z"/>
 		</g>
 	</g>
 </g>
@@ -17,11 +17,11 @@
 		<sodipodi:namedview  id="namedview16" fit-margin-top="0" fit-margin-right="0" pagecolor="#ffffff" showgrid="false" inkscape:zoom="5.3666668" bordercolor="#666666" borderopacity="1" objecttolerance="10" inkscape:pageshadow="2" inkscape:cx="79.983736" guidetolerance="10" inkscape:window-width="1280" inkscape:window-height="1004" fit-margin-bottom="0" inkscape:cy="16.739179" fit-margin-left="0" inkscape:pageopacity="0" gridtolerance="10" inkscape:window-y="-8" inkscape:current-layer="svg2" inkscape:window-x="-8" inkscape:window-maximized="1">
 		</sodipodi:namedview>
 	<path id="twitter" sodipodi:nodetypes="ccscscscscsscsscscsscsccc" inkscape:connector-curvature="0" fill="#33CCFF" d="
-		M36.795,35.334c1.38,0,2.563-0.554,3.55-1.658c0.986-1.106,1.479-2.433,1.479-3.979c0-1.548-0.492-2.874-1.482-3.978
-		c-0.99-1.106-2.175-1.66-3.56-1.66H21.89v-5.637c0-1.549-0.491-2.874-1.471-3.977c-0.976-1.108-2.154-1.66-3.522-1.66
+		M54.795,35.334c1.38,0,2.563-0.554,3.55-1.658c0.986-1.106,1.479-2.433,1.479-3.979c0-1.548-0.492-2.874-1.482-3.978
+		c-0.99-1.106-2.175-1.66-3.56-1.66H39.89v-5.637c0-1.549-0.491-2.874-1.471-3.977c-0.976-1.108-2.154-1.66-3.522-1.66
 		c-1.412,0-2.606,0.542-3.585,1.626c-0.979,1.084-1.468,2.423-1.468,4.015v22.5c0,4.647,1.468,8.618,4.407,11.913
-		c2.936,3.298,6.473,4.945,10.609,4.945h9.936c1.382,0,2.562-0.552,3.548-1.657c0.986-1.103,1.479-2.433,1.479-3.979
+		c2.937,3.298,6.473,4.945,10.609,4.945h9.936c1.382,0,2.562-0.552,3.548-1.657c0.986-1.103,1.479-2.433,1.479-3.979
 		s-0.492-2.871-1.479-3.978s-2.17-1.66-3.549-1.66h-9.938c-1.379,0-2.553-0.543-3.521-1.628c-0.967-1.089-1.45-2.409-1.45-3.961
-		v-5.589L36.795,35.334L36.795,35.334z"/>
+		v-5.589L54.795,35.334L54.795,35.334z"/>
 </g>
 </svg>
