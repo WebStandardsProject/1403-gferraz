@@ -14,6 +14,7 @@
 				-moz-background-size: cover;
 				-o-background-size: cover;
 				background-size: cover;
+				position: relative;
 		}
 		table{
 			border-collapse: collapse;
@@ -60,6 +61,19 @@
 			margin-bottom: 10px;
 			font-size: 2em;
 		}
+		#modal{
+			position: fixed;
+			top: 15%;
+			left: 40%;
+			background-color: rgba(0,0,0, .8);
+			color: white;
+			font-size: 1.2em;
+			text-align: center;
+			box-shadow: 0 0 2px #000;
+			z-index: 5;
+			width: 300px;
+			height: 80px;
+		}
 		
 	</style>
 </head>
@@ -78,26 +92,42 @@
 		</section>
 		
 		<section id="links">
-		<table style="border: 1px solid black;">
-			<tr>
-				<th>1. UX Plan</th>
-				<th>2. Git Live Page</th>
-				<th>3. Pinterest</th>
-			</tr>
-			<tr>
-				<td>
-					<a href = https://www.dropbox.com/s/tmxv7rhlzjjbz9y/ADT_ferraz_gabriel_UXPlan.docx>Link</a>
-				</td>
+			<table style="border: 1px solid black;">
+				<tr>
+					<th>1. UX Plan</th>
+					<th>2. Git Live Page</th>
+					<th>3. Pinterest</th>
+				</tr>
+				<tr>
+					<td>
+						<a href = https://www.dropbox.com/s/tmxv7rhlzjjbz9y/ADT_ferraz_gabriel_UXPlan.docx>Link</a>
+					</td>
 				
-				<td>
-					<a  href = http://webstandardsproject.github.io/1403-gferraz/project/index.html>Link</a>
-				</td>
+					<td>
+						<a  href = http://webstandardsproject.github.io/1403-gferraz/project/index.html>Link</a>
+					</td>
 				
-				<td>
-					<a  href = http://www.pinterest.com/zapmusico/inspiration-ux>Link</a>
-				</td>
+					<td id="pinterest">
+						<a  href = http://www.pinterest.com/zapmusico/inspiration-ux>Link</a>
+					</td>
 				
-			</tr>
-		</table>
+				</tr>
+			</table>
+		</section>
+		<div id="modal">
+			<p>For some reason this link only works when you right click it.</p>
+		</div>
+
+		<script type ="text/javascript" src= "js/jquery-1.11.0.min.js"></script>
+		<script>
+		$('#modal').hide();
+		console.log("#modal");
+		$('#pinterest').hover(function(){
+			$('#modal').slideDown();
+		}, function(){
+			$('#modal').slideUp();
+				});
+		</script>
+		
 	</body>
 </html>
