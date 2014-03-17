@@ -5,11 +5,10 @@
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
 	<meta charset="utf-8">
 	<title>Gabriel Ferraz - WPS1403</title>
-	<style>
-	
-		
+	<style>	
 		body{
 			margin-bottom: 40px;
+			position: relative;
 		}
 		table{
 			border-collapse: collapse;
@@ -17,7 +16,7 @@
 			width: 100%;
 		}
 		#second_table th, #second_table td{
-			width:25%;
+			width:20%;
 		}
 		
 		#adt2{
@@ -25,7 +24,7 @@
 			margin-bottom:10px;
 		}
 		
-		#third_table th, #third_table td{
+		#first_table th, #first_table td, #third_table th, #third_table td{
 			width:25%;
 		}
 		
@@ -81,9 +80,9 @@
 			margin-left:0;
 		}
 		#modal{
-			position: fixed;
-			top: 70%;
-			left: 64.6%;
+			position: absolute;
+			top: 41%;
+			left: 48%;
 			background-color: rgba(0,0,0, .9);
 			color: white;
 			font-size: 1.2em;
@@ -91,7 +90,7 @@
 			box-shadow: 0 0 2px #000;
 			z-index: 5;
 			width: 300px;
-			height: 65px;
+			height: 90px;
 		}
 		#modal p{
 			margin:10px;
@@ -109,23 +108,22 @@
 			-o-background-size: cover;
 			background-size: cover;
 			z-index: -1;
-		}
-		
+		}		
 	</style>
 </head>
 
 	<body>
 		<div id="overlay"></div>
-	
 		<h1>Gabriel Ferraz's Landing Page</h1>
 		<h2 id="project_title">Project Title: Academic Job Search</h2>
 		<h2>WPS</h2>
 		<section id="wps">
-			<table>
+			<table id="first_table">
 				<tr>
 					<th>1. UX Plan</th>
 					<th>2. Git Live Page</th>
 					<th>3. Pinterest</th>
+					<th>4. Inspiration UI</th>
 				</tr>
 				<tr>
 					<td>
@@ -138,6 +136,9 @@
 				
 					<td>
 						<a id="pinterest" href = "http://www.pinterest.com/zapmusico/inspiration-ux" target="_blank">Link</a>
+					</td>
+					<td>
+						<a id="dropbox" href = "https://www.dropbox.com/s/gek90mjoop0g8v3/ferraz_gabriel_inspiration_ui.pdf" target="_blank">Link</a>
 					</td>
 				
 				</tr>
@@ -152,6 +153,7 @@
 					<th>Usability Hub Test 2</th>
 					<th>Usability Hub Test 3</th>
 					<th>Usability Hub Test 4</th>
+					<th>Prototype <br> Alpha Test</th>
 				</tr>
 				<tr>
 					<td>
@@ -167,6 +169,9 @@
 					</td>
 					<td>
 						<a  href ="https://usabilityhub.com/do/9d14e9457a61/1091" target="_blank">Link</a>
+					</td>
+					<td>
+						<a  href =" " target="_blank">Link</a>
 					</td>
 				</tr>
 			</table>
@@ -199,7 +204,7 @@
 			</table>
 		</section>
 		<div id="modal">
-			<p>For some reason this link only works when you right click it.</p>
+			<p>For some reason this link only works when you right click it. <br> p.s. Pinterest sucks</p>
 		</div>
 
 		<script type ="text/javascript" src= "js/jquery-1.11.0.min.js"></script>
