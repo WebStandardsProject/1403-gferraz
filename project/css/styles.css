@@ -1,3 +1,858 @@
 
+/* 
+main body
+=========
+ */
+
+html{
+	background-color: rgb(253, 253, 253);
+}
+
+body{
+	width:960px;
+	margin: 0 auto;
+	padding-top: 10px;
+	font-family: arial, verdana, sans-serif;
+	font-size:62.5%; /* changes the default to 10px*/
+}
+
+header{
+	background: url("../images/header6_gradient1.png");
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: top 220px center;
+	background-color: white;
+	overflow: hidden;
+}
+
+article{
+	width: 100%;
+	background: linear-gradient(rgb(250, 250, 250), rgb(255, 255, 255));
+	/* margin:200px 0 0 0; */
+}
+
+
+/* 
+social network icons
+=================
+ */
+
+header ul li{
+	list-style: none;
+}
+
+#facebook{
+ height:42px;
+ position:fixed;
+ top:140px;
+ left:-30px;
+}
+
+#google_plus{
+ height:42px;;
+ position:fixed;
+ top:183px;
+ left:-30px; 
+}
+
+#twitter{
+ height:42px;
+ position:fixed;
+ top:226px;
+ left:-31px;
+}
+
+#linkedin{
+ height:42px;
+ position:fixed;
+ top:269px;
+ left:-30px;
+}
+
+/* 
+header elements
+===============
+ */
+
+
+h1{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	float: left;
+	display:none;
+}
+
+#image{
+	position: absolute;
+	top:5px;
+	left:10px;
+	width: 290px;
+}
+
+header p{
+	text-align: right;
+	margin-right:20px;
+	margin-top:30px;
+	float: right;
+}
+
+#register a{
+	margin-right: 10px;
+	margin-left: 15px;
+	font-size:.9em;
+	text-decoration:none;
+	background-color:rgb(237,155,67);
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius:5px;
+	padding: 10px;
+	color: rgb(245,245,255);
+}
+
+#register a:hover{
+	background-color:rgb(233,153,63);
+	color: white;
+	box-shadow: 0 0 .5px #000;
+}
+
+#sign_in a{
+	font-size:0.8em;
+	text-decoration:none;
+	background-color: #15619C;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius:5px;
+	padding: 10px;
+	color: rgb(245,245,245);
+}
+
+#sign_in a:hover{
+	background-color:rgb(11,87,146);
+	color: white;
+	box-shadow: 0 0 .5px #000;
+}
+
+
+/* 
+form search starts
+=============
+ */
+
+#search_inputs{
+	margin-top:40px;
+	margin-bottom:26px;
+	float:left;
+	clear:both;
+}
+
+#call_to_search{
+	margin-bottom: 0;
+	float:left;
+	width: 525px;
+	text-align:center;
+	font-size:4em;
+	font-weight: bold;	
+	color: #15619C;
+}
+
+#call_to_search_p{
+	font-size: 2em;
+	color: #15619C;
+	width: 525px; 
+	font-style: oblique;
+	margin:0;
+	text-align: left;
+	line-height: 28px;
+	float:left;
+}
+
+#underline{
+	text-decoration: underline;
+}
+
+p#search_boxes{
+	float: left;
+	clear:both;
+	margin-top:10px;
+	width: 545px;
+}
+
+#key_word, #location{
+	width:200px;
+	height:45px;
+	border: 2px solid rgb(237,155,67);
+	font-size: 1.7em;
+	color: rgb(150,150,150);
+	font-style: oblique;
+	text-indent: 5px;
+	border-radius:5px;
+	float:left;
+	margin-right: 5px;
+}
+
+#submit{
+	width:135px;
+	height:51px;
+	padding-top: 3px;
+	text-align: center;
+	background-color:rgb(243,163,73);
+	border: 1px solid rgb(237,155,67);
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	border-radius:5px;
+}
+
+#submit:hover{
+	background-color:rgb(233,153,63);
+	cursor:pointer;
+}
+
+ #check_membership a{
+	color:rgb(237,155,67);
+	text-decoration: none;
+	font-style: oblique;
+	font-size: 1.1em;
+ }
+
+/* 
+form register
+========
+ */
+ 
+ #form_register{
+ 	position: fixed;
+ 	z-index: 10;
+ 	top: 80px;
+ 	right: 100px;
+ 	width: 300px;
+ 	height: 210px;
+ 	background-color:rgb(253,173,83);
+ 	color: #15619C;
+ 	border: 2px solid rgb(5,40,101);
+	border-radius: 5px;
+/* 	box-shadow: 0px 0px 20px .5px #000; */
+ }
+ 
+ #btn_register{
+ 	margin-top:10px;
+ }
+ 
+ #register_submit{
+ 	font-size:0.8em;
+	text-decoration:none;
+	background-color: #15619C;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius:5px;
+	padding: 10px;
+	color: rgb(245,245,245);
+ }
+ 
+#register_submit:hover{
+  	background-color:rgb(11,87,146);
+	color: white;
+	box-shadow: 0 0 .5px #000;
+	cursor: pointer;
+}
+
+#form_register_forgot{
+	float:left;
+	margin-left: 35px;
+	margin-right:0;
+	font-size:1.1em;
+}
+
+#form_register_forgot a{
+	font-style: oblique;
+	font-size: 1.2em;
+	color:#15619C;
+}
+
+/* 
+overlay
+=======
+ */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* 
+navigation
+==========
+ */
+ 
+nav{
+	 padding:0; 
+	 margin-top: 87px;
+	 float: left;
+	 clear: both;
+	 background: white;
+	 width: 960px;
+}
+
+nav ul{
+	min-height:10px;
+	padding:23px 0 23px;
+	text-align: center;
+	width: inherit;
+	clear: both;
+	margin-top:0;
+	margin-bottom:0;
+	line-height: 11px;
+	border-top: 1px solid rgb(237,155,67);
+	border-bottom: 1px solid rgb(237,155,67);
+}
+
+.nav_list a{
+	margin: 10px 0;
+	padding:18px 13.4px 18.5px;
+}
+
+.nav_list{
+	margin: 10px 0;
+	padding:19px 13.4px 16.5px;
+	font-size: .5em;
+}
+
+.nav_list:hover{
+	background-color:rgba(237,155,67,.8);
+}
+
+.nav_list:hover a{
+	color:rgb(245,245,245);
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	text-align: center; 
+	font-size: 1.8em;
+	text-transform: uppercase;
+	font-weight: bold; 
+	float: left;
+	line-height: 13px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #15619C;
+}
+
+
+/* 
+font styles/sizes
+=================
+ */
+ 
+
+h1{
+	font-size: 2.6em;
+}
+
+h2{
+	font-size:2.2em;
+	margin:0;
+	padding:0;
+}
+
+h3{
+	font-size:1.8em;
+	margin-top:0;
+}
+
+p{
+	font-size: 1.6em;
+}
+
+
+/* 
+article
+=======
+ */
+
+article{
+	overflow: hidden;
+}
+
+ 
+/* 
+search options divs - (orange circles)
+=============
+ */
+
+#fields, #universities, #states{
+	width:284.6px;
+	height: 260px;
+	padding:10px;
+	/* border: 1px solid rgb(5,40,101); */
+	border-radius: 10px;
+	margin-bottom:20px;
+	background:rgb(243,163,73);
+	float:left;
+}
+
+#fields, #universities{
+	margin-right:23.1px;
+}
+
+#fields img, #universities img, #states img{
+	display: block;
+	margin: 20px auto 0;
+	padding-bottom: 10px;
+}
+
+#fields:hover,#universities:hover,#states:hover{
+	cursor: pointer;
+}
+
+#fields h2, #universities h2, #states h2, #hot_searches_heading{
+	/* font-family: arial, verdana, sans-serif; */
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 50px;
+	color:#0C6298;
+}
+
+ /* 
+hidden divs
+==============
+ */
+
+.hidden_div1, .hidden_div2, .hidden_div3 {
+	width:284.6px;
+	height: 260px;
+	padding:10px;
+	border-radius: 10px;
+	margin-bottom:20px;
+	background-color:rgb(240,240,240);
+	float:left;
+}
+
+.hidden_div1, .hidden_div2{
+	margin-right:23px;
+}
+
+.hidden_div1{
+	position: absolute;
+	top:669px;
+	left:160.5px;
+}
+
+.hidden_div2{
+	position: absolute;
+	top:669px;
+	left:484.5px;
+}
+
+.hidden_div3{
+	position: absolute;
+	top:669px;
+	left:808.5px;
+}
+
+ .search_box_style {
+	margin-top: 120px;
+	margin-left: 50px;
+}
+
+.dropbox{
+	float: left;
+	margin-left:0;
+	margin-top:10px;
+	font-size: 1.2em;
+}
+
+.bttn_register {
+	margin-left: 15px;
+	margin-top: 0;
+	float:left;
+}
+
+ /* 
+section 1
+==============
+ */
+ 
+ #section_one{
+ 	padding-top: 60px;
+ }
+ 
+ #resources_heading{
+	text-align: left;
+	color:#0C6298;
+	margin-bottom: 10px;
+	margin-top:10px;
+	width: 593px;
+	/* font-family: arial, verdana, sans-serif; */
+} 
+ 
+ #resources{
+	width:625.3px;
+	padding: 0 10px 10px 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+	clear: left;
+	overflow: hidden;
+/* 	background-color:rgb(245,245,245); */
+}
+
+#resources h3{
+	color:#0C6298;
+	/* font-family: arial, verdana, sans-serif; */
+}
+
+#resources a{
+	color:rgb(237,155,67);
+	text-decoration:none;
+	font-style: oblique;
+}
+
+/* 
+div resources - inner divs
+==============
+ */
+ 
+ #section_two{
+ 	margin-top:43px;
+ }
+
+#cv {
+	width:48.78048%;
+	padding: 10px 0px 10px 15px;
+	height:260px;
+	float: left;
+	margin-right: 15px;
+}
+
+ #tp{
+	width:48.78048%;
+	padding: 10px 0 10px 0;
+	height:260px;
+	float: left;
+}
+
+#resources #cv h3, #cl h3, #tp h3{
+	margin-bottom:5px;
+}
+
+ #cv p, #cl p, #tp p{
+	margin-top:5px;
+	color:#0C6298;
+}
+
+#tp{
+	margin-right:0;
+}
+ 
+#search_options{
+	overflow: hidden;
+	clear: both; 
+	padding-top:20px;
+ }
+
+#search_options img{
+	height: 90px;
+}
+
+/* 
+div hidden job results - accordion
+======================
+ */
+
+#engineering h2{
+	color:#15619C;
+	margin-bottom: 19px;
+	padding-top: 10px;
+	
+}
+ #jobs{
+	width:625.3px;
+	padding: 0 10px 10px 0;
+	margin-right: 20px; 
+	margin-bottom: 20px;
+	float: left;
+	clear: left;
+	/* background-color:rgb(245,245,245); */
+	/* overflow: scroll; */
+}
+
+#jobs h3{
+	margin-bottom:0;
+	margin-top:10px;
+	float: left;
+}
+
+#jobs h3 a{
+	color:rgb(51,127,186); /* color:#0C6298; */
+	font-family: arial, verdana, sans-serif;
+	font-style: none;
+	text-decoration:none;
+	width:100%;
+	float:left;
+	clear
+}
+
+#jobs h3 a:hover{
+	color:rgb(11,87,146);
+}
+
+#jobs h3 span{
+	display: block;
+	font-size: .8em;
+	width: 100%;
+	font-weight: normal;
+}
+
+.accordion_p{ /* this is the div, not the p */
+	float:left;
+} 
+
+.accordion_p p{
+	margin-bottom: 10px;
+}
+
+.accordion_p a{
+	color:rgb(237,155,67);
+	text-decoration:none;
+	font-style: oblique;
+	margin-top: 5px;
+}
+
+.accordion_p a:hover{
+	color:rgb(227,145,57);
+}
+
+.save_job_hp{
+	color:#15619C;
+	opacity: .85;
+	margin-left: 305px;
+	font-Style: normal;
+	font-weight: bold;
+}
+
+.save_job_hp:hover{
+	cursor:pointer;
+	opacity:1; 
+}
+
+.jobs_links{
+	display: block;
+	margin-top: 10px;
+}
+
+.border_bottom{
+	width: 95.5%;
+	border-bottom: 1px solid #15619C;
+	opacity: .2;
+}
+
+
+/* 
+dialogue box
+============
+ */
+ 
+.overlay_dialog{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	background-color: rgba(0,0,0,0.6);
+}
+ 
+#dialog_membership{
+	width: 300px;
+	padding: 10px;
+	background-color: rgb(240,240,240);
+	border: 1px solid #000;
+	border-radius: 5px;
+	position: fixed;
+	left: 473px;
+	top: 40%;
+	overflow: hidden;
+	font-size: .8em;
+	z-index: 10;
+}
+
+#dialog_membership:hover{
+	cursor:move;
+}
+
+#dialogue_header{
+ 	background:linear-gradient(rgb(160, 160, 160), rgb(240, 240, 240));
+ 	border: 1px solid #000;
+ 	border-radius: 5px;
+ 	margin-top: 0;
+ 	padding: 5px;
+ 	font-weight: bold;
+
+}
+.overlay_one{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+}
+
+#become_member{
+	margin-left: 185px;
+	background-color:rgb(243,163,73);
+	color: white;
+	font-size: 1.9em;
+	border-radius: 5px;
+	padding: 4.5px;
+}
+
+#become_member:hover{
+	box-shadow: 0 0 2px #000;
+	cursor: pointer;
+}
+
+#div_no_membership{
+	float: right;
+	height: 35px;
+	line-height: 35px;
+}
+
+#no_membership{
+	margin-left: 5px;
+	margin-top: 9.2px;
+	background-color: #15619C;
+	color: white;
+	font-size: 1.3em;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+#no_membership:hover{
+	box-shadow: 0 0 2px #000;
+	cursor: pointer;
+}
+
+
+/* 
+divs section 2
+==============
+ */
+ 
+#section_two{
+	overflow:hidden;
+	padding-top:0;
+}
+
+#hot_searches{
+	width:280px;
+	height: 280px;
+	padding: 10px 0 10px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+/* 	background-color:rgb(245,245,245); */
+	float: left;
+}
+
+#hot_searches h3{
+	margin-bottom: 5px;
+	color:#0C6298;
+	/* font-family: arial, verdana, sans-serif */;
+}
+
+#hot_searches p{
+	font-size: 1.4em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#hot_searches p a{
+	color:rgb(237,155,67);
+	text-decoration:none;
+}
+
+#hot_searches .load_more{
+	margin-bottom: 10px;
+	font-style: oblique;
+	text-decoration: underline;
+}
+
+/* 
+footer
+======
+ */
+
+footer{
+	width: 960px;
+	text-align: left;
+	padding: 10px 0;
+	clear:both;
+	color:#0C6298;
+	padding:0;
+	clear:both;
+	background-color:rgb(248,248,248);
+	margin-top: 40px;
+}
+ 
+/* 
+
+#faq, #links, #social_networks, #contact_us, #terms{
+	width:150px;
+	height: 100px;
+	float: left;
+	margin:1.041666666% 1.1% 2.541666666%  2.45666666% ;  10px;
+	padding:.528333333%  .641666666%;  10px;
+}
+ */
+
+
+footer p{
+	clear: both;
+	padding-top: 5px;
+	margin-top: 0px;
+}
+
+p#copyright{
+	text-align: center;
+	/* background: linear-gradient(rgb(51,51,51), rgb(37,37,37)); */
+	background:linear-gradient(rgb(12,98,152),rgb(2,88,142) );
+	color:rgb(245,245,245);
+	padding: 20px 0;
+	margin-bottom:0;
+	font-size: 1.4em;
+}
+
+#faq h3, #links h3, #social_networks h3, #contact_us h3, #terms h3 {
+	color:#0C6298;
+}
+
+footer a{
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover{
+	color: black;
+}
+
+
+/* 
+footer h3{
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+ */
+
+
+
 
 
