@@ -18,6 +18,7 @@ body {
   margin-bottom: 30px;
   background: black; }
 
+/* upper part */
 #sky_high {
   background: black;
   height: 200px;
@@ -60,19 +61,6 @@ body {
   border-radius: 50%;
   background: black; }
 
-/* 
-#black_moon2{
-	position: absolute;
-	z-index: 2;
-	width:$moon-width - 2px;
-	height: $moon-height - 2px;
-	margin-top: $moon-margin-top - 127px;
-	margin-left:$moon-margin-left - 362px;
-	border-radius: $border-radius;
-	background: linear-gradient(white, rgba(100,100,100,.5));
-	box-shadow: 1px -1px .5px #fff;
-}
- */
 .outer_small_star {
   width: 6px;
   height: 6px; }
@@ -167,6 +155,8 @@ body {
   left: 0px;
   top: 0px; }
 
+
+/* lower part */
 #sky_low {
   background: -moz-linear-gradient(black, #3c3c3c);
   background: -webkit-linear-gradient(black, #3c3c3c);
@@ -180,81 +170,209 @@ body {
   left: 200px;
   top: 50px; }
 
+/* buildings */
+
 #building1 {
-  width: 100px;
-  height: 250px;
+  width: 90px;
+  height: 255px;
   position: absolute;
   background: black;
-  top: 150px; }
+  top: 145px; }
 
 #building2 {
-  width: 120px;
-  height: 180px;
+  width: 110px;
+  height: 205px;
   position: absolute;
   background: black;
   left: 100px;
-  top: 220px; }
+  top: 195px; }
 
 #building3 {
-  width: 110px;
+  width: 100px;
   height: 165px;
   position: absolute;
   background: black;
   margin-left: 220px;
-  margin-top: 235px; }
+  margin-top: 220px; }
 
 #building4 {
-  width: 150px;
-  height: 290px;
+  width: 140px;
+  height: 270px;
   position: absolute;
   background: black;
   margin-left: 330px;
-  margin-top: 110px; }
+  margin-top: 120px; }
 
 #building5 {
-  width: 160px;
+  width: 150px;
   height: 215px;
   position: absolute;
   background: black;
   margin-left: 480px;
-  margin-top: 185px; }
+  margin-top: 170px; }
 
 #building6 {
-  width: 145px;
+  width: 135px;
   height: 360px;
   position: absolute;
   background: black;
   margin-left: 640px;
-  margin-top: 40px; }
+  margin-top: 20px; }
 
 #building7 {
-  width: 130px;
-  height: 250px;
+  width: 125px;
+  height: 260px;
   position: absolute;
   background: black;
-  margin-left: 785px;
-  margin-top: 150px; }
+  margin-left: 794px;
+  margin-top: 120px; }
 
 #building8 {
-  width: 180px;
-  height: 150px;
+  width: 130px;
+  height: 220px;
   position: absolute;
   background: black;
-  margin-left: 895px;
-  margin-top: 250px; }
+  margin-left: 930px;
+  margin-top: 170px; }
 
 #building9 {
-  width: 110px;
-  height: 200px;
+  width: 90px;
+  height:180px;
   position: absolute;
   background: black;
-  margin-left: 1075px;
-  margin-top: 200px; }
+  margin-left: 1072px;
+  margin-top: 220px; }
 
 #building10 {
-  width: 90px;
+  width: 105px;
   height: 250px;
   position: absolute;
   background: black;
-  margin-left: 1185px;
-  margin-top: 150px; }
+  margin-left: 1173px;
+  margin-top: 170px; }
+
+/* windows */
+
+.windows1{
+	float: left;
+	margin-left: 12px; 
+	margin-top: 20px;
+	background: rgb(255,254,83); 
+	width:30px;
+	height:30px;
+}
+
+div.windows1:nth-child(2n+1){
+	margin-left: 8px;
+}
+
+.windows2{
+	float: left;
+	margin-right: 10px; 
+	margin-top: 20px;
+	background: rgb(255,254,83); 
+	width:30px;
+	height:30px;
+}
+
+
+div.windows2:nth-child(2n+1){
+	margin-left: 20px;
+}
+
+.windows3{
+	float: left;
+	margin-left: 10px; 
+	margin-top: 20px;
+	background: rgb(255,254,83);  
+	width:30px;
+	height:30px;
+}
+
+div.windows3:nth-child(2n+1){
+	margin-left: 15px;
+}
+
+.windows4{
+	float: left;
+	margin-left: 10px; 
+	margin-top: 20px;
+	background: rgb(255,254,83);  
+	width:30px;
+	height:30px;
+}
+
+div.windows4:nth-child(3n+1){
+	margin-left: 15px;
+}
+
+.windows5{
+	float: left;
+	margin-left: 10px; 
+	margin-top: 20px;
+	background: rgb(255,254,83);  
+	width:30px;
+	height:30px;
+}
+
+div.windows5:nth-child(3n+1){
+	margin-left: 20px;
+}
+
+.windows6{
+	float: left;
+	margin-left: 10px; 
+	margin-top: 20px;
+	background: rgb(255,254,83);  
+	width:30px;
+	height:30px;
+}
+
+div.windows6:nth-child(3n+1){
+	margin-left: 8px;
+}
+
+.windows7{
+	float: left;
+	margin-left: 10px; 
+	margin-top: 20px;
+	background: rgb(255,254,83);  
+	width:30px;
+	height:30px;
+}
+
+div.windows7:nth-child(3n+1){
+	margin-left: 8px;
+}
+
+.windows8{
+	float: left;
+	margin-left: 10px; 
+	margin-top: 20px;
+	background: rgb(255,254,83);  
+	width:30px;
+	height:30px;
+}
+
+.windows9{
+	float: left;
+	margin-left: 10px; 
+	margin-top: 20px;
+	background: rgb(255,254,83);  
+	width:30px;
+	height:30px;
+}
+
+.windows10{
+	float: left;
+	margin-left: 10px; 
+	margin-top: 20px;
+	background: rgb(255,254,83);  
+	width:30px;
+	height:30px;
+}
+
+div.windows10:nth-child(2n+1){
+	margin-left: 18px;
+}
+
