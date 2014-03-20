@@ -1,0 +1,313 @@
+/* mixins with arguments */
+@mixin linearGradient($color, $color1){
+	background: -moz-linear-gradient($color, $color1);
+	background: -webkit-linear-gradient($color, $color1);
+	background: -o-linear-gradient($color, $color1);
+	background:linear-gradient($color, $color1);
+};
+
+/* mixin with arguments 2 */
+
+@mixin absolutePosition($pos, $lef, $tp){
+	position:$pos;
+	left: $lef;
+	top:$tp
+}
+
+$color_grayScale: navy;
+/* this variable uses some built-in sass color properties */
+$moon-color: radial-gradient(white, rgb(230,230,230), grayscale(invert($color_grayScale)));
+$width: 100%;
+$font-size:16px;
+$moon-width:150px;
+$moon-height:150px;
+$moon-margin-left:100px;
+$moon-margin-top:50px;
+$border-radius:50%;
+
+
+/* if statement */
+$black_moon: true;/*  this is a boolean */
+$black-moon-color: if($black_moon, #000, #fff); /* the variable has the value "true" implied, meaning $black_moon is true, thus the first color will be applied */
+/* 
+we could also write it like this:
+$black_moon: yes;
+$black-moon-color: if($black_moon=="yes", #000, #fff);
+ */
+
+$stars-color: white;
+$stars-radius: 50%;
+$stars-glow: 0 0 8px #fff;
+$small-stars-size:2px;
+$moon-glow: 0 0 10px #fff;
+$building-width: 100px;
+$building-height: 250px;
+$building-background: black;
+$building-margin-left: 20px;
+$building-margin-top: 150px;
+$float-left: left;
+$buildings-border: 1px solid #000;
+
+
+
+
+body{
+	 position: relative;
+	 width:100%;
+	 max-width: 1276px;
+	 margin-left:0;
+	 margin-top:0;
+	 margin-bottom:30px; 
+	 background:black; 
+}
+
+#sky_high{
+	background: black;
+	height: 200px;
+	width:100%;
+	margin-left:0;
+	margin-bottom: 30px;
+}
+
+#moon{
+	position: absolute;
+	z-index:2;
+	width:$moon-width;
+	height: $moon-height;
+/* 	@include linearGradient(white, rgb(150,150,150)); */	
+	background: $moon-color;
+	margin-top: $moon-margin-top;
+	margin-left:$moon-margin-left;
+	border-radius: $border-radius;
+}
+
+#moon_glow{
+	border-color: transparent transparent transparent white;
+}
+
+#moon_two{
+	position: absolute;
+	z-index: 1;
+	width:$moon-width;
+	height: $moon-height;
+	background:white;
+	box-shadow: $moon-glow;
+	margin-top: $moon-margin-top;
+	margin-left:$moon-margin-left;
+	border-radius: $border-radius;
+}
+
+#black_moon{
+	position: absolute;
+	z-index: 3;
+	width:$moon-width;
+	height: $moon-height;
+	margin-top: $moon-margin-top - 30px;
+	margin-left:$moon-margin-left +40px;
+	border-radius: $border-radius;
+	background: $black-moon-color;
+}
+
+/* 
+#black_moon2{
+	position: absolute;
+	z-index: 2;
+	width:$moon-width - 2px;
+	height: $moon-height - 2px;
+	margin-top: $moon-margin-top - 127px;
+	margin-left:$moon-margin-left - 362px;
+	border-radius: $border-radius;
+	background: linear-gradient(white, rgba(100,100,100,.5));
+	box-shadow: 1px -1px .5px #fff;
+}
+ */
+
+
+.outer_small_star{
+	width: $small-stars-size+4px; 
+ 	height: $small-stars-size+4px;
+}
+
+.outer_medium_star{
+	width: $small-stars-size+6px; 
+ 	height: $small-stars-size+6px;
+}
+
+.outer_large_star{
+	width: $small-stars-size+8px; 
+ 	height: $small-stars-size+8px;
+}
+
+.small_stars, .medium_stars, .large_stars{
+	position: absolute;
+	background: $stars-color;
+	border-radius:$stars-radius;	
+	box-shadow:$stars-glow;
+}
+
+.small_stars{
+ 	width: $small-stars-size; 
+ 	height: $small-stars-size;
+    left: 650px;
+    top: 90px;
+}
+
+.medium_stars{
+ 	width: $small-stars-size*2; 
+ 	height: $small-stars-size*2;
+ 	left: 500px;
+ 	top: 40px;
+}
+
+.large_stars{
+ 	width: $small-stars-size*3; 
+ 	height: $small-stars-size*3;
+	left: 900px;
+	top: 80px;
+}
+
+#sky_high div:nth-child(4){
+	@include absolutePosition(absolute, 400px, 100px);
+}
+
+#sky_high div:nth-child(5){
+	@include absolutePosition(absolute, 10px, 30px);
+}
+
+#sky_high div:nth-child(6){
+	@include absolutePosition(absolute, -600px, 0px);
+}
+
+#sky_high div:nth-child(7){
+	@include absolutePosition(absolute, 450px, 60px);
+}
+
+#sky_high div:nth-child(8){
+	@include absolutePosition(absolute, 300px, 170px);
+}
+
+#sky_high div:nth-child(9){
+	@include absolutePosition(absolute, -230px, 120px);
+    z-index:3;
+    border-radius: 5px;
+}
+
+#sky_high div:nth-child(10){
+	@include absolutePosition(absolute, 400px, 250px);
+    z-index:3;
+}
+
+#sky_high div:nth-child(11){
+	@include absolutePosition(absolute, -100px, 130px)
+}
+
+#sky_high div:nth-child(13){
+	@include absolutePosition(absolute, 550px, -10px);
+}
+
+#sky_high div:nth-child(14){
+	@include absolutePosition(absolute, -100px, 50px)
+}
+
+#sky_high div:nth-child(15){
+	@include absolutePosition(absolute, 0px, 0px);
+}
+
+#sky_low{
+  @include linearGradient(black, rgb(60,60,60));
+   height: 400px;
+   position:relative;
+}
+
+#sky_low div.small_stars:nth-child(1){
+	@include absolutePosition(absolute, 200px, 50px);
+}
+
+#building1{
+	width: $building-width;
+	height: $building-height;
+	position:absolute;
+	background: $building-background;
+	top: $building-margin-top;
+}
+
+#building2{
+	width: $building-width + 20px;
+	height: $building-height - 70px;
+	position: absolute;
+	background: $building-background;
+	left: $building-margin-left + 80px;
+	top: $building-margin-top + 70px;
+}
+
+#building3{
+	width: $building-width +10px;
+	height: $building-height - 85px;
+	position:absolute;
+	background: $building-background;
+	margin-left: $building-margin-left + 200px;
+	margin-top: $building-margin-top + 85px;
+}
+
+#building4{
+	width: $building-width + 50px;
+	height: $building-height + 40px;
+	position:absolute;
+	background: $building-background;
+	margin-left: $building-margin-left + 310px;
+	margin-top: $building-margin-top - 40px;
+}
+
+#building5{
+	width: $building-width + 60px;
+	height: $building-height - 35px;
+	position:absolute;
+	background: $building-background;
+	margin-left: $building-margin-left + 460px;
+	margin-top: $building-margin-top + 35px;
+}
+
+#building6{
+	width: $building-width + 45px;
+	height: $building-height + 110px;
+	position:absolute;
+	background: $building-background;
+	margin-left: $building-margin-left + 620px;
+	margin-top: $building-margin-top - 110px;
+}
+
+#building7{
+	width: $building-width + 30px;
+	height: $building-height;
+	position:absolute;
+	background: $building-background;
+	margin-left: $building-margin-left + 765px;
+	margin-top: $building-margin-top;	
+}
+
+#building8{
+	width: $building-width + 80px;
+	height: $building-height - 100px;
+	position:absolute;
+	background: $building-background;
+	margin-left: $building-margin-left + 875px;
+	margin-top: $building-margin-top + 100px;
+}
+
+#building9{
+	width: $building-width + 10px;
+	height: $building-height - 50px;
+	position:absolute;
+	background: $building-background;
+	margin-left: $building-margin-left + 1055px;
+	margin-top: $building-margin-top + 50px;
+}
+
+#building10{
+	width: $building-width - 10px;
+	height: $building-height;
+	position:absolute;
+	background: $building-background;
+	margin-left: $building-margin-left + 1165px;
+	margin-top: $building-margin-top;
+}

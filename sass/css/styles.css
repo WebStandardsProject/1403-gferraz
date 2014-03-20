@@ -1,0 +1,260 @@
+/* mixins with arguments */
+/* mixin with arguments 2 */
+/* this variable uses some built-in sass color properties */
+/* if statement */
+/*  this is a boolean */
+/* the variable has the value "true" implied, meaning $black_moon is true, thus the first color will be applied */
+/* 
+we could also write it like this:
+$black_moon: yes;
+$black-moon-color: if($black_moon=="yes", #000, #fff);
+ */
+body {
+  position: relative;
+  width: 100%;
+  max-width: 1276px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+  background: black; }
+
+#sky_high {
+  background: black;
+  height: 200px;
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 30px; }
+
+#moon {
+  position: absolute;
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  /* 	@include linearGradient(white, rgb(150,150,150)); */
+  background: radial-gradient(white, #e6e6e6, #bfbfbf);
+  margin-top: 50px;
+  margin-left: 100px;
+  border-radius: 50%; }
+
+#moon_glow {
+  border-color: transparent transparent transparent white; }
+
+#moon_two {
+  position: absolute;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  background: white;
+  box-shadow: 0 0 10px white;
+  margin-top: 50px;
+  margin-left: 100px;
+  border-radius: 50%; }
+
+#black_moon {
+  position: absolute;
+  z-index: 3;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: 140px;
+  border-radius: 50%;
+  background: black; }
+
+/* 
+#black_moon2{
+	position: absolute;
+	z-index: 2;
+	width:$moon-width - 2px;
+	height: $moon-height - 2px;
+	margin-top: $moon-margin-top - 127px;
+	margin-left:$moon-margin-left - 362px;
+	border-radius: $border-radius;
+	background: linear-gradient(white, rgba(100,100,100,.5));
+	box-shadow: 1px -1px .5px #fff;
+}
+ */
+.outer_small_star {
+  width: 6px;
+  height: 6px; }
+
+.outer_medium_star {
+  width: 8px;
+  height: 8px; }
+
+.outer_large_star {
+  width: 10px;
+  height: 10px; }
+
+.small_stars, .medium_stars, .large_stars {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 8px white; }
+
+.small_stars {
+  width: 2px;
+  height: 2px;
+  left: 650px;
+  top: 90px; }
+
+.medium_stars {
+  width: 4px;
+  height: 4px;
+  left: 500px;
+  top: 40px; }
+
+.large_stars {
+  width: 6px;
+  height: 6px;
+  left: 900px;
+  top: 80px; }
+
+#sky_high div:nth-child(4) {
+  position: absolute;
+  left: 400px;
+  top: 100px; }
+
+#sky_high div:nth-child(5) {
+  position: absolute;
+  left: 10px;
+  top: 30px; }
+
+#sky_high div:nth-child(6) {
+  position: absolute;
+  left: -600px;
+  top: 0px; }
+
+#sky_high div:nth-child(7) {
+  position: absolute;
+  left: 450px;
+  top: 60px; }
+
+#sky_high div:nth-child(8) {
+  position: absolute;
+  left: 300px;
+  top: 170px; }
+
+#sky_high div:nth-child(9) {
+  position: absolute;
+  left: -230px;
+  top: 120px;
+  z-index: 3;
+  border-radius: 5px; }
+
+#sky_high div:nth-child(10) {
+  position: absolute;
+  left: 400px;
+  top: 250px;
+  z-index: 3; }
+
+#sky_high div:nth-child(11) {
+  position: absolute;
+  left: -100px;
+  top: 130px; }
+
+#sky_high div:nth-child(13) {
+  position: absolute;
+  left: 550px;
+  top: -10px; }
+
+#sky_high div:nth-child(14) {
+  position: absolute;
+  left: -100px;
+  top: 50px; }
+
+#sky_high div:nth-child(15) {
+  position: absolute;
+  left: 0px;
+  top: 0px; }
+
+#sky_low {
+  background: -moz-linear-gradient(black, #3c3c3c);
+  background: -webkit-linear-gradient(black, #3c3c3c);
+  background: -o-linear-gradient(black, #3c3c3c);
+  background: linear-gradient(black, #3c3c3c);
+  height: 400px;
+  position: relative; }
+
+#sky_low div.small_stars:nth-child(1) {
+  position: absolute;
+  left: 200px;
+  top: 50px; }
+
+#building1 {
+  width: 100px;
+  height: 250px;
+  position: absolute;
+  background: black;
+  top: 150px; }
+
+#building2 {
+  width: 120px;
+  height: 180px;
+  position: absolute;
+  background: black;
+  left: 100px;
+  top: 220px; }
+
+#building3 {
+  width: 110px;
+  height: 165px;
+  position: absolute;
+  background: black;
+  margin-left: 220px;
+  margin-top: 235px; }
+
+#building4 {
+  width: 150px;
+  height: 290px;
+  position: absolute;
+  background: black;
+  margin-left: 330px;
+  margin-top: 110px; }
+
+#building5 {
+  width: 160px;
+  height: 215px;
+  position: absolute;
+  background: black;
+  margin-left: 480px;
+  margin-top: 185px; }
+
+#building6 {
+  width: 145px;
+  height: 360px;
+  position: absolute;
+  background: black;
+  margin-left: 640px;
+  margin-top: 40px; }
+
+#building7 {
+  width: 130px;
+  height: 250px;
+  position: absolute;
+  background: black;
+  margin-left: 785px;
+  margin-top: 150px; }
+
+#building8 {
+  width: 180px;
+  height: 150px;
+  position: absolute;
+  background: black;
+  margin-left: 895px;
+  margin-top: 250px; }
+
+#building9 {
+  width: 110px;
+  height: 200px;
+  position: absolute;
+  background: black;
+  margin-left: 1075px;
+  margin-top: 200px; }
+
+#building10 {
+  width: 90px;
+  height: 250px;
+  position: absolute;
+  background: black;
+  margin-left: 1185px;
+  margin-top: 150px; }
