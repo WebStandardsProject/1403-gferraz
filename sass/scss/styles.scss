@@ -15,7 +15,7 @@
 }
 
 $color_grayScale: navy;
-/* this variable uses some built-in sass color properties */
+/* the variable below will use some built-in sass color properties */
 $moon-color: radial-gradient(white, rgb(230,230,230), grayscale(invert($color_grayScale)));
 $width: 100%;
 $font-size:16px;
