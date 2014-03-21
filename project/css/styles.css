@@ -17,7 +17,15 @@ body{
 }
 
 header{
-	background: url("../images/header6_gradient1.png");
+	background: url("../images/header6_gradient1(inverted).png");
+	/* 
+	-moz-transform: scaleX(-1); this is really cool. It flips the element to which it is applied
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+ */
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: top 220px center;
@@ -106,23 +114,20 @@ header p{
 	font-size:.9em;
 	text-decoration:none;
 	background-color:rgb(237,155,67);
-	border: 1px solid rgba(0,0,0,0.2);
 	border-radius:5px;
 	padding: 10px;
 	color: rgb(245,245,255);
 }
 
 #register a:hover{
-	background-color:rgb(233,153,63);
+	background-color:rgb(233,153,55);
 	color: white;
-	box-shadow: 0 0 .5px #000;
 }
 
 #sign_in a{
 	font-size:0.8em;
 	text-decoration:none;
 	background-color: #15619C;
-	border: 1px solid rgba(0,0,0,0.2);
 	border-radius:5px;
 	padding: 10px;
 	color: rgb(245,245,245);
@@ -131,7 +136,6 @@ header p{
 #sign_in a:hover{
 	background-color:rgb(11,87,146);
 	color: white;
-	box-shadow: 0 0 .5px #000;
 }
 
 
@@ -149,7 +153,7 @@ form search starts
 
 #call_to_search{
 	margin-bottom: 0;
-	margin-top: 55px;
+	margin-top: 45px;
 	float:left;
 	width: 525px;
 	text-align:center;
@@ -159,13 +163,14 @@ form search starts
 }
 
 #call_to_search_p{
-	font-size: 2em;
-	color: #15619C;
-	width: 525px; 
-	font-style: oblique;
+	font-size:2em;
+	color:#15619C;
+	width:525px; 
+	font-style:oblique;
 	margin:0;
-	text-align: left;
-	line-height: 28px;
+	text-align:left;
+	line-height:30px;
+	letter-spacing:.22px;
 	float:left;
 }
 
@@ -181,7 +186,7 @@ p#search_boxes{
 }
 
 #key_word, #location{
-	width:200px;
+	width:195px;
 	height:45px;
 	border: 2px solid rgb(237,155,67);
 	font-size: 1.7em;
@@ -194,21 +199,22 @@ p#search_boxes{
 }
 
 #submit{
-	width:135px;
-	height:51px;
+	width:130px;
+	height:45px;
 	padding-top: 3px;
 	text-align: center;
 	background-color:rgb(243,163,73);
 	border: 1px solid rgb(237,155,67);
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	text-align: center;
 	color: white;
 	border-radius:5px;
+	float:left;
 }
 
 #submit:hover{
-	background-color:rgb(233,153,63);
+	background-color:rgb(233,153,55);
 	cursor:pointer;
 }
 
@@ -293,7 +299,7 @@ navigation
  
 nav.row{
 	 padding:0; 
-	 margin-top: 55px;
+	 margin-top: 48px;
 	 float: left;
 	 clear: both;
 	 background: white;
@@ -399,7 +405,7 @@ search options divs - (orange circles)
 }
 
 #fields, #universities{
-	margin-right:23.1px;
+	margin-right:53px;
 }
 
 #fields img, #universities img, #states img{
@@ -486,10 +492,11 @@ section 1
  
  #resources_heading{
 	text-align: left;
-	color:#0C6298;
+	color:rgb(11,87,146);
 	margin-bottom: 10px;
 	margin-top:10px;
 	width: 593px;
+	font-size:2.2em;
 	/* font-family: arial, verdana, sans-serif; */
 } 
  
@@ -505,7 +512,8 @@ section 1
 }
 
 #resources h3{
-	color:#0C6298;
+	color:rgb(11,87,146);
+	font-size:1.8em;
 	/* font-family: arial, verdana, sans-serif; */
 }
 
@@ -525,17 +533,17 @@ div resources - inner divs
  }
 
 #cv {
-	width:48.78048%;
-	padding: 10px 0px 10px 15px;
-	height:260px;
+/* 	width:48.78048%; */
+	padding: 10px 0px 0px 15px;
+/* 	height:260px; */
 	float: left;
 	margin-right: 15px;
 }
 
  #tp{
-	width:48.78048%;
-	padding: 10px 0 10px 0;
-	height:260px;
+	/* width:48.78048%; */
+	padding: 10px 0 10px 15px;
+/* 	height:260px; */
 	float: left;
 }
 
@@ -756,12 +764,8 @@ divs section 2
 
 #hot_searches{
 	width:280px;
-	height: 280px;
-	padding: 10px 0 10px;
-	margin-bottom: 20px;
-	margin-left: 20px;
-/* 	background-color:rgb(245,245,245); */
-	float: left;
+	height: 257px;
+	margin: 15px 0  20px 34px;
 }
 
 #hot_searches h3{
@@ -774,6 +778,7 @@ divs section 2
 	font-size: 1.4em;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	line-height: 15.5px;
 }
 
 #hot_searches p a{
@@ -792,30 +797,17 @@ footer
 ======
  */
 
-footer{
+footer.row{
 	width: 960px;
 	text-align: left;
-	padding: 10px 0;
+	padding-top: 15px;
 	clear:both;
 	color:#0C6298;
-	padding:0;
 	clear:both;
-	background-color:rgb(248,248,248);
-	margin-top: 40px;
+	border-top: 1px solid rgba(11,87,146, .3);;
+	margin-top: 20px;
 }
  
-/* 
-
-#faq, #links, #social_networks, #contact_us, #terms{
-	width:150px;
-	height: 100px;
-	float: left;
-	margin:1.041666666% 1.1% 2.541666666%  2.45666666% ;  10px;
-	padding:.528333333%  .641666666%;  10px;
-}
- */
-
-
 footer p{
 	clear: both;
 	padding-top: 5px;
@@ -824,16 +816,18 @@ footer p{
 
 p#copyright{
 	text-align: center;
-	/* background: linear-gradient(rgb(51,51,51), rgb(37,37,37)); */
 	background:linear-gradient(rgb(12,98,152),rgb(2,88,142) );
 	color:rgb(245,245,245);
-	padding: 20px 0;
+	padding: 10px 0;
 	margin-bottom:0;
 	font-size: 1.4em;
 }
 
 #faq h3, #links h3, #social_networks h3, #contact_us h3, #terms h3 {
-	color:#0C6298;
+	/* color:#0C6298; */
+	color:rgb(237,155,67);
+	padding-bottom: 5px;
+	margin-bottom:0;
 }
 
 footer a{
