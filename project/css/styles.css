@@ -108,6 +108,7 @@ header p{
 
 #signIn_signUp{
 	margin-top: 10px;
+	margin-right:0;
 }
 
 #register a{
@@ -118,26 +119,27 @@ header p{
 	background-color:rgb(237,155,67);
 	border-radius:5px;
 	padding: 12px 16px;
-	color: rgb(245,245,255);
+	color: white;
 }
 
 #register a:hover{
 	background-color:rgb(233,153,55);
 	color: white;
+	text-shadow: 0 0 0 white;
 }
 
 #sign_in a{
 	font-size:1em;
 	text-decoration:none;
-	background-color: #15619C;
-	border-radius:5px;
+	color: #15619C;
 	padding: 12px 16px;
-	color: rgb(245,245,245);
+	text-shadow: 0 0 0 #15619C;
+	border-right: 1px solid black;
 }
 
 #sign_in a:hover{
-	background-color:rgb(11,87,146);
-	color: white;
+	color:rgb(1,77,136);
+	text-decoration: underline;
 }
 
 
@@ -170,7 +172,7 @@ form search starts
 	width:525px; 
 	font-style:oblique;
 	margin:0;
-	text-align:left;
+	text-align:justify;
 	line-height:30px;
 	letter-spacing:.22px;
 	float:left;
@@ -508,11 +510,10 @@ section 1
 	float: left;
 	clear: left;
 	overflow: hidden;
-/* 	background-color:rgb(245,245,245); */
 }
 
 #resources h3{
-	color:rgb(11,87,146);
+	color:rgb(1,77,136);
 	font-size:1.8em;
 	text-shadow: 0 0 0 rgb(1,77,136);
 }
@@ -533,17 +534,13 @@ div resources - inner divs
  }
 
 #cv {
-/* 	width:48.78048%; */
 	padding: 10px 0px 0px 15px;
-/* 	height:260px; */
 	float: left;
 	margin-right: 15px;
 }
 
  #tp{
-	/* width:48.78048%; */
 	padding: 10px 0 10px 15px;
-/* 	height:260px; */
 	float: left;
 }
 
@@ -766,13 +763,14 @@ divs section 2
 #hot_searches{
 	width:280px;
 	height: 257px;
-	margin: 10px 0  20px 0px;
-	padding-left:0;
+	margin: 10px 0  20px 0;
+	padding-left:18px;
+	
 }
 
 #hot_searches h3{
 	margin-bottom: 5px;
-	color:#0C6298;
+	color: rgb(1,77,136);
 	text-shadow: 0 0 0 rgb(1,77,136);
 }
 
@@ -819,6 +817,7 @@ footer p{
 	clear: both;
 	padding-top: 5px;
 	margin-top: 0px;
+	color:#0C6298;
 }
 
 p#copyright{
@@ -828,6 +827,26 @@ p#copyright{
 	padding: 10px 0;
 	margin-bottom:0;
 	font-size: 1.4em;
+}
+
+#faq{
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+#social_networks{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#contact_us{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#terms{
+	padding-left: 30px;
+	padding-right: 0;
 }
 
 #faq h3, #links h3, #social_networks h3, #contact_us h3, #terms h3 {
