@@ -31,6 +31,9 @@ article{
 	/* margin:200px 0 0 0; */
 }
 
+#signIn_signUp{
+	margin-top: 10px;
+}
 
 /* 
 social network icons
@@ -146,6 +149,7 @@ form search starts
 
 #call_to_search{
 	margin-bottom: 0;
+	margin-top: 55px;
 	float:left;
 	width: 525px;
 	text-align:center;
@@ -287,63 +291,60 @@ navigation
 ==========
  */
  
-nav{
+nav.row{
 	 padding:0; 
-	 margin-top: 87px;
+	 margin-top: 55px;
 	 float: left;
 	 clear: both;
 	 background: white;
 	 width: 960px;
+	 overflow:hidden;
 }
 
 nav ul{
+	display: inline-block;
 	min-height:10px;
-	padding:23px 0 23px;
+	/* padding:23px 0 23px; */
 	text-align: center;
 	width: inherit;
 	clear: both;
 	margin-top:0;
 	margin-bottom:0;
-	line-height: 11px;
+	margin-left:0;
 	border-top: 1px solid rgb(237,155,67);
 	border-bottom: 1px solid rgb(237,155,67);
-}
-
-.nav_list a{
-	margin: 10px 0;
-	padding:18px 13.4px 18.5px;
-}
-
-.nav_list{
-	margin: 10px 0;
-	padding:19px 13.4px 16.5px;
-	font-size: .5em;
-}
-
-.nav_list:hover{
-	background-color:rgba(237,155,67,.8);
-}
-
-.nav_list:hover a{
-	color:rgb(245,245,245);
 }
 
 nav ul li{
 	list-style: none;
 	display: inline-block;
 	text-align: center; 
-	font-size: 1.8em;
 	text-transform: uppercase;
 	font-weight: bold; 
 	float: left;
-	line-height: 13px;
+	line-height:1px;
+	font-size: 1em;
 }
 
 nav ul li a{
-	text-decoration: none;
-	color: #15619C;
+	width:210px;
 }
 
+nav ul li:hover{
+	background-color:rgba(237,155,67,.8);
+}
+
+ nav ul li a{
+	text-decoration: none;
+	color: #15619C;
+	display: inline-block;
+	height: 46px;
+	line-height:46px;
+}
+
+nav ul li:hover a{
+	color:rgb(245,245,245);
+}
 
 /* 
 font styles/sizes
