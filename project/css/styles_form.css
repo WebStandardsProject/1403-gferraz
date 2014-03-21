@@ -792,6 +792,146 @@ divs section 2
 	text-decoration: underline;
 }
 
+
+
+
+/* 
+form styles
+===========
+ */
+ 
+ form{
+ 	margin-left: 205px;
+ 	min-height: 50px;
+ 	overflow:hidden;
+ }
+ 
+#sign_up_header{
+	 color: #15619C;
+	 font-size: 3em;
+	 margin: 40px auto 20px;
+	 text-align: center;
+}
+
+
+ #login_info{
+	/* border: 1px solid rgb(5,40,101); */
+	border-radius: 5px;
+	overflow: hidden;
+	width:750px;
+	margin-left: 10px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	/* background-color:rgba(247,215,122, 0.1); */
+	color: #15619C;
+	margin-bottom: 10px;
+}
+ 
+input{
+	height: 25px;
+	width: 300px;
+	border: 1px solid rgb(5,40,101);
+}
+
+input:focus{
+	background:rgba(21,97,156, .1);
+}
+
+#login_info .main_paragraphs{
+	width: 140px;
+	font-size: 1.8em;
+	margin-top: 10px;
+}
+
+label{
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+ 
+.red{
+ 	color: red;
+ }
+ 
+ #checkbox_terms{
+ 	float: left;
+ 	clear: both;
+ 	line-height: 30px;
+ 	margin-left:5px;
+ }
+ 
+ #terms_checkbox{
+ 	width: 20px;
+ 	margin-bottom:0;
+ 	margin-right:10px;
+ 	float: left;
+ }
+  
+ #terms_checkbox + label{
+ 	margin-top: 0;
+ 	padding-bottom: 5px;
+ 	line-height: 10px;
+ }
+ 
+  #terms_checkbox + label a{
+  	text-decoration: none;
+  	color: #15619C;
+  }
+ 
+/*  =============== */
+
+ #newsletter_terms{
+ 	float: left;
+ 	clear: both;
+ 	line-height: 30px;
+ 	margin-top: 0;
+ 	margin-left:5px;
+ }
+ 
+ #newsletter_checkbox{
+ 	width: 20px;
+ 	margin-bottom:0;
+ 	margin-right:10px;
+ 	float: left;
+ }
+  
+ #newsletter_checkbox + label{
+ 	margin-top: 0;
+ 	padding-bottom: 5px;
+ 	line-height: 10px;
+ }
+ 
+
+/* 
+===================
+ 
+ */
+ 
+ #btn{
+ 	float:left;
+ 	margin-left: 146.5px;
+ }
+ 
+ #form_submit{
+ 	font-size: 2.5em;
+ 	font-weight: bold;
+ 	width: 250px;
+ 	height: 80px;
+ 	background-color:rgb(237,155,67);
+	color: rgb(245,245,255);
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 10px;
+	text-transform: uppercase;
+ }
+ 
+ #form_submit:hover{
+ 	background: linear-gradient(rgb(230,150,60), rgba(230,150,60, .7));
+	color: white;
+	box-shadow: 0 0 5px #000;
+	cursor: pointer;
+ }
+
+
+
 /* 
 footer
 ======
@@ -838,6 +978,11 @@ footer a{
 footer a:hover{
 	color: black;
 }
+
+
+
+
+
 
 
 
