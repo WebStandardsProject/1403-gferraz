@@ -39,9 +39,6 @@ article{
 	/* margin:200px 0 0 0; */
 }
 
-#signIn_signUp{
-	margin-top: 10px;
-}
 
 /* 
 social network icons
@@ -108,40 +105,42 @@ header p{
 	float: right;
 }
 
-
 #signIn_signUp{
 	margin-top: 10px;
+	margin-right:0;
 }
 
 #register a{
 	margin-right: 10px;
-	margin-left: 15px;
+	margin-left: 12px;
 	font-size:1em;
 	text-decoration:none;
 	background-color:rgb(237,155,67);
 	border-radius:5px;
 	padding: 12px 16px;
-	color: rgb(245,245,255);
+	color: white;
 }
 
 #register a:hover{
 	background-color:rgb(233,153,55);
 	color: white;
+	text-shadow: 0 0 0 white;
 }
 
 #sign_in a{
 	font-size:1em;
 	text-decoration:none;
-	background-color: #15619C;
-	border-radius:5px;
+	color: #15619C;
 	padding: 12px 16px;
-	color: rgb(245,245,245);
+	text-shadow: 0 0 0 #15619C;
+	border-right: 1px solid black;
 }
 
 #sign_in a:hover{
-	background-color:rgb(11,87,146);
-	color: white;
+	color:rgb(1,77,136);
+	text-decoration: underline;
 }
+
 
 /* 
 form register
@@ -319,6 +318,7 @@ form styles
 #sign_up_header{
 	 color: #15619C;
 	 font-size: 3em;
+	 width: 480px;
 	 margin: 40px auto 20px;
 	 text-align: center;
 }
@@ -327,8 +327,8 @@ form styles
 #login_info{
 	border-radius: 5px;
 	overflow: hidden;
-	width:750px;
-	padding-bottom: 20px;
+	width:460px;
+	padding-bottom: 10px;
 	color: #15619C;
 }
  
@@ -337,11 +337,6 @@ input{
 	width: 300px;
 	border: 1px solid rgb(5,40,101);
 }
-
-#checkbox_terms{
-
-}
-
 
 input:focus{
 	background:rgba(21,97,156, .1);
@@ -365,8 +360,8 @@ label{
  #checkbox_terms{
  	float: left;
  	clear: both;
- 	line-height: 30px;
- 	margin-left:5px;
+ 	line-height: 25px;
+ 	margin-bottom:10px;
  }
  
  #terms_checkbox{
@@ -392,9 +387,9 @@ label{
  #newsletter_terms{
  	float: left;
  	clear: both;
- 	line-height: 30px;
+ 	line-height: 25px;
  	margin-top: 0;
- 	margin-left:5px;
+ 	margin-bottom:30px;
  }
  
  #newsletter_checkbox{
@@ -417,20 +412,24 @@ label{
  */
  
  #btn{
- 	float:left;
- 	margin-left: 146.5px;
+ 	margin: 0 auto;
+ 	width: 480px;
  }
  
  #form_submit{
- 	font-size: 2.5em;
+ 	font-size: 2em;
  	font-weight: bold;
- 	width: 250px;
+ 	width: 190px;
  	height: 80px;
  	background-color:rgb(237,155,67);
 	color: rgb(245,245,255);
 	border-radius: 10px;
 	text-transform: uppercase;
+	text-align: center;
+	display:block;
+	margin: 0 auto;
 	border: none;
+	clear: both;
  }
  
  #form_submit:hover{
@@ -461,6 +460,7 @@ footer p{
 	clear: both;
 	padding-top: 5px;
 	margin-top: 0px;
+	color:#0C6298;
 }
 
 p#copyright{
@@ -472,7 +472,28 @@ p#copyright{
 	font-size: 1.4em;
 }
 
+#faq{
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+#social_networks{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#contact_us{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#terms{
+	padding-left: 30px;
+	padding-right: 0;
+}
+
 #faq h3, #links h3, #social_networks h3, #contact_us h3, #terms h3 {
+	/* color:#0C6298; */
 	color:rgb(237,155,67);
 	padding-bottom: 5px;
 	margin-bottom:0;
