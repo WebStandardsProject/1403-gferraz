@@ -332,10 +332,13 @@ form styles
 	color: #15619C;
 }
  
+#login, #form_password,#confirm_password{
+	border:1px solid rgba(11,87,146,.5);
+} 
+ 
 input{
 	height: 25px;
 	width: 300px;
-	border: 1px solid rgb(5,40,101);
 }
 
 input:focus{
@@ -418,7 +421,7 @@ label{
  
  #form_submit{
  	font-size: 2em;
- 	font-weight: bold;
+ 	/* font-weight: bold; */
  	width: 190px;
  	height: 80px;
  	background-color:rgb(237,155,67);
@@ -436,6 +439,7 @@ label{
  	background-color:rgb(233,153,55);
 	color: white;
 	cursor: pointer;
+	text-shadow: 0 0 0 white;
  }
 
 
