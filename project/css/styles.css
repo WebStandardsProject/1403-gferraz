@@ -421,9 +421,27 @@ search options divs - (orange circles)
 
 #fields h2, #universities h2, #states h2, #hot_searches_heading{
 	text-align: center;
-	margin-bottom: 10px;
-	margin-top: 50px;
+	margin-bottom: 35px;
+    margin-top: 25px;
 	color:#0C6298;
+}
+
+#fields .arrow{
+	position: absolute;
+	top: 35%;
+	left:60.5%;
+}
+
+#universities .arrow{
+	position: absolute;
+	top: 35%;
+	left:85%;
+}
+
+#states .arrow{
+	position: absolute;
+	top: 35%;
+	left:60.5%;
 }
 
  /* 
@@ -441,36 +459,40 @@ hidden divs
 	float:left;
 }
 
+/* 
 .hidden_div1, .hidden_div2{
 	margin-right:23px;
 }
+ */
 
 .hidden_div1{
 	position: absolute;
-	top:669px;
-	left:160.5px;
 }
 
 .hidden_div2{
 	position: absolute;
-	top:669px;
-	left:484.5px;
+	top:630px;
+	left:350px;
 }
 
 .hidden_div3{
 	position: absolute;
-	top:669px;
-	left:808.5px;
+	top:630px;
+	left:695px;
+
 }
 
+/* 
  .search_box_style {
 	margin-top: 120px;
 	margin-left: 50px;
 }
+ */
 
 .dropbox{
+	width: 200px;
 	float: left;
-	margin-left:0;
+	margin-left:25px;
 	margin-top:10px;
 	font-size: 1.2em;
 }
@@ -479,6 +501,17 @@ hidden divs
 	margin-left: 15px;
 	margin-top: 0;
 	float:left;
+}
+
+.register_submit{
+	margin-left: 50px;
+ 	font-size:0.8em;
+	text-decoration:none;
+	background-color: #15619C;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius:5px;
+	padding: 10px;
+	color: rgb(245,245,245);
 }
 
  /* 
