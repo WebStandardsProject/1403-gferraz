@@ -10,7 +10,7 @@ html{
 
 body{
 	width:960px;
-	margin: 0 auto;
+	margin:0 auto;
 	padding-top: 10px;
 	font-family: arial, verdana, sans-serif;
 	font-size:62.5%; /* changes the default to 10px*/
@@ -41,43 +41,6 @@ article{
 
 
 /* 
-social network icons
-=================
- */
-
-header ul li{
-	list-style: none;
-}
-
-#facebook{
- height:42px;
- position:fixed;
- top:140px;
- left:-30px;
-}
-
-#google_plus{
- height:42px;;
- position:fixed;
- top:183px;
- left:-30px; 
-}
-
-#twitter{
- height:42px;
- position:fixed;
- top:226px;
- left:-31px;
-}
-
-#linkedin{
- height:42px;
- position:fixed;
- top:269px;
- left:-30px;
-}
-
-/* 
 header elements
 ===============
  */
@@ -106,7 +69,7 @@ header p{
 }
 
 #signIn_signUp{
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-right:0;
 }
 
@@ -140,7 +103,6 @@ header p{
 	color:rgb(1,77,136);
 	text-decoration: underline;
 }
-
 
 /* 
 form register
@@ -215,7 +177,7 @@ navigation
  
 nav.row{
 	 padding:0; 
-	 margin-top: 48px;
+	 margin-top: 98px;
 	 float: left;
 	 clear: both;
 	 background: white;
@@ -319,7 +281,7 @@ form styles
 	 color: #15619C;
 	 font-size: 3em;
 	 width: 480px;
-	 margin: 40px auto 20px;
+	 margin: 40px auto 10px;
 	 text-align: center;
 }
 
