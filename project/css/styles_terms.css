@@ -17,19 +17,7 @@ body{
 }
 
 header{
-	background: url("../images/header6_gradient1(inverted).png");
-	/* 
-	-moz-transform: scaleX(-1); this is really cool. It flips the element to which it is applied
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
- */
-	position: relative;
-	background-repeat: no-repeat;
-	background-position: top 220px center;
-	background-color: white;
+	position:relative;	
 	overflow: hidden;
 }
 
@@ -337,7 +325,7 @@ footer.row{
 	color:#0C6298;
 	clear:both;
 	border-top: 1px solid rgba(11,87,146, .3);;
-	margin-top: 20px;
+	margin-top: 84px;
 }
  
 footer p{
