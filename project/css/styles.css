@@ -471,13 +471,13 @@ hidden divs
 
 .hidden_div2{
 	position: absolute;
-	top:660px;
+	top:60px;
 	left:350px;
 }
 
 .hidden_div3{
 	position: absolute;
-	top:660px;
+	top:60px;
 	left:695px;
 
 }
@@ -521,6 +521,7 @@ section 1
  
  #section_one{
  	padding-top: 40px;
+ 	position:relative;
  }
  
  #resources_heading{
