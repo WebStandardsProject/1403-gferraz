@@ -13,23 +13,27 @@
 	<meta property="og:description" content="Academic Job Search Contact Page">
 	<link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles_contact.css" />
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<title>Academic Job Search | Contact Form</title>
 </head>
 
 <!-- body starts -->
 	<body>
-		<div class="overlay">
+		<!-- 
+<div class="overlay">
 		</div>
-		<header>
-		<!--	<h1>AcademicJobSearch.com</h1> -->
-			<a href="index.html"><img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo"></a>
-			<!--<p><span id="sign_in"><a href="#">Sign In</a></span><span id="register"><a href="form.html">Sign Up</a></span>
-			</p> -->
+ -->
+	<header>
+	<!-- 		<h1>AcademicJobSearch.com</h1> -->
+			<div class="row">
+				<a href="index.html"> <img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo"></a>
+				<p id="signIn_signUp"><span id="sign_in"><a href="#">LOG IN</a></span> <span id="register"><a href="form.html">SIGN UP</a></span>
+			</p> 
+			</div>
 			
 <!-- form register starts -->
-	<!--		<form id="form_register">												
+	<!-- 		<form id="form_register">												
 				<p><label for = "login_name">Login Name</label>
 				<input id ="login_name" type = "text" name = "name" maxlength = "15" required />
 				</p>
@@ -42,9 +46,9 @@
 			</form> -->
 			
 <!-- nav starts -->
-			<div class="row">
-				<nav>	
-					<ul>
+		
+				<nav class="row">	
+					<ul>	
 						<li id="home" class="small-12 medium-3 large-3 columns">
 							<span class="nav_list">
 								<a href="admin.html">My Dashboard</a>
@@ -64,10 +68,9 @@
 							<span class="nav_list">
 								<a href="#">How it Works</a>
 							</span>
-						</li>
+						</li>				
 					</ul>		
 				</nav>
-			</div>
 		</header>
 		
 <!-- form starts -->
@@ -83,7 +86,7 @@
 					<input id ="name" class = "float_left clear" type = "text" name = "name" maxlength = "30" placeholder ="&#32;30 characters max" required />
 					</p>
 
-					<p><label for = "name" class="float_left clear"><span class="red">*&#32;</span>Second Name</label>
+					<p><label for = "name" class="float_left clear"><span class="red">*&#32;</span>Last Name</label>
 					<input id ="second_name" class="float_left clear" type = "text" name = "second_name" maxlength = "15" placeholder ="&#32;15 characters max" required />
 					</p>
 

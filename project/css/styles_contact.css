@@ -1,12 +1,23 @@
+/* 
+html classes
+============
+ */
+
+.clear{
+	clear:both;
+}
+
+.float_left{
+	float: left;
+}
+
+
 
 /* 
 main body
 =========
  */
 
-html{
-	background-color: rgb(253, 253, 253);
-}
 
 body{
 	width:960px;
@@ -14,28 +25,6 @@ body{
 	padding-top: 10px;
 	font-family: arial, verdana, sans-serif;
 	font-size:62.5%; /* changes the default to 10px*/
-}
-
-header{
-	background: url("../images/header6_gradient1(inverted).png");
-	/* 
-	-moz-transform: scaleX(-1); this is really cool. It flips the element to which it is applied
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
- */
-	position: relative;
-	background-repeat: no-repeat;
-	background-position: top 220px center;
-	background-color: white;
-	overflow: hidden;
-}
-
-article{
-	width: 100%;
-	background: linear-gradient(rgb(250, 250, 250), rgb(255, 255, 255));
 }
 
 
@@ -104,10 +93,10 @@ header p{
 }
 
 /* 
-form register
+register
 ========
  */
- 
+  
  #form_register{
  	position: fixed;
  	z-index: 10;
@@ -117,15 +106,21 @@ form register
  	height: 210px;
  	background-color:rgb(253,173,83);
  	color: #15619C;
- 	border: 2px solid rgb(5,40,101);
+ 	border: 1px solid rgb(5,40,101);
 	border-radius: 5px;
+	/* box-shadow: 0px 70px 120px 5px #000; */
+	box-shadow: 0px 0px 20px .5px #000;
  }
  
- #btn_register{
- 	margin-top:10px;
+  #form_register input{
+  	width: 135px;
+  }
+ 
+  #form_register #btn_register{
+ 	margin-top:0;
  }
  
- #register_submit{
+  #form_register #register_submit{
  	font-size:0.8em;
 	text-decoration:none;
 	background-color: #15619C;
@@ -133,19 +128,21 @@ form register
 	border-radius:5px;
 	padding: 10px;
 	color: rgb(245,245,245);
+	width: 80px;
+	height: 40px;
  }
  
-#register_submit:hover{
+ #form_register #register_submit:hover{
   	background-color:rgb(11,87,146);
 	color: white;
 	box-shadow: 0 0 .5px #000;
-	cursor: pointer;
 }
 
 #form_register_forgot{
 	float:left;
-	margin-left: 35px;
+	margin-left: 30px;
 	margin-right:0;
+	margin-top:20px;
 	font-size:1.1em;
 }
 
@@ -156,16 +153,17 @@ form register
 }
 
 /* 
-overlay
-=======
+sign in form overlay
+====================
  */
-.overlay {
+ 
+ .overlay {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 5;
+  z-index: 1;
   background-color: rgba(0,0,0,0.6);
 }
 
@@ -229,15 +227,12 @@ nav ul li:hover a{
 	color:rgb(245,245,245);
 }
 
+
 /* 
 font styles/sizes
 =================
  */
- 
 
-h1{
-	font-size: 2.6em;
-}
 
 h2{
 	font-size:2.2em;
@@ -254,75 +249,70 @@ p{
 	font-size: 1.6em;
 }
 
-
-/* 
-article
-=======
- */
-
-article{
-	overflow: hidden;
-}
-
- 
 /* 
 form styles
 ===========
  */
  
  form{
- 	margin-top:20px;
-	margin-bottom: 10px;
- 	border: 1px solid rgb(5,40,101);
-	border-radius: 5px;
-	background-color:rgba(247,215,122, 0.1);
-	color: #15619C;
-	box-shadow: 0 0 5px #000;
+ 	width: 100%;
  	min-height: 50px;
- 	overflow:hidden;
+ 	overflow: hidden;
+ 	clear: both;
+ 	background: linear-gradient(rgb(250, 250, 250), rgb(255, 255, 255));
  }
  
- form.column, form.columns {
- 	padding: 0 0 20px 0;
+ form img{
+ 	position: absolute;
+ 	top: 95px;
  }
  
 #sign_up_header{
+	 width: 100%;
 	 color: #15619C;
 	 font-size: 3em;
-	 width: 480px;
-	 margin: 20px auto 10px;
-	 text-align: center;
+	 margin-top: 40px;
+	 margin-bottom: 10px;
+	 margin-left: 3px;
+	 float: left;
 }
-
-#login_info{
+ 
+#personal{
+	position:relative;
+	width: 99%;
+	border: 1px solid rgb(5,40,101);
 	border-radius: 5px;
 	overflow: hidden;
-	width:460px;
-	padding-bottom: 10px;
-	color: #15619C;
-}
- 
-#login, #form_password, #confirm_password{
-	border:1px solid rgba(11,87,146,.5);
-	width: 99%;
-} 
-
-#login_info, #checkbox_terms, #newsletter_terms{
+	float: left;
+	clear:left;
+	margin-left: 5px;
 	padding-left: 20px;
+	padding-bottom: 20px;
+	background-color:rgba(247,215,122, 0.1);
+	color: #15619C;
+	margin-bottom: 10px;
+	box-shadow: 0 0 5px #000;
 }
  
-input{
+textarea, input{
 	height: 25px;
+	width: 300px;
+	border: 1px solid rgb(5,40,101);
 }
+
+textarea{
+	min-height: 105px;
+	max-height: 250px;
+	min-width: 300px;
+	max-width: 400px;
+	padding-top: 5px;
+	padding-left: 5px;
+	border: 1px solid rgb(5,40,101);
+}
+
 
 input:focus{
 	background:rgba(21,97,156, .1);
-}
-
-#login_info .main_paragraphs{
-	width: 140px;
-	font-size: 1.8em;
-	margin-top: 10px;
 }
 
 label{
@@ -334,88 +324,34 @@ label{
  	color: red;
  }
  
- #checkbox_terms{
- 	float: left;
- 	clear: both;
- 	line-height: 25px;
- 	margin-bottom:10px;
+ #textfield{
+ 	max-width:;
  }
- 
- #terms_checkbox{
- 	width: 20px;
- 	margin-bottom:0;
- 	margin-right:10px;
- 	float: left;
- }
-  
- #terms_checkbox + label{
- 	margin-top: 0;
- 	padding-bottom: 5px;
- 	line-height: 10px;
- }
- 
-  #terms_checkbox + label a{
-  	text-decoration: none;
-  	color: #15619C;
-  }
- 
-/*  =============== */
-
- #newsletter_terms{
- 	float: left;
- 	clear: both;
- 	line-height: 25px;
- 	margin-top: 0;
- 	margin-bottom:30px;
- }
- 
- #newsletter_checkbox{
- 	width: 20px;
- 	margin-bottom:0;
- 	margin-right:10px;
- 	float: left;
- }
-  
- #newsletter_checkbox + label{
- 	margin-top: 0;
- 	padding-bottom: 5px;
- 	line-height: 10px;
- }
- 
-
-/* 
-===================
- 
- */
  
  #btn{
- 	margin: 0 auto;
- 	width: 480px;
+ 	float:left;
+ 	margin-top: 30px;
  }
  
- #form_submit{
+ #submit{
  	font-size: 2em;
- 	/* font-weight: bold; */
- 	width: 190px;
- 	height: 80px;
+ 	font-weight: bold;
+ 	width: 210px;
+ 	height: 60px;
  	background-color:rgb(237,155,67);
 	color: rgb(245,245,255);
+	border: 1px solid rgba(0,0,0,0.2);
 	border-radius: 10px;
 	text-transform: uppercase;
-	text-align: center;
-	display:block;
-	margin: 0 auto;
-	border: none;
-	clear: both;
+	margin-left: 45.5px;
  }
  
- #form_submit:hover{
- 	background-color:rgb(233,153,55);
+ #submit:hover{
+ 	background: linear-gradient(rgb(230,150,60), rgba(230,150,60, .7));
 	color: white;
+	box-shadow: 0 0 5px #000;
 	cursor: pointer;
-	text-shadow: 0 0 0 white;
  }
-
 
 
 /* 
@@ -485,12 +421,6 @@ footer a{
 footer a:hover{
 	color: black;
 }
-
-
-
-
-
-
 
 
 
