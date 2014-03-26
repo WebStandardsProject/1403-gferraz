@@ -1,0 +1,105 @@
+/* 
+div hidden job results
+======================
+ */
+ 
+ #search_results{
+ 	z-index: 10;
+ }
+
+#search_results h2{
+	color:#15619C;
+	margin-bottom: 10px;
+}
+
+#print_results h2{
+	float: left;
+	color: rgb(12, 98, 152);
+	display: block;
+}
+
+ #job_results{
+	padding: 0 10px 10px 0;
+	margin-right: 20px; 
+	margin-bottom: 20px;
+	float: left;
+	clear: left;
+}
+
+.full_result{
+	float: left;
+	border: 1px solid rgb(237,155,67);
+	border-radius: 5px;
+	padding: 0 10px 5px;
+	margin-bottom: 10px;
+}
+
+.full_result p{
+	margin-bottom: 5px;
+}
+
+#job_results h3{
+	margin-bottom:0;
+	margin-top:10px;
+	float: left;
+}
+
+#job_results h3 /* a */{
+	color:rgb(51,127,186); /* color:#0C6298; */
+	font-family: arial, verdana, sans-serif;
+	font-style: none;
+	text-decoration:none;
+	width:100%;
+	float:left;
+	clear
+}
+
+/* 
+#job_results h3 a:hover{
+	color:rgb(11,87,146);
+}
+ */
+
+#job_results h3 span{
+	display: block;
+	font-size: .8em;
+	width: 100%;
+	font-weight: normal;
+	color: black;
+}
+
+.accordion_p a{
+	color:rgb(237,155,67);
+	text-decoration:none;
+	font-style: oblique;
+	margin-top: 5px;
+}
+
+.accordion_p a:hover{
+	color:rgb(227,145,57);
+}
+
+.accordion_p{
+	float:left;
+	font-size: .9em;
+	width: 100%;
+}
+
+.save_job{
+	color:#15619C;
+	opacity: .85;
+	margin-left: 305px;
+	font-Style: normal;
+	font-weight: bold;
+}
+
+.save_job:hover{
+	cursor:pointer;
+	opacity:1; 
+	text-shadow: 0 0 .05px #000;
+}
+
+.jobs_links{
+	display: block;
+	margin-top: 10px;
+}

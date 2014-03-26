@@ -147,7 +147,7 @@ jobs folder/menu
 	padding-left: 0;
 	margin: 5px auto;
 	position: absolute;
-	top: 53px;
+	top: 51px;
 	z-index: 2;
 }
 
@@ -160,7 +160,7 @@ jobs folder/menu
 }
 
 #folder ul li:first-child{
-	height: 3px;
+	height: 4px;
 	opacity:0;
 	padding:0;
 }
@@ -218,7 +218,7 @@ jobs folder/menu
 	height: 26px;
 	margin-left: 50px;
 	position:absolute;
-	top:32px;
+	top:30px;
 }
 
 #folder ul li{
@@ -354,6 +354,10 @@ search inputs
 	color: #15619C;
 }
 
+#search_inputs input{
+	float:left;
+}
+
 #search_inputs #close_search{
 	margin-left: 15px;
 	font-size: .37em;
@@ -372,6 +376,10 @@ p#search_boxes{
 	margin:0 0 0 204px;
 }
 
+#key_word{
+	margin-left: 25px;
+}
+
 #key_word, #location{
 	width:195px;
 	height:45px;
@@ -386,11 +394,9 @@ p#search_boxes{
 
 #submit{
 	width:135px;
-	height:51px;
-	/* line-height: 50px; */
+	height:45px;
 	padding-top: 3px;
 	padding-bottom: 1px;
-
 	text-align: center;
 	background-color:rgb(243,163,73);
 	border: 1px solid rgb(237,155,67);
@@ -433,11 +439,11 @@ section two
 }
 
 #sidebar #selected_jobs{
-	margin: 78px 0 15px;
+	margin: 91px 0 15px;
 	color: rgb(13,65,133);
 	text-align: center;
-	padding-top:15px;
-	padding-bottom:15px;
+	padding-top:11px;
+	padding-bottom:11px;
 	width: 347px;
 }
 

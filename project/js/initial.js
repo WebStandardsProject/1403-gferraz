@@ -484,7 +484,7 @@ var indexToggle=1;
 $('#search').click(function(e){	
 	e.preventDefault();
 	if(indexToggle%2!=0){
-		$('html,body').animate({scrollTop: $('#footer').offset().top},1300);
+		$('html,body').animate({scrollTop: $('footer').offset().top},1300);
 		
 		if(indexToggle>1){
 			$('#middle_column').html('<p id="p_middleColumn">Perform a search and save jobs to this area. Jobs will automatically be saved to your "Saved Jobs" main tab</p>');
