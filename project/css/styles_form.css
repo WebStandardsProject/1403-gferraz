@@ -192,7 +192,6 @@ header form input#login_name, header form input#password {
 }
 
 
-
 /* 
 overlay
 =======
@@ -225,7 +224,6 @@ nav.row{
 nav ul{
 	display: inline-block;
 	min-height:10px;
-	/* padding:23px 0 23px; */
 	text-align: center;
 	width: 100%;
 	clear: both;
@@ -247,9 +245,6 @@ nav ul li{
 	font-size: 1em;
 }
 
-nav ul li a{
-	width:210px;
-}
 
 nav ul li:hover{
 	background-color:rgba(237,155,67,.8);
@@ -258,12 +253,16 @@ nav ul li:hover{
  nav ul li a{
 	text-decoration: none;
 	color: #15619C;
-	display: inline-block;
+	/* display: inline-block; */
 	height: 46px;
 	line-height:46px;
 }
 
 nav ul li:hover a{
+	color:rgb(245,245,245);
+}
+
+nav ul li a:active{
 	color:rgb(245,245,245);
 }
 
@@ -349,12 +348,6 @@ form styles
 #login_info, #checkbox_terms, #newsletter_terms{
 	padding-left: 20px;
 }
- 
-/* 
-input{
-	height: 25px;
-}
- */
 
 input:focus{
 	background:rgba(21,97,156, .1);
@@ -367,7 +360,6 @@ input:focus{
 }
 
 label{
-	/* margin-top: 15px; */
 	margin-bottom: 5px;
 }
  
@@ -536,15 +528,88 @@ Media Queries Start
 
 @media only screen and (max-width: 1050px){
 	form#formulary{
- 	width:90%;
+ 		width:90%;
 	}
 }
 
 
-@media only screen and (max-width:641px) {
+@media only screen and (max-width: 755px){
 	#signIn_signUp{
 		display:none;
 	}
+	
+	nav.row{
+		margin-top: 148px;
+	}
+}
+
+@media only screen and (max-width:641px) {
+	body{
+		width:100%;
+	}
+	nav ul{
+ 		font-size: 1rem; 
+ 		border:none;
+ 		color:rgb(245,245,245);
+	}
+	
+	nav ul li {
+		border-bottom: 1px solid #fff;
+		background-color:rgba(237,155,67,.8);
+	}
+	
+	nav ul li a{
+		color:rgb(245,245,245);
+	}
+	
+	nav ul li:active a{
+		color: #15619C;
+		background-color:white;
+	}
+	
+	nav ul li:active{
+		background-color:white;
+	}
+	
+	nav ul li:hover a{
+		color: #15619C;
+	}
+	
+	nav ul li:hover{
+		background-color:white;
+	}
+	
+	
+	
+	form#formulary{
+		width: 100%;
+		border:none;
+		box-shadow:none;
+		margin-top:0;
+		margin-bottom:0;
+		padding-bottom:84px;
+	}
+	#sign_up_header{
+		margin-top: 40px;
+	}
+	
+	footer.row{
+		margin-top:0px;
+		padding-top:0;
+	}
+	
+	#contact_us, #terms{
+		display:none;
+
+	}
+}
+
+@media only screen and (max-width:587px) {
+	#checkbox_terms, #newsletter_terms{
+		display:none;
+	}
+
+
 }
 
 
