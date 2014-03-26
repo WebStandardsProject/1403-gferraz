@@ -25,11 +25,18 @@ $(window).load(function(){
 
 //HOME PAGE - animates the social network icons on hover
 //================================
-$('.social_networks').hover(function(){
+$('#facebook, #google_plus, #linkedin').hover(function(){
 	$(this).animate({left: -5}, 700);
 	}, 
 		function(){
 			$(this).animate({left: -30}, 500);
+});
+
+$('#twitter').hover(function(){
+	$(this).animate({left: -5}, 700);
+	}, 
+		function(){
+			$(this).animate({left: -30.5}, 500);
 });
 
 
