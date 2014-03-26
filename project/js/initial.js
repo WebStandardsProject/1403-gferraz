@@ -538,6 +538,15 @@ $('#form_submit').click(function(){
 	window.location.assign("admin.html");
 });
 
+$('#saved_jobs_li').click(function(){
+	window.location.assign("saved_jobs.html");
+});
+
+$('#logout').click(function(){
+	window.location.assign("admin.html");
+});
+
+
 /*
 
 
