@@ -104,7 +104,6 @@ header p{
 	float: right;
 }
 
-
 #signIn_signUp{
 	margin-top: 10px;
 	margin-right:0;
@@ -170,7 +169,7 @@ form search starts
 	color:#15619C;
 	width:525px; 
 	font-style:oblique;
-	margin:0;
+	margin-left:20px;
 	text-align:justify;
 	line-height:30px;
 	letter-spacing:.22px;
