@@ -104,21 +104,60 @@ form register
 ========
  */
  
+header form p {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom:0;
+    text-align: left;
+}
+
+header form p:nth-child(2) {
+	margin-top:10px;
+}
+
+header form label{
+	margin:0;
+}
+
+header form input#login_name, header form input#password {
+	height: 30px;
+	width: 241px;	
+}
+ 
  #form_register{
  	position: fixed;
  	z-index: 10;
  	top: 80px;
  	right: 100px;
- 	width: 300px;
+ 	width: 285px;
  	height: 210px;
  	background-color:rgb(253,173,83);
  	color: #15619C;
  	border: 2px solid rgb(5,40,101);
 	border-radius: 5px;
+	margin-top:0;
+
  }
  
- #btn_register{
- 	margin-top:10px;
+  #login_name{
+ -moz-box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-family: inherit;
+    font-size: 0.875rem;
+    height: 2.3125rem;
+    margin: 0;
+    padding: 0;
+    transition: box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;
+    width: 100%;
+ }
+ 
+  #btn_register{
+ 	margin:0 15px;
  }
  
  #register_submit{
@@ -127,7 +166,7 @@ form register
 	background-color: #15619C;
 	border: 1px solid rgba(0,0,0,0.2);
 	border-radius:5px;
-	padding: 10px;
+	padding: 10px 15px;
 	color: rgb(245,245,245);
  }
  
@@ -140,9 +179,10 @@ form register
 
 #form_register_forgot{
 	float:left;
-	margin-left: 35px;
+	margin-left: 25px;
 	margin-right:0;
 	font-size:1.1em;
+	margin-top:15px;
 }
 
 #form_register_forgot a{
@@ -150,6 +190,8 @@ form register
 	font-size: 1.2em;
 	color:#15619C;
 }
+
+
 
 /* 
 overlay
@@ -307,9 +349,11 @@ form styles
 	padding-left: 20px;
 }
  
+/* 
 input{
 	height: 25px;
 }
+ */
 
 input:focus{
 	background:rgba(21,97,156, .1);
