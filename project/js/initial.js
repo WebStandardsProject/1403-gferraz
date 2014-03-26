@@ -531,6 +531,8 @@ var username = $('#login').val();
 //ajax call for the login
 //=============
 
+/*
+
 $('#register_submit').click(function(e){
 	e.preventDefault();
 	var user = $('#login_name').val();
@@ -557,7 +559,7 @@ $('#register_submit').click(function(e){
 	});//closes the ajax call
 	
 });//closes the on click function
-
+*/
 
 //ajax call for the logout
 //===================
@@ -572,6 +574,7 @@ $('#logout').click(function(){
 //ajax call for the registration page (form)
 //==================
 
+/*
 $('#form_submit').click(function(e){
 	e.preventDefault();
 	var username = $('#login').val();
@@ -605,7 +608,7 @@ $('#form_submit').click(function(e){
 	
 });//closes the on click function
 
-
+*/
 //ajax call for job search on admin page
 //==================
 
