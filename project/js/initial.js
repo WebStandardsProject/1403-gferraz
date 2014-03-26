@@ -531,7 +531,16 @@ var username = $('#login').val();
 //ajax call for the login
 //=============
 
+$('#register_submit').click(function(){
+	window.location.assign("admin.html");
+});
+$('#form_submit').click(function(){
+	window.location.assign("admin.html");
+});
+
 /*
+
+
 
 $('#register_submit').click(function(e){
 	e.preventDefault();
