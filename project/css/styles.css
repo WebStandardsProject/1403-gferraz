@@ -1063,6 +1063,10 @@ Media Queries Start
 		display: none;
 	}
 	
+	article{
+		display:none;
+	}
+	
 	#image{
 		display:none;
 	}
@@ -1102,6 +1106,7 @@ Media Queries Start
 		background-color: rgba(243,243,243,.9);
 		height:60px;
 	}
+	
 	
 	#call_to_search, #call_to_search_p{
 		display:none;
@@ -1148,7 +1153,7 @@ Media Queries Start
 	}
 	
 	nav.row{
-		margin-top:78px;
+		margin-top:0;
 		z-index:-1;
 	}
 	
