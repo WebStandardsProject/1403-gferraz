@@ -253,7 +253,6 @@ nav ul li:hover{
  nav ul li a{
 	text-decoration: none;
 	color: #15619C;
-	/* display: inline-block; */
 	height: 46px;
 	line-height:46px;
 }
@@ -548,11 +547,12 @@ Media Queries Start
 	#faq, #social_networks, #contact_us, #terms{
 		display:none;  
 	}
+	footer.row{
+		border:none;
+	}
 }
 
-footer.row{
-	border:none;
-}
+
 
 
 @media only screen and (max-width: 755px){

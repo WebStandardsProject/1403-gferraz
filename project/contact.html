@@ -24,11 +24,14 @@
 		</div>
 
 	<header>
-	<!-- 		<h1>AcademicJobSearch.com</h1> -->
-			<div class="row">
-				<a href="index.html"> <img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo"><span id="icon_logo"><img src="images/logo_icon_A1(small).png"></span></a>
-				<p id="signIn_signUp"><span id="hamburger_menu"><img src="images/hamburger.png"></span><span id="sign_in"><a href="#">LOG IN</a></span> <span id="register"><a href="form.html">SIGN UP</a></span>
-			</p> 
+			<h1>AcademicJobSearch.com</h1>
+			<div class="row" id="header_div">
+				<div class="small-6 columns">
+					<a href="index.html"><img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo"><span id="icon_logo"><img src="images/logo_icon_A1.png"></span></a>
+				</div>
+				<div class="small-6 columns">
+					<p id="signIn_signUp"><span id="hamburger_menu"><img src="images/hamburger1.png"></span><span id="sign_in"><a href="#">LOG IN</a></span> <span id="register"><a href="form.html">SIGN UP</a></span></p> 
+				</div>
 			</div>
 			
 <!-- form register starts -->
@@ -42,27 +45,27 @@
 				</p>
 				<p id="form_register_forgot"><a href = "#">Forgot login or password</a></p>
 				<p id="btn_register"><input id="register_submit" type = "submit" value ="Sign In"/></p>
-			</form>			
+			</form>
 <!-- nav starts -->
 		
 				<nav class="row">	
 					<ul>	
-						<li id="home" class="small-12 medium-3 large-3 columns">
+						<li id="home" class="small-12 large-3 columns">
 							<span class="nav_list">
 								<a href="admin.html">My Dashboard</a>
 							</span>
 						</li>
-						<li class="small-12 medium-3 large-3 columns">
+						<li class="small-12 large-3 columns">
 							<span class="nav_list">
 								<a href="form.html">Sign Up</a>
 							</span>
 						</li>
-						<li class="small-12 medium-3 large-3 columns">
+						<li class="small-12 large-3 columns">
 							<span class="nav_list">
 								<a href="#">Members Benefits</a>
 							</span>
 						</li>
-						<li class="small-12 medium-3 large-3 columns">
+						<li class="small-12 large-3 columns">
 							<span class="nav_list">
 								<a href="#">How it Works</a>
 							</span>
@@ -79,7 +82,7 @@
 			<h2 class="clear small-12 columns" id="sign_up_header">CONTACT FORM</h2>
 <!-- 	personal info -->
 			<div id="personal" class="small-12 columns">
-				<div class="small-12 large-6 columns">
+				<div class="small-12 medium-12 large-6 columns">
 					<p><label for = "name" class="float_left"><span class="red">*&#32;</span>First Name</label>
 					<input id ="name" class = "float_left clear" type = "text" name = "name" maxlength = "30" placeholder ="&#32;30 characters max" required />
 					</p>
@@ -98,8 +101,8 @@
 	<!-- submit button starts here -->
 					<p id="btn" class="clear"><input id="submit" type = "submit" value ="Submit"/></p>
 				</div>
-				<div class="show-for-large-up large-6 columns">
-					<img src="images/emblem.png">	
+				<div class="large-6 columns show-for-large-up">
+					<img id="emblem" src="images/emblem.png">	
 				</div>
 			</div>
 		</form> 
@@ -109,11 +112,11 @@
 		
 <!-- footer starts -->
 			<footer class="row">	
-				<div id="faq" class="medium-3 large-3 columns show-for-medium-up"><a href="#">
+				<div id="faq" class="medium-3 large-3 columns"><a href="#">
 					<h3>Faq</h3>
 					<p>Find answers to questions you might have about the website</p></a>
 				</div>
-				<div id="social_networks" class="medium-3 large-3 columns show-for-medium-up"><a href="#">
+				<div id="social_networks" class="medium-3 large-3 columns"><a href="#">
 					<h3>Social Networks</h3>
 					<p>Connect with us via social media</p></a>
 				</div>
