@@ -526,6 +526,17 @@ Media Queries Start
 ===================
  */
 
+@media only screen and (max-width: 1400px){
+	#hamburger_menu{
+		display:none;
+	}
+	
+	#icon_logo{
+		display:none;
+	}
+}
+
+
 @media only screen and (max-width: 1050px){
 	form#formulary{
  		width:90%;
@@ -534,19 +545,51 @@ Media Queries Start
 
 
 @media only screen and (max-width: 755px){
-	#signIn_signUp{
+	#sign_in,#register {
 		display:none;
 	}
 	
-	nav.row{
-		margin-top: 148px;
+	
+	#hamburger_menu{
+		display:block;
 	}
 }
 
 @media only screen and (max-width:641px) {
 	body{
 		width:100%;
+		padding-top:0;
 	}
+	
+	#image{
+		display:none;
+	}
+	#icon_logo{
+		display:block;
+		width:40px;
+		margin-top: 20px;
+		margin-left:20px;
+	}
+	#signIn_signUp{
+		margin-top: 25px;
+	}
+	
+	#hamburger_menu{
+		margin-right: 20px;
+	}
+	
+	#header_div{
+		position:fixed;
+		box-shadow:0 2px 3px #000;
+		z-index:3;
+		background-color: white;
+	}
+	
+	nav.row{
+		margin-top:78px;
+		z-index:-1;
+	}
+	
 	nav ul{
  		font-size: 1rem; 
  		border:none;
@@ -556,6 +599,14 @@ Media Queries Start
 	nav ul li {
 		border-bottom: 1px solid #fff;
 		background-color:rgba(237,155,67,.8);
+	}
+	
+	nav ul li:first-child{
+		border-top: 1px solid rgba(237,155,67,.8);
+	}
+	
+	nav ul li:last-of-type{
+		border-bottom: 1px solid rgba(237,155,67,.8);
 	}
 	
 	nav ul li a{
