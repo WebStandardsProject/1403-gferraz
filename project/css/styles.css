@@ -1080,11 +1080,11 @@ Media Queries Start
 	#icon_logo{
 		display:block;
 		width:40px;
-		margin-top: 20px;
+		margin-top: 10px;
 		margin-left:20px;
 	}
 	#signIn_signUp{
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 	
 	#sign_up_header{
@@ -1100,6 +1100,7 @@ Media Queries Start
 		box-shadow:0 2px 3px #000;
 		z-index:3;
 		background-color: rgba(243,243,243,.9);
+		height:60px;
 	}
 	
 	#call_to_search, #call_to_search_p{

@@ -574,11 +574,11 @@ Media Queries Start
 	#icon_logo{
 		display:block;
 		width:40px;
-		margin-top: 20px;
+		margin-top: 10px;
 		margin-left:20px;
 	}
 	#signIn_signUp{
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 	
 	#hamburger_menu{
@@ -590,10 +590,11 @@ Media Queries Start
 		box-shadow:0 2px 3px #000;
 		z-index:3;
 		background-color: rgba(243,243,243,.9);
+		height:60px;
 	}
 	
 	nav.row{
-		margin-top:78px;
+		margin-top:63px;
 		z-index:-1;
 	}
 	
