@@ -330,10 +330,16 @@ form#contact img{
 	margin-bottom: 10px;
 	box-shadow: 0 0 2px #000;
 }
+
  
-form#contact textarea, form#contact input{
-	height: 28px;
-	width: 300px;
+
+form#contact textarea{
+	min-height: 105px;
+	max-height: 250px;
+	max-width: 100%;
+	min-width:50%;
+	padding-top: 5px;
+	padding-left: 5px;
 	border: 1px solid rgb(5,40,101);
 }
 
@@ -351,8 +357,16 @@ form#contact label{
  	color: red;
  }
  
- #textfield{
- 	max-width:;
+ .textfield_heading{
+ 	margin-top:10px;
+ 	margin-bottom:5px;
+ 	color:#4D4D4D;
+ 	font-size:1.4em;
+ }
+ 
+ p#btn{
+ 	width: 210px;
+ 	margin: 0 auto;
  }
  
 form#contact #btn{
@@ -369,7 +383,7 @@ form#contact #submit{
 	color: rgb(245,245,255);
 	border-radius: 10px;
 	text-transform: uppercase;
-	margin-left: 45.5px;
+	margin: 0 auto;
 	border: none;
  }
  
@@ -464,16 +478,6 @@ Media Queries Start
 		display:none;
 	}
 	
-	form#contact textarea{
-		min-height: 105px;
-		max-height: 250px;
-		min-width: 300px;
-		max-width: 400px;
-		padding-top: 5px;
-		padding-left: 5px;
-		border: 1px solid rgb(5,40,101);
-	}
-
 }
 
 
@@ -485,9 +489,6 @@ Media Queries Start
 
 @media only screen and (max-width: 1024px){
 
-	div#personal input, #textfield{
-		width: 100%;
-	}
 	#personal{
 		width: 98.5%;
 	}
@@ -532,6 +533,10 @@ Media Queries Start
 	}
 	#signIn_signUp{
 		margin-top: 25px;
+	}
+	
+	#sign_up_header{
+		margin-top: 40px;
 	}
 	
 	#hamburger_menu{
@@ -590,18 +595,21 @@ Media Queries Start
 		background-color:white;
 	}
 	
+	#sign_up_header{
+		text-align:center;
+		margin-left:0;
+	}
+	
 	#personal{
 		width: 100%;
-		max-width:700px;
-		
 		border:none;
 		box-shadow:none;
-		margin-top:0;
-		margin-bottom:0;
+		margin:0;
 		padding-bottom:84px;
 	}
-	#sign_up_header{
-		margin-top: 40px;
+	
+	form#contact{
+		margin-bottom:0;
 	}
 	
 	footer.row{
