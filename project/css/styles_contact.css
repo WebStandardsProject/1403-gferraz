@@ -20,7 +20,7 @@ main body
 
 
 body{
-	width:76%;
+	width:74.5%;
 	margin:0 auto;
 	padding-top: 10px;
 	font-family: arial, verdana, sans-serif;
@@ -340,7 +340,7 @@ form#contact textarea{
 	min-width:50%;
 	padding-top: 5px;
 	padding-left: 5px;
-	border: 1px solid rgb(5,40,101);
+	border: 1px solid #ccc;
 }
 
 
@@ -372,6 +372,7 @@ form#contact label{
 form#contact #btn{
  	float:left;
  	margin-top: 30px;
+ 	width:100%;
  }
  
 form#contact #submit{
@@ -383,6 +384,7 @@ form#contact #submit{
 	color: rgb(245,245,255);
 	border-radius: 10px;
 	text-transform: uppercase;
+	display:block;
 	margin: 0 auto;
 	border: none;
  }
@@ -547,7 +549,7 @@ Media Queries Start
 		position:fixed;
 		box-shadow:0 2px 3px #000;
 		z-index:3;
-		background-color: white;
+		background-color: rgba(243,243,243,.9);
 	}
 	
 	nav.row{
@@ -611,6 +613,7 @@ Media Queries Start
 	form#contact{
 		margin-bottom:0;
 	}
+
 	
 	footer.row{
 		margin-top:0px;
@@ -623,13 +626,6 @@ Media Queries Start
 	}
 }
 
-@media only screen and (max-width:587px) {
-	#checkbox_terms, #newsletter_terms{
-		display:none;
-	}
-
-
-}
 
 
 

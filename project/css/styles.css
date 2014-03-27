@@ -9,7 +9,7 @@ html{
 }
 
 body{
-	width:960px;
+	width:74.5%;
 	margin: 0 auto;
 	padding-top: 10px;
 	font-family: arial, verdana, sans-serif;
@@ -31,6 +31,7 @@ header{
 	background-position: top 220px center;
 	background-color: white;
 	overflow: hidden;
+	width:100%;
 }
 
 article{
@@ -335,10 +336,9 @@ navigation
 nav.row{
 	 padding:0; 
 	 margin-top: 48px;
-	 float: left;
 	 clear: both;
 	 background: white;
-	 width: 960px;
+	 width: 100%;
 	 overflow:hidden;
 }
 
@@ -549,6 +549,7 @@ section 1
  #section_one{
  	padding-top: 40px;
  	position:relative;
+ 	width:100%;
  }
  
  #resources_heading{
@@ -562,7 +563,7 @@ section 1
 } 
  
  #resources{
-	width:625.3px;
+	width:/* 625.3px */65.13541667%;
 	padding: 0 10px 10px 0;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -590,6 +591,7 @@ div resources - inner divs
  
  #section_two{
  	margin-top:23px;
+ 	width:100%;
  }
 
 #cv {
@@ -820,7 +822,7 @@ divs section 2
 }
 
 #hot_searches{
-	width:280px;
+	width:/* 280px */ 29.166666%;
 	height: 257px;
 	margin: 10px 0  20px 0;
 	padding-left:18px;
@@ -862,7 +864,7 @@ footer
  */
 
 footer.row{
-	width: 960px;
+	width: 100%;
 	text-align: left;
 	padding-top: 15px;
 	clear:both;
@@ -924,6 +926,161 @@ footer a:hover{
 	color: black;
 }
 
+
+
+/* 
+Media Queries Start
+===================
+ */
+
+@media only screen and (max-width: 1400px){
+	#hamburger_menu{
+		display:none;
+	}
+	
+	#icon_logo{
+		display:none;
+	}
+}
+
+@media only screen and (max-width: 1050px){
+	form#formulary{
+ 		width:99%;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+
+	#personal{
+		width: 98.5%;
+	}
+}
+
+@media only screen and (max-width: 808px){
+	#faq, #social_networks, #contact_us, #terms{
+		display:none;  
+	}
+	footer.row{
+		border:none;
+	}
+}
+
+
+@media only screen and (max-width: 755px){
+	#sign_in,#register {
+		display:none;
+	}
+	
+	#hamburger_menu{
+		display:block;
+	}
+}
+
+@media only screen and (max-width:641px) {
+	body{
+		width:100%;
+		padding-top:0;
+	}
+	
+	#image{
+		display:none;
+	}
+	
+	#icon_logo{
+		display:block;
+		width:40px;
+		margin-top: 20px;
+		margin-left:20px;
+	}
+	#signIn_signUp{
+		margin-top: 25px;
+	}
+	
+	#sign_up_header{
+		margin-top: 40px;
+	}
+	
+	#hamburger_menu{
+		margin-right: 20px;
+	}
+	
+	#header_div{
+		position:fixed;
+		box-shadow:0 2px 3px #000;
+		z-index:3;
+		background-color: rgba(243,243,243,.9);
+	}
+	
+	nav.row{
+		margin-top:78px;
+		z-index:-1;
+	}
+	
+	nav ul{
+ 		font-size: 1rem; 
+ 		border:none;
+ 		color:rgb(245,245,245);
+	}
+	
+	nav ul li {
+		border-bottom: 1px solid #fff;
+		background-color:rgba(237,155,67,.8);
+	}
+	
+	nav ul li:first-child{
+		border-top: 1px solid rgba(237,155,67,.8);
+	}
+	
+	nav ul li:last-of-type{
+		border-bottom: 1px solid rgba(237,155,67,.8);
+	}
+	
+	nav ul li a{
+		color:rgb(245,245,245);
+	}
+	
+	nav ul li:active a{
+		color: #15619C;
+		background-color:white;
+	}
+	
+	nav ul li:active{
+		background-color:white;
+	}
+	
+	nav ul li:hover a{
+		color: #15619C;
+	}
+	
+	nav ul li:hover{
+		background-color:white;
+	}
+	#terms_div{
+		padding-right:0;
+	}
+	
+	#terms_div h2{
+		text-align:center;
+		margin-left:0;
+	}
+	
+	#section_one{
+		box-shadow:none;
+		border:none;
+		background-color: rgba(247, 215, 122, 0.1);
+		margin-bottom:0;
+	}
+
+	footer.row{
+		margin-top:0px;
+		padding-top:0;
+	}
+	
+	#contact_us, #terms{
+		display:none;
+
+	}
+}
 
 
 

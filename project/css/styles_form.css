@@ -9,7 +9,7 @@ html{
 }
 
 body{
-	width:76%;
+	width:74.5%;
 	margin:0 auto;
 	padding-top: 10px;
 	font-family: arial, verdana, sans-serif;
@@ -552,9 +552,6 @@ Media Queries Start
 	}
 }
 
-
-
-
 @media only screen and (max-width: 755px){
 	#sign_in,#register {
 		display:none;
@@ -592,7 +589,7 @@ Media Queries Start
 		position:fixed;
 		box-shadow:0 2px 3px #000;
 		z-index:3;
-		background-color: white;
+		background-color: rgba(243,243,243,.9);
 	}
 	
 	nav.row{
