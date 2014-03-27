@@ -307,10 +307,11 @@ form#contact img{
  
 #sign_up_header{
 	 width: 100%;
+	 background-color: rgba(247, 215, 122, 0.1);
 	 color: #15619C;
 	 font-size: 3em;
-	 margin-top: 40px;
-	 margin-bottom: 10px;
+	 padding-top: 40px;
+	 padding-bottom: 10px;
 	 margin-left: 3px;
 	 float: left;
 }
@@ -528,10 +529,6 @@ Media Queries Start
 	}
 	#signIn_signUp{
 		margin-top: 15px;
-	}
-	
-	#sign_up_header{
-		margin-top: 40px;
 	}
 	
 	#hamburger_menu{

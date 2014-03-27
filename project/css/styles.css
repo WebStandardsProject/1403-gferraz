@@ -1059,7 +1059,7 @@ Media Queries Start
 	header{
 		background: none;
 	}
-	header ul:first-child{
+	header ul:nth-child(1){
 		display: none;
 	}
 	

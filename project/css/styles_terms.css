@@ -531,6 +531,12 @@ Media Queries Start
 	#terms_div h2{
 		text-align:center;
 		margin-left:0;
+		font-size: 3em;
+		background-color: rgba(247, 215, 122, 0.1);
+		margin-top:0;
+		margin-bottom:0;
+		padding-top:40px;
+		padding-bottom:10px;
 	}
 	
 	#section_one{
