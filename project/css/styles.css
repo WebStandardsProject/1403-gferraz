@@ -45,6 +45,10 @@ article{
 social network icons
 =================
  */
+ 
+ header ul:first-child{
+ 	margin-bottom:0;
+ }
 
 header ul li{
 	list-style: none;
@@ -83,6 +87,7 @@ header elements
 ===============
  */
 
+
 h1{
 	text-indent: 100%;
 	white-space: nowrap;
@@ -98,6 +103,10 @@ h1{
 	width: 290px;
 }
 
+#image2{
+	display:none;
+}
+
 header p{
 	text-align: right;
 	margin-right:20px;
@@ -106,7 +115,7 @@ header p{
 }
 
 #signIn_signUp{
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-right:0;
 }
 
@@ -142,6 +151,9 @@ header p{
 }
 
 
+
+
+
 /* 
 form search starts
 =============
@@ -155,12 +167,14 @@ form search starts
 }
 
 #call_to_search{
+	width:100%;
 	margin-bottom: 0;
-	margin-top: 45px;
+	margin-top: 55px;
+	margin-left:0;
 	float:left;
-	width: 525px;
 	text-align:center;
 	font-size:4em;
+	letter-spacing:0.4px;
 	font-weight: bold;	
 	color: #15619C;
 }
@@ -168,9 +182,9 @@ form search starts
 #call_to_search_p{
 	font-size:2em;
 	color:#15619C;
-	width:525px; 
 	font-style:oblique;
-	margin-left:20px;
+	margin-left:0;
+	margin-right:0;
 	text-align:justify;
 	line-height:30px;
 	letter-spacing:.22px;
@@ -185,11 +199,13 @@ p#search_boxes{
 	float: left;
 	clear:both;
 	margin-top:10px;
-	width: 545px;
+	margin-right:0;
+	margin-left:0;
+	width:100%;
 }
 
 #key_word, #location{
-	width:195px;
+	width:35%;
 	height:45px;
 	border: 2px solid rgb(237,155,67);
 	font-size: 1.7em;
@@ -198,11 +214,11 @@ p#search_boxes{
 	text-indent: 5px;
 	border-radius:5px;
 	float:left;
-	margin-right: 5px;
+	margin-right: 1.5%;
 }
 
 #submit{
-	width:130px;
+	width:25%;
 	height:45px;
 	padding-top: 3px;
 	text-align: center;
@@ -219,6 +235,10 @@ p#search_boxes{
 #submit:hover{
 	background-color:rgb(233,153,55);
 	cursor:pointer;
+}
+
+#placehoder_mobile{
+	display:none;
 }
 
  #check_membership a{
@@ -429,7 +449,7 @@ search options divs - (orange circles)
  */
 
 #fields, #universities, #states{
-	width:260px;
+	width:/* 260px */ 27.0833333%;
 	height: 242px;
 	padding:10px;
 	border-radius: 10px;
@@ -439,7 +459,7 @@ search options divs - (orange circles)
 }
 
 #fields, #universities{
-	margin-right:88px;
+	margin-right:/* 80px */ 8.4%;
 }
 
 #fields img, #universities img, #states img{
@@ -563,7 +583,7 @@ section 1
 } 
  
  #resources{
-	width:/* 625.3px */65.13541667%;
+	/* width:625.3px65.13541667%; */
 	padding: 0 10px 10px 0;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -943,16 +963,57 @@ Media Queries Start
 	}
 }
 
-@media only screen and (max-width: 1050px){
-	form#formulary{
- 		width:99%;
-	}
-}
 
 @media only screen and (max-width: 1024px){
 
 	#personal{
 		width: 98.5%;
+	}
+}
+
+@media only screen and (max-width: 1005px){
+
+	#call_to_search {
+		font-size: 3.5em;
+		letter-spacing: 0.4px;
+	}
+	
+	#call_to_search_p {
+		color: #15619C;
+		font-size: 1.8em;
+		
+	}
+	
+}
+
+
+@media only screen and (max-width: 900px){
+
+	#call_to_search {
+		font-size: 3.5em;
+		letter-spacing: 0.4px;
+	}
+	
+	#call_to_search_p {
+		color: #15619C;
+		font-size: 1.8em;
+		
+	}
+	
+	#keyword, #location{
+		font-size:1.5em;
+	}
+	
+	#submit{
+		font-size:1.1em;
+	}
+
+	
+}
+
+@media only screen and (max-width: 887px){
+	#call_to_search{
+		font-size: 3em;
 	}
 }
 
@@ -976,14 +1037,44 @@ Media Queries Start
 	}
 }
 
+@media only screen and (max-width: 745px){
+	#call_to_search{
+		font-size: 2.8em;
+	}
+}
+
+@media only screen and (max-width: 724px){
+	#call_to_search{
+		font-size: 2.43em;
+	}
+}
+
 @media only screen and (max-width:641px) {
 	body{
 		width:100%;
 		padding-top:0;
+		background: url("../images/background-mobile.png") no-repeat center center fixed;
+		background-size:cover;
+	}
+	header{
+		background: none;
+	}
+	header ul:first-child{
+		display: none;
 	}
 	
 	#image{
 		display:none;
+	}
+	
+	p#search_boxes a{
+		display:block:
+		width: 100%;
+	}
+	#image2{
+		display:block;
+		width:90%;
+		margin:0 auto 60px;
 	}
 	
 	#icon_logo{
@@ -1009,6 +1100,50 @@ Media Queries Start
 		box-shadow:0 2px 3px #000;
 		z-index:3;
 		background-color: rgba(243,243,243,.9);
+	}
+	
+	#call_to_search, #call_to_search_p{
+		display:none;
+	}
+	
+	#placehoder_mobile{
+		display:block;
+		width:90%;
+		height:45px;
+		border: 2px solid rgb(237,155,67);
+		font-size: 1.5em;
+		color: rgb(150,150,150);
+		font-style: oblique;
+		text-indent: 5px;
+		border-radius:5px;
+		margin: 0 auto 60px;
+	}
+	
+	#key_word{
+		display:none;
+	}
+
+	#search_inputs{
+		margin-top:120px;
+		width:100%;
+	}
+	
+
+	#location{
+		display:none;
+	}
+	
+	#submit{
+		width:150px;
+		max-width:100%;
+		height:150px;
+		max-height:100%;
+		border: 3px solid rgb(198, 120, 36);
+		border-radius:50%;
+		font-size: 1.6em;
+		margin: 0 auto;
+		display:block;
+		float:none;
 	}
 	
 	nav.row{
@@ -1055,20 +1190,15 @@ Media Queries Start
 	nav ul li:hover{
 		background-color:white;
 	}
-	#terms_div{
-		padding-right:0;
-	}
 	
-	#terms_div h2{
-		text-align:center;
-		margin-left:0;
-	}
-	
-	#section_one{
-		box-shadow:none;
-		border:none;
-		background-color: rgba(247, 215, 122, 0.1);
+	ul{
 		margin-bottom:0;
+	}
+	
+	#section_two{
+		width:99%;
+		margin-left:10px;
+		margin-right:10px;
 	}
 
 	footer.row{
@@ -1082,5 +1212,19 @@ Media Queries Start
 	}
 }
 
+@media only screen and (max-width:465px) {
+	#placehoder_mobile{
+		font-size: 1.1em;
+	}
+
+}
+
+
+@media only screen and (max-width:350px) {
+	#placehoder_mobile{
+		font-size: .8em;
+	}
+
+}
 
 

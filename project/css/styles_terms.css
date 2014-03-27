@@ -423,18 +423,6 @@ Media Queries Start
 	}
 }
 
-@media only screen and (max-width: 1050px){
-	form#formulary{
- 		width:99%;
-	}
-}
-
-@media only screen and (max-width: 1024px){
-
-	#personal{
-		width: 98.5%;
-	}
-}
 
 @media only screen and (max-width: 808px){
 	#faq, #social_networks, #contact_us, #terms{

@@ -482,13 +482,6 @@ Media Queries Start
 	
 }
 
-
-@media only screen and (max-width: 1050px){
-	form#formulary{
- 		width:99%;
-	}
-}
-
 @media only screen and (max-width: 1024px){
 
 	#personal{
