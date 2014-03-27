@@ -539,8 +539,19 @@ Media Queries Start
 
 @media only screen and (max-width: 1050px){
 	form#formulary{
- 		width:90%;
+ 		width:99%;
 	}
+}
+
+
+@media only screen and (max-width: 808px){
+	#faq, #social_networks, #contact_us, #terms{
+		display:none;  
+	}
+}
+
+footer.row{
+	border:none;
 }
 
 
@@ -548,7 +559,6 @@ Media Queries Start
 	#sign_in,#register {
 		display:none;
 	}
-	
 	
 	#hamburger_menu{
 		display:block;
