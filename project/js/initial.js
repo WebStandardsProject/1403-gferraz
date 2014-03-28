@@ -65,32 +65,44 @@ $(function(){
 });
 
 
+//hover on divs field, university, effects - added on the WSP project
+// =================
+$('#fields, #universities, #states').hover(
+  function(){
+    $(this).css("background-color","rgb(255,185,95)");
+	$(this).find("img[src$='arrow.png']").fadeTo(300, 1);
+  }
+  	,function(){
+  		$(this).css("background-color","rgb(243,163,73)");
+  		$(this).find("img[src$='arrow.png']").fadeTo(300, 0);
+  	});
+
 //HOME PAGE - sets the hover state of the divs - has to check the clickIndex of the circles because I am changing the color of the circles on click and the hover and click need to be combined together
 //================
-$('#fields, #universities, #states').hover(
-  function() {
-    $(this).css("background-color","rgb(255,185,95)");
-  }
-  
-  	,function() {
-  	
-  if(indexFieldClick%2!==0){
-		$('#fields').css("background-color","rgb(255,185,95)");
-	} else { $('#fields').css("background-color","rgb(243,163,73)");
-	};
-  		
-  if(indexUniversityClick%2!==0){
-	$('#universities').css("background-color","rgb(255,185,95)");
-	} else { $('#universities').css("background-color","rgb(243,163,73)");
-	};
-	
-	if(indexStatesClick%2!==0){
-	$('#states').css("background-color","rgb(255,185,95)");
-	} else {$('#states').css("background-color","rgb(243,163,73)");
-	};
-
-  }
-);
+// $('#fields, #universities, #states').hover(
+//   function() {
+//     $(this).css("background-color","rgb(255,185,95)");
+//   }
+//   
+//   	,function() {
+//   	
+//   if(indexFieldClick%2!==0){
+// 		$('#fields').css("background-color","rgb(255,185,95)");
+// 	} else { $('#fields').css("background-color","rgb(243,163,73)");
+// 	};
+//   		
+//   if(indexUniversityClick%2!==0){
+// 	$('#universities').css("background-color","rgb(255,185,95)");
+// 	} else { $('#universities').css("background-color","rgb(243,163,73)");
+// 	};
+// 	
+// 	if(indexStatesClick%2!==0){
+// 	$('#states').css("background-color","rgb(255,185,95)");
+// 	} else {$('#states').css("background-color","rgb(243,163,73)");
+// 	};
+// 
+//   }
+// );
 
 //sets opacity of the hidden divs to 0
 // ===============
@@ -105,7 +117,7 @@ function fields_first_click(){
 	$('#fields').animate({left: -220}, 2000);
 	$('.hidden_div1').fadeTo(2000, 1);
 	$('#fields').css("background-color","rgb(255,185,95)");
-	$('#fields img[src$="arrow.png"]').fadeTo(1500, 1);
+// 	$('#fields img[src$="arrow.png"]').fadeTo(1500, 1);
 		
 //the code below calls the functions that "close" the divs "university" and "state", and resets the clickIndex of those functions to 0. This means that when the user clicks on a div and there is any other div opened, the div that is open will close. If the click is and odd number, it will call the function that opens the div. If the click is an even number, it will call the function that closes the div. By changing the index to 0, we are re-setting the function to the divs initial state, which is closed. Thus, the function that opens the div will be called on the next click. Another way to solve this problem would be by incrementing the index by 1 (clickIndex++) instead of re-setting it to 0. The result would be the same.
 //==============		
@@ -128,7 +140,7 @@ function fields_first_click(){
 function fields_second_click(){
 	$('#fields').animate({left: 0}, 2000);
 	$('.hidden_div1').fadeTo(2200, 0);
-	$('#fields img[src$="arrow.png"]').fadeTo(1500, 0);
+	// $('#fields img[src$="arrow.png"]').fadeTo(1500, 0);
 	
 //this function takes care of the color transition when the circle comes back to its original place
 //=============
@@ -179,9 +191,9 @@ function clickFields(){
 
 //calls function
 //==============
-$('#fields').click(function(){
-	clickFields();
-});
+// $('#fields').click(function(){
+// 	clickFields();
+// });
 
 //functions that move the university div
 // ===============
@@ -189,7 +201,7 @@ function universities_first_click(){
 	$('#universities').animate({left: -240}, 2000);
 	$('.hidden_div2').fadeTo(2000, 1);
 	$('#universities').css("background-color","rgb(255,185,95)");
-	$('#universities img[src$="arrow.png"]').fadeTo(1500, 1);
+// 	$('#universities img[src$="arrow.png"]').fadeTo(1500, 1);
 				
 //functions that close the other divs (only )if they are open
 //=================		
@@ -210,7 +222,7 @@ function universities_first_click(){
 function universities_second_click(){
 	$('#universities').animate({left: 0}, 2000);
 	$('.hidden_div2').fadeTo(2200, 0);	
-	$('#universities img[src$="arrow.png"]').fadeTo(1500, 0);
+	// $('#universities img[src$="arrow.png"]').fadeTo(1500, 0);
 	
 //this function takes care of the color transition when the circle comes back to its original place
 //=============
@@ -262,9 +274,9 @@ function clickUniversity(){
 //calls function
 //=============
 
-$('#universities').click(function(){
-	clickUniversity();
-});
+// $('#universities').click(function(){
+// 	clickUniversity();
+// });
 
 //functions that move the State div
 // ===============
@@ -272,7 +284,7 @@ function states_first_click(){
 	$('#states').animate({left: -240}, 2000);
 	$('.hidden_div3').fadeTo(2000, 1);
 	$('#states').css("background-color","rgb(255,185,95)");
-	$('#states img[src$="arrow.png"]').fadeTo(1500, 1);	
+	// $('#states img[src$="arrow.png"]').fadeTo(1500, 1);	
 
 //functions that close the other divs (only )if they are open
 //================
@@ -294,7 +306,7 @@ function states_first_click(){
 function states_second_click(){
 	$('#states').animate({left: 0}, 2000);
 	$('.hidden_div3').fadeTo(2200, 0);
-	$('#states img[src$="arrow.png"]').fadeTo(1500, 0);	
+	// $('#states img[src$="arrow.png"]').fadeTo(1500, 0);	
 	
 //this function takes care of the color transition when the circle comes back to its original place
 //=============
@@ -346,9 +358,9 @@ function clickStates(){
 
 //calls function
 //=============
-$('#states').click(function(){
-	clickStates();
-});
+// $('#states').click(function(){
+// 	clickStates();
+// });
 
 //function that displays the search results and moves the screen down
 //=============

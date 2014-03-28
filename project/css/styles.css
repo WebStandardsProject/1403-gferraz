@@ -449,9 +449,9 @@ search options divs - (orange circles)
  */
 
 #fields, #universities, #states{
-	width:/* 260px */ 27.0833333%;
-	height: 242px;
+	width:/* 260px  */29.0833333%;
 	padding:10px;
+	padding-bottom:4.5%;
 	border-radius: 10px;
 	margin-bottom:20px;
 	background:rgb(243,163,73);
@@ -459,7 +459,7 @@ search options divs - (orange circles)
 }
 
 #fields, #universities{
-	margin-right:/* 80px */ 8.4%;
+	margin-right:/* 80px */ 6.3%;
 }
 
 #fields img, #universities img, #states img{
@@ -479,23 +479,35 @@ search options divs - (orange circles)
 	color:#0C6298;
 }
 
+/* 
+.arrow{
+	float: left; 
+	margin-left: 65px; 
+	margin-top: 0;
+	height: 70px;
+	width: 25px;
+}
+ */
+
 #fields .arrow{
 	position: absolute;
-	top: 35%;
-	left:60.5%;
+	top: 30%;
+	left:88%;
 }
 
 #universities .arrow{
 	position: absolute;
-	top: 35%;
-	left:85%;
+	top: 30%;
+	left:88%;
 }
 
 #states .arrow{
 	position: absolute;
-	top: 35%;
-	left:60.5%;
+	top: 30%;
+	left:88%;
 }
+
+
 
  /* 
 hidden divs
@@ -964,11 +976,43 @@ Media Queries Start
 }
 
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1027px){
 
 	#personal{
 		width: 98.5%;
 	}
+	 
+	div#fields, div#universities, div#states{
+		width:100%;
+		font-size: 1.5em;
+		padding-bottom:2%;
+	} 
+	div#fields h2, div#universities h2, div#states h2{
+		margin-bottom:20px;
+		margin-top:25px;
+		margin-right: 215px;
+		float:right;
+	} 
+	
+	div#fields h2{
+		margin-right: 254px;
+	} 
+	
+	div#states h2{
+		margin-right: 247px;
+	} 
+	
+	div#fields img, div#universities img, div#states img{
+		float:left;
+		margin-left: 20px;
+		width:60px;
+		height:60px;
+	} 
+	
+	div#states img{
+		margin-top:25px;
+	}
+	
 }
 
 @media only screen and (max-width: 1005px){
@@ -1053,10 +1097,6 @@ Media Queries Start
 	body{
 		width:100%;
 		padding-top:0;
-		/* 
-background: url("../images/background-mobile.png") no-repeat center center fixed;
-		background-size:cover;
- */
 	}
 	header{
 		background: url("../images/background-mobile.png") no-repeat center center fixed;
