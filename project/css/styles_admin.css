@@ -612,7 +612,19 @@ Media Queries Start
 	p#manage{
 		font-size:1.8em;
 	}
-	
+}
+
+@media only screen and (max-width: 641px){
+	body{
+		width:100%;
+	}
+
+	#job_icons_manage img{
+		width: 80%;
+	}
+	#job_icons_manage img:first-of-type{
+		margin-left:9%;
+	}
 }
 
 @media only screen and (max-width: 390px){
