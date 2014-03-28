@@ -472,6 +472,10 @@ Media Queries Start
 		margin-right: 20px;
 	}
 	
+	#terms_div{
+		padding-top:63px;
+	}
+	
 	#header_div{
 		position:fixed;
 		box-shadow:0 2px 3px #000;
@@ -480,9 +484,15 @@ Media Queries Start
 		height:60px;
 	}
 	
-	nav.row{
-		margin-top:63px;
-		z-index:-1;
+	#nav1{
+		display:none;
+	}
+	 
+	#nav2{
+		display:inline-block;
+		margin-left:0;
+		margin-right:0;
+		width:100%;
 	}
 	
 	nav ul{
