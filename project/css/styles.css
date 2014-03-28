@@ -187,7 +187,6 @@ form search starts
 	margin-right:0;
 	text-align:justify;
 	line-height:30px;
-	letter-spacing:.22px;
 	float:left;
 }
 
@@ -198,7 +197,7 @@ form search starts
 p#search_boxes{
 	float: left;
 	clear:both;
-	margin-top:10px;
+	margin-top:30px;
 	margin-right:0;
 	margin-left:0;
 	width:100%;
@@ -215,7 +214,7 @@ p#search_boxes{
 	text-indent: 5px;
 	border-radius:5px;
 	float:left;
-	margin-right: 1.5%;
+	margin-right: 2.5%;
 }
 
 #submit_hp{
@@ -356,7 +355,7 @@ navigation
  
 nav.row{
 	 padding:0; 
-	 margin-top: 48px;
+	 margin-top: 7%;
 	 clear: both;
 	 background: white;
 	 width: 100%;
@@ -597,9 +596,9 @@ section 1
  
  #resources{
 	/* width:625.3px65.13541667%; */
-	padding: 0 10px 10px 0;
+	padding: 0 10px 0 0;
 	margin-right: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 0;
 	float: left;
 	clear: left;
 	overflow: hidden;
@@ -634,7 +633,7 @@ div resources - inner divs
 }
 
  #tp{
-	padding: 10px 0 10px 15px;
+	padding: 10px 0 0 15px;
 	float: left;
 }
 
@@ -891,6 +890,7 @@ divs section 2
 	text-decoration: underline;
 }
 
+
 /* 
 footer
 ======
@@ -904,7 +904,7 @@ footer.row{
 	color:#0C6298;
 	clear:both;
 	border-top: 1px solid rgba(11,87,146, .3);;
-	margin-top: 20px;
+	margin-top: 84px;
 }
  
 footer p{
@@ -959,8 +959,6 @@ footer a:hover{
 	color: black;
 }
 
-
-
 /* 
 Media Queries Start
 ===================
@@ -978,6 +976,13 @@ Media Queries Start
 	.arrow{
 		display:none;
 	}
+}
+
+@media only screen and (max-width: 1272px){
+	nav.row{
+		margin-top:4%;
+	}
+
 }
 
 
@@ -998,16 +1003,15 @@ Media Queries Start
 		float:right;
 	} 
 	
+	div#fields h2{
+		margin-right:/*  254px */35.8%;
+	} 
 	div#universities h2{
-		margin-right: /* 215px  */22.395833%;
+		margin-right: /* 215px  */26.395833%;
 	}
 	
-	div#fields h2{
-		margin-right:/*  254px */26.458333%;
-	} 
-	
 	div#states h2{
-		margin-right: /* 247px */ 25.79216%;
+		margin-right: /* 247px */ 35%;
 	} 
 	
 	div#fields img, div#universities img, div#states img{
@@ -1032,14 +1036,39 @@ Media Queries Start
 	
 	#call_to_search_p {
 		color: #15619C;
-		font-size: 1.8em;
-		
+		font-size: 1.8em;	
+	}
+}
+@media only screen and (max-width: 900px){
+
+	html{
+		position:relative;
 	}
 	
-}
+	body{
+	 	width:90%;
+	 	position:static;
+	 }
+	 header{
+	 	position:static;
+	 }
+	 
+	 #social_media{
+	 	position:absolute;
+		left: -40px;
+	 	top: 192px;
+	 }
+	 
+	#facebook, #google_plus, #twitter, #linkedin{
+		position:static;
+		margin-top:1px;
+	}
+	
+	#twitter{
+		width:69px;
+		margin-top:1.5px;
+	}
 
-
-@media only screen and (max-width: 900px){
 
 	#call_to_search {
 		font-size: 3.5em;
@@ -1059,8 +1088,6 @@ Media Queries Start
 	#submit_hp{
 		font-size:1.1em;
 	}
-
-	
 }
 
 @media only screen and (max-width: 887px){
@@ -1081,9 +1108,14 @@ Media Queries Start
 	}
 	
 }
-
+@media only screen and (min-width: 641px) and (max-width: 800px){
+	nav.row{
+			margin-top:4%;
+		}
+}
 
 @media only screen and (max-width: 755px){
+	 
 	#sign_in,#register {
 		display:none;
 	}
@@ -1226,7 +1258,6 @@ Media Queries Start
 	
 	nav.row{
 		margin-top:60px;
-		z-index:-1;
 	}
 	
 	nav ul{

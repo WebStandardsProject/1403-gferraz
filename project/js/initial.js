@@ -4,7 +4,7 @@
 
 	$('#form_register').hide();
 	$('.overlay').hide();
-	$('#fields img[src$="arrow.png"], #universities img[src$="arrow.png"], #states img[src$="arrow.png"]').hide();
+	// $('#fields img[src$="arrow.png"], #universities img[src$="arrow.png"], #states img[src$="arrow.png"]').hide();
 	$('#engineering').hide();
 	$('#dialog-confirm').hide();
 	$('#dialog_membership').hide();
@@ -70,11 +70,11 @@ $(function(){
 $('#fields, #universities, #states').hover(
   function(){
     $(this).css("background-color","rgb(255,185,95)");
-	$(this).find("img[src$='arrow.png']").fadeTo(300, 1);
+	// $(this).find("img[src$='arrow.png']").fadeTo(300, 1);
   }
   	,function(){
   		$(this).css("background-color","rgb(243,163,73)");
-  		$(this).find("img[src$='arrow.png']").fadeTo(300, 0);
+  		// $(this).find("img[src$='arrow.png']").fadeTo(300, 0);
   	});
 
 //HOME PAGE - sets the hover state of the divs - has to check the clickIndex of the circles because I am changing the color of the circles on click and the hover and click need to be combined together

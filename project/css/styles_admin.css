@@ -22,7 +22,7 @@ html{
 }
 
 body{
-	width:960px;
+	width:74.5%;
 	margin: 0 auto;
 	font-family: arial, verdana, sans-serif;
 	font-size:62.5%; /* changes the default to 10px*/
@@ -77,11 +77,12 @@ gear/menu
 }
 
 #gear ul{
+	
 	padding-left: 0;
 	margin: 5px 0;
 	position: absolute;
 	top: 53px;
-	left: 43px;
+	left: -10px;
 	width: 110px;
 	z-index: 2;
 }
@@ -157,6 +158,10 @@ jobs folder/menu
 	padding: 15px 0px 15px 20px;
 	background: rgb(67, 137, 196);	
 	color: rgb(245,245,245);
+}
+
+#folder #saved_jobs a{
+	color:white;
 }
 
 #folder ul li:first-child{
@@ -277,10 +282,8 @@ manage jobs area
 ===========
  */
  
-.manage_jobs{
-	width: 185px;
-	margin-left:42.2px;
-	margin-right:0;
+.columns .manage_jobs {
+	padding-right:0;
 	margin-bottom: 30px;
 	border-radius:10px;
 	opacity:.93;
@@ -522,20 +525,21 @@ dialogue box
 	padding: 2px;
 }
 
+
 /* 
 footer
 ======
  */
 
 footer.row{
-	width: 960px;
+	width: 100%;
 	text-align: left;
 	padding-top: 15px;
 	clear:both;
 	color:#0C6298;
 	clear:both;
 	border-top: 1px solid rgba(11,87,146, .3);;
-	margin-top: 20px;
+	margin-top: 84px;
 }
  
 footer p{
@@ -588,6 +592,5 @@ footer a{
 footer a:hover{
 	color: black;
 }
-
 
 

@@ -188,6 +188,7 @@ article
  
 #terms_div{
  	padding-left: 0;
+ 	padding-right: 0;
  	width: 100%;
  }
 
@@ -213,6 +214,10 @@ sign in form overlay
 navigation
 ==========
  */
+ 
+ #nav2{
+		display:none;
+	}
  
 nav.row{
 	 padding:0; 
@@ -472,6 +477,16 @@ Media Queries Start
 		margin-right: 20px;
 	}
 	
+	#section_one{
+		height: 85%;
+	}
+	
+	/* 
+#section_one:hover{
+		overflow:none;
+	}
+ */
+
 	#terms_div{
 		padding-top:63px;
 	}
