@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
 	<meta content="initial-scale=1" name="viewport">
 	<meta name="description" content="Profile and admin section for members registered on Academic Job Search.">
 	<meta name="keywords" content="Jobs in Academia, Scholarly Jobs, University Jobs, Academic Job Search.">
@@ -23,13 +23,14 @@
 		<div class="overlay_one">
 		</div>
 		<header>
-		<div class="row">
-				<div class="small-6 large-4 columns">
+		<!--	<h1>AcademicJobSearch.com</h1> -->
+			<div class="row">
+				<div class="small-4 large-4 columns">
 					<a href="index.html"><img id="image" src="images/logo_academic_jobs_dark_blue_white_handle1.png" alt="logo"></a>
 				</div>
-			
+				
 <!-- folder icons and menu start -->			
-		<div class="small-6  large-4 large-offset-4 columns">
+				<div class="small-4 large-4 small-offset-4 columns">
 					<div class="row">
 						<div class="small-6 columns">
 							<ul id="jobs_folder">
@@ -39,15 +40,19 @@
 									<ul>
 										<li></li>
 										<li>Job Alerts<span id="new_alert">1 new</span></li>
-										<li id="saved_jobs_li"><a href="saved_jobs.html" style="color:white;">Saved Jobs</a></li>
+										<li id="saved_jobs"><a href="saved_jobs.html">Saved Jobs</a></li>
 										<li>Jobs Applied</li>
 										<li>Search Log</li>
 										<li>Resources</li>
+										<li>Terms of Use</li>
+										<li>Home</li>
 									</ul>
 								</li>
 							</ul>	
-						</div>	
-						<div class="small-6 columns">
+						</div>
+					
+<!-- gear icons and menu start -->		
+						<div class="small-6 large-4 columns">	
 							<ul id="profile_gear">
 								<li id="gear">
 									<img id="first_gear" src="images/gear.png"></img>
@@ -60,35 +65,34 @@
 										<li id="logout">Log Out</li>
 									</ul>
 								</li>
-							</ul>	
-						</div>	
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>	
-	</header>
+		</header>
 		
 <!-- welcome/manage jobs section starts -->
 	<article>	
 		<section id="welcome_section">
 			<div class="row">
-				<div class="show-for-medium-up medium-6 medium-centered columns">
+				<div class="small-12 small-centered columns">
 					<img id = "avatar" src = "images/avatar.png"></img>
 					<p id="admin_welcome">Welcome, User</p>
 					<p id="manage">Start Managing Your Jobs</p>
 				</div>	
 			</div>
-			<div class="row">
-				<div class="small-12 medium-6 large-3 columns" style="margin-bottom:20px;">		
+			<div class="row" id="job_icons_manage">
+				<div class="small-6 medium-3 large-3 columns">		
 					<a href ="#"><img id="search" class="manage_jobs" src = "images/search_jobs(light).png"></img></a>
 				</div>
-				<div class="small-12 medium-6 large-3 columns" style="margin-bottom:20px;">
+				<div class="small-6 medium-3 large-3 columns">
 					<a href ="#"><img id="saved" class="manage_jobs" src = "images/job_alert.png"></img></a>
 				</div>
-				<div class="small-12 medium-6 large-3 columns" style="margin-bottom:20px;">
+				<div class="small-6 medium-3 large-3 columns">
 					<a href ="saved_jobs.html"><img id="alert" class="manage_jobs" src = "images/saved_jobs.png"></img></a>	
 				</div>
-				<div class="small-12 medium-6 large-3 columns">
+				<div class="small-6 medium-3 large-3 columns">
 					<a href ="#"><img id="applied" class="manage_jobs" src = "images/jobs_applied.png"></img></a>	
 				</div>	
 			</div>
@@ -104,19 +108,10 @@
 						<input id="submit" type="submit" value="Find Jobs">  
 					</div>                           
 				</form>
-			</section>
-			
-			<section id="sidebar" class="small-12 medium-4 large-4 columns">
-				<h3 id="selected_jobs">SAVED JOBS</h3>
-				<div id="middle_column">
-					<p id="p_middleColumn">Perform a search and save jobs to this area. Jobs will automatically be saved to your "Saved Jobs" main tab</p>
-				</div>
-			</section>
 				
-				
-				<div id="print_results">
-<!-- results will be printed here -->
-				</div>
+					<div id="print_results">
+	<!-- results will be printed here -->
+					</div>
 		
 			<!--		<div id="dialog-confirm">
 						<p id="dialogue_title">Delete this job?
@@ -127,11 +122,19 @@
 						<button id="cancel">Cancel</button>
 						<button id="ok">Ok</button>
 					</div>		-->
-		</div>		
+				
+				</section>
 		
-			
-
+				<!-- 
+<section id="sidebar" class="show-for-medium-up medium-4 large-4 columns">
+					<h3 id="selected_jobs">SAVED JOBS</h3>
 		
+					<div id="middle_column">
+						<p id="p_middleColumn">Perform a search and save jobs to this area. Jobs will automatically be saved to your "Saved Jobs" main tab</p>
+					</div>
+			</section>
+ -->
+		</div>
 	</article>						
 				
 <!-- footer starts -->
@@ -144,11 +147,11 @@
 					<h3>Social Networks</h3>
 					<p>Connect with us via social media</p></a>
 				</div>
-				<div id="contact_us" class="small-6 medium-3 large-3 columns"><a href="contact.html">
+				<div id="contact_us" class="small-6 medium-3 large-3 columns show-for-medium-up"><a href="contact.html">
 					<h3>Contact Us</h3>
 					<p>Ask questions or make suggestions</p></a>
 				</div>
-				<div id="terms" class="small-6 medium-3 large-3 columns"><a href="terms.html">
+				<div id="terms" class="small-6 medium-3 large-3 columns show-for-medium-up"><a href="terms.html">
 					<h3>Terms of Use</h3>
 					<p>Learn about our policies</p></a>
 				</div>
@@ -158,7 +161,7 @@
 		<script type ="text/javascript" src="js/vendor/fastclick.js">
 		<script type ="text/javascript" src= "js/jquery-1.11.0.min.js"></script>
 		<script type ="text/javascript" src="js/foundation.min.js">
-		<script type ="text/javascript" src= "js/jquery-ui-1.10.4.custom.min.js"></script>
+		<script type ="text/javascript" src= "js/jquery-ui-1.10.4.custom.min.js"></script> 
 		<script type ="text/javascript" src = "js/initial.js"></script>
 		 <script>
   			$(document).foundation();

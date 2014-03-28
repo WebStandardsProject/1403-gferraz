@@ -4,7 +4,7 @@
 
 	$('#form_register').hide();
 	$('.overlay').hide();
-	// $('#fields img[src$="arrow.png"], #universities img[src$="arrow.png"], #states img[src$="arrow.png"]').hide();
+	// ('#fields img[src$="arrow.png"], #universities img[src$="arrow.png"], #states img[src$="arrow.png"]').hide();
 	$('#engineering').hide();
 	$('#dialog-confirm').hide();
 	$('#dialog_membership').hide();

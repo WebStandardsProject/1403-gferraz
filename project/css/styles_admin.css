@@ -77,12 +77,11 @@ gear/menu
 }
 
 #gear ul{
-	
 	padding-left: 0;
-	margin: 5px 0;
+	margin-top: 5px;
+	margin-left:14%;
 	position: absolute;
 	top: 53px;
-	left: -10px;
 	width: 110px;
 	z-index: 2;
 }
@@ -244,9 +243,7 @@ welcome
 p#admin_welcome{
  	clear: both;
 	font-size: 4.3em;
-	margin: 0 auto;
 	padding: 0 20px;
-	width: 360px;
 	text-align: center;
 	color: rgb(21,97,156);
 }
@@ -261,7 +258,7 @@ p#admin_welcome{
 }
  
 #welcome_section{
-	padding-bottom: 100px;
+	padding-bottom: /* 100px */ 7%;
 }
 
 #avatar{
@@ -281,6 +278,10 @@ p#admin_welcome{
 manage jobs area 
 ===========
  */
+ 
+ #job_icons_manage img{
+ 	width: 100%;
+ }
  
 .columns .manage_jobs {
 	padding-right:0;
@@ -539,7 +540,7 @@ footer.row{
 	color:#0C6298;
 	clear:both;
 	border-top: 1px solid rgba(11,87,146, .3);;
-	margin-top: 84px;
+	margin-top: 5%;
 }
  
 footer p{
@@ -592,5 +593,53 @@ footer a{
 footer a:hover{
 	color: black;
 }
+
+
+/* 
+Media Queries Start
+===================
+ */
+
+
+
+@media only screen and (max-width: 1024px){
+	p#admin_welcome{
+		font-size:3.8em;
+		padding-left:0;
+		padding-right:0;
+	}
+
+	p#manage{
+		font-size:1.8em;
+	}
+	
+}
+
+@media only screen and (max-width: 390px){
+	p#admin_welcome{
+		font-size:3.5em;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	p#admin_welcome{
+		font-size:3em;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	p#admin_welcome{
+		font-size:2.6em;
+	}
+
+	p#manage{
+		font-size:1.4em;
+	}
+	
+}
+
+
+
+
 
 

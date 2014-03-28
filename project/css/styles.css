@@ -479,33 +479,18 @@ search options divs - (orange circles)
 	color:#0C6298;
 }
 
-/* 
-.arrow{
-	float: left; 
-	margin-left: 65px; 
-	margin-top: 0;
-	height: 70px;
-	width: 25px;
-}
- */
-
 #fields .arrow{
-	position: absolute;
-	top: 30%;
-	left:88%;
+	display:none;
 }
 
 #universities .arrow{
-	position: absolute;
-	top: 30%;
-	left:88%;
+	display:none;
 }
 
 #states .arrow{
-	position: absolute;
-	top: 30%;
-	left:88%;
+	display:none;
 }
+
 
 
 
@@ -524,12 +509,6 @@ hidden divs
 	float:left;
 }
 
-/* 
-.hidden_div1, .hidden_div2{
-	margin-right:23px;
-}
- */
-
 .hidden_div1{
 	position: absolute;
 }
@@ -544,9 +523,7 @@ hidden divs
 	position: absolute;
 	top:60px;
 	left:695px;
-
 }
-
 
 .dropbox{
 	width: 200px;
@@ -1024,7 +1001,26 @@ Media Queries Start
 	div#states img{
 		margin-top:25px;
 	}
-	
+	#fields .arrow{
+	position: absolute;
+	top: 30%;
+	left:88%;
+	display:block;
+}
+
+#universities .arrow{
+	position: absolute;
+	top: 30%;
+	left:88%;
+	display:block;
+}
+
+#states .arrow{
+	position: absolute;
+	top: 30%;
+	left:88%;
+	display:block;
+}
 }
 
 @media only screen and (max-width: 1005px){
@@ -1135,17 +1131,11 @@ Media Queries Start
 	#call_to_search{
 		font-size: 2.8em;
 	}
-	.arrow{
-		display:none;
-	}
 }
 
 @media only screen and (max-width: 724px){
 	#call_to_search{
 		font-size: 2.43em;
-	}
-	.arrow{
-		display:none;
 	}
 }
 
@@ -1210,7 +1200,6 @@ Media Queries Start
 		height:60px;
 	}
 	
-	
 	#call_to_search, #call_to_search_p{
 		display:none;
 	}
@@ -1237,7 +1226,6 @@ Media Queries Start
 		margin-top:120px;
 		width:100%;
 	}
-	
 
 	#location{
 		display:none;
@@ -1325,15 +1313,12 @@ Media Queries Start
 	#placehoder_mobile{
 		font-size: 1.1em;
 	}
-
 }
-
 
 @media only screen and (max-width:350px) {
 	#placehoder_mobile{
 		font-size: .8em;
 	}
-
 }
 
 
