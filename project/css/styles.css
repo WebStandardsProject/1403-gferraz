@@ -990,16 +990,19 @@ Media Queries Start
 	div#fields h2, div#universities h2, div#states h2{
 		margin-bottom:20px;
 		margin-top:25px;
-		margin-right: 215px;
 		float:right;
 	} 
 	
+	div#universities h2{
+		margin-right: /* 215px  */22.395833%;
+	}
+	
 	div#fields h2{
-		margin-right: 254px;
+		margin-right:/*  254px */26.458333%;
 	} 
 	
 	div#states h2{
-		margin-right: 247px;
+		margin-right: /* 247px */ 25.79216%;
 	} 
 	
 	div#fields img, div#universities img, div#states img{
@@ -1075,6 +1078,10 @@ Media Queries Start
 	#sign_in,#register {
 		display:none;
 	}
+	div#fields h2, div#universities h2, div#states h2{
+		font-size:1.8em;
+	} 
+}
 	
 	#hamburger_menu{
 		display:block;
