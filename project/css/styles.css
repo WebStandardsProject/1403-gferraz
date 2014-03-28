@@ -953,7 +953,7 @@ Media Queries Start
 ===================
  */
 
-@media only screen and (min-width: 755px){
+@media only screen and (max-width: 2000px){
 	#hamburger_menu{
 		display:none;
 	}
@@ -1053,14 +1053,21 @@ Media Queries Start
 	body{
 		width:100%;
 		padding-top:0;
+		/* 
+background: url("../images/background-mobile.png") no-repeat center center fixed;
+		background-size:cover;
+ */
+	}
+	header{
 		background: url("../images/background-mobile.png") no-repeat center center fixed;
 		background-size:cover;
 	}
-	header{
-		background: none;
-	}
-	header ul:nth-child(1){
+	
+	header ul#social_media{
 		display: none;
+	}
+	#content_mobile{
+		overflow:hidden;
 	}
 	
 	article{
@@ -1146,14 +1153,14 @@ Media Queries Start
 		max-height:100%;
 		border: 3px solid rgb(198, 120, 36);
 		border-radius:50%;
-		font-size: 1.6em;
+		font-size: 1.55em;
 		margin: 0 auto;
 		display:block;
 		float:none;
 	}
 	
 	nav.row{
-		margin-top:0;
+		margin-top:60px;
 		z-index:-1;
 	}
 	
