@@ -209,7 +209,8 @@ p#search_boxes{
 	height:45px;
 	border: 2px solid rgb(237,155,67);
 	font-size: 1.7em;
-	color: rgb(150,150,150);
+	color: rgb(130,130,130);
+	background: rgba(255,255,255,.6);
 	font-style: oblique;
 	text-indent: 5px;
 	border-radius:5px;
@@ -217,7 +218,7 @@ p#search_boxes{
 	margin-right: 1.5%;
 }
 
-#submit{
+#submit_hp{
 	width:25%;
 	height:45px;
 	padding-top: 3px;
@@ -232,7 +233,7 @@ p#search_boxes{
 	float:left;
 }
 
-#submit:hover{
+#submit_hp:hover{
 	background-color:rgb(233,153,55);
 	cursor:pointer;
 }
@@ -973,6 +974,10 @@ Media Queries Start
 	#icon_logo{
 		display:none;
 	}
+	
+	.arrow{
+		display:none;
+	}
 }
 
 
@@ -1047,11 +1052,11 @@ Media Queries Start
 		
 	}
 	
-	#keyword, #location{
+	#key_word, #location{
 		font-size:1.5em;
 	}
 	
-	#submit{
+	#submit_hp{
 		font-size:1.1em;
 	}
 
@@ -1071,6 +1076,10 @@ Media Queries Start
 	footer.row{
 		border:none;
 	}
+	#submit_hp{
+		font-size:1em;
+	}
+	
 }
 
 
@@ -1085,17 +1094,26 @@ Media Queries Start
 	#hamburger_menu{
 		display:block;
 	}
+	#submit_hp{
+		font-size:.9em;
+	}
 }
 
 @media only screen and (max-width: 745px){
 	#call_to_search{
 		font-size: 2.8em;
 	}
+	.arrow{
+		display:none;
+	}
 }
 
 @media only screen and (max-width: 724px){
 	#call_to_search{
 		font-size: 2.43em;
+	}
+	.arrow{
+		display:none;
 	}
 }
 
@@ -1171,7 +1189,8 @@ Media Queries Start
 		height:45px;
 		border: 2px solid rgb(237,155,67);
 		font-size: 1.5em;
-		color: rgb(150,150,150);
+		color: rgb(140,140,140);
+		background: rgba(255,255,255,.65);
 		font-style: oblique;
 		text-indent: 5px;
 		border-radius:5px;
@@ -1192,7 +1211,7 @@ Media Queries Start
 		display:none;
 	}
 	
-	#submit{
+	#submit_hp{
 		width:150px;
 		max-width:100%;
 		height:150px;

@@ -307,7 +307,6 @@ form#contact img{
  
 #sign_up_header{
 	 width: 100%;
-	 background-color: rgba(247, 215, 122, 0.1);
 	 color: #15619C;
 	 font-size: 3em;
 	 padding-top: 40px;
@@ -591,6 +590,7 @@ Media Queries Start
 	#sign_up_header{
 		text-align:center;
 		margin-left:0;
+		 background-color: rgba(247, 215, 122, 0.1);
 	}
 	
 	#personal{
