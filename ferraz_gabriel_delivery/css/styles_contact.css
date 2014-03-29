@@ -1,0 +1,637 @@
+/* 
+html classes
+============
+ */
+
+.clear{
+	clear:both;
+}
+
+.float_left{
+	float: left;
+}
+
+
+
+/* 
+main body
+=========
+ */
+
+
+body{
+	width:74.5%;
+	margin:0 auto;
+	padding-top: 10px;
+	font-family: arial, verdana, sans-serif;
+	font-size:62.5%; /* changes the default to 10px*/
+}
+
+article{
+	width: 100%;
+	background: linear-gradient(rgb(250, 250, 250), rgb(255, 255, 255));
+}
+
+
+/* 
+header elements
+===============
+ */
+
+header{
+	position: relative;
+	overflow: hidden;
+}
+
+h1{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	float: left;
+	display:none;
+}
+
+#image{
+	position: absolute;
+	top:5px;
+	left:10px;
+	width: 290px;
+}
+
+header p{
+	text-align: right;
+	margin-right:20px;
+	margin-top:30px;
+	float: right;
+}
+
+#signIn_signUp{
+	margin-top: 30px;
+	margin-right:0;
+}
+
+#register a{
+	margin-right: 10px;
+	margin-left: 12px;
+	font-size:1em;
+	text-decoration:none;
+	background-color:rgb(237,155,67);
+	border-radius:5px;
+	padding: 12px 16px;
+	color: white;
+}
+
+#register a:hover{
+	background-color:rgb(233,153,55);
+	color: white;
+	text-shadow: 0 0 0 white;
+}
+
+#sign_in a{
+	font-size:1em;
+	text-decoration:none;
+	color: #15619C;
+	padding: 12px 16px;
+	text-shadow: 0 0 0 #15619C;
+	border-right: 1px solid black;
+}
+
+#sign_in a:hover{
+	color:rgb(1,77,136);
+	text-decoration: underline;
+}
+
+/* 
+form register
+========
+ */
+ 
+ header form p {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom:0;
+    text-align: left;
+}
+
+header form p:nth-child(2) {
+	margin-top:10px;
+}
+
+header form input#login_name, header form input#password {
+	height: 30px;
+	width: 241px;	
+}
+ 
+ #form_register{
+ 	position: fixed;
+ 	z-index: 10;
+ 	top: 80px;
+ 	right: 100px;
+ 	width: 285px;
+ 	height: 210px;
+ 	background-color:rgb(253,173,83);
+ 	color: #15619C;
+ 	border: 2px solid rgb(5,40,101);
+	border-radius: 5px;
+
+ }
+ 
+  #login_name{
+ -moz-box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-family: inherit;
+    font-size: 0.875rem;
+    height: 2.3125rem;
+    margin: 0;
+    padding: 0;
+    transition: box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;
+    width: 100%;
+ }
+ 
+ #btn_register{
+ 	margin:0 15px;
+ }
+ 
+ #register_submit{
+ 	font-size:0.8em;
+	text-decoration:none;
+	background-color: #15619C;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius:5px;
+	padding: 10px 15px;
+	color: rgb(245,245,245);
+ }
+ 
+#register_submit:hover{
+  	background-color:rgb(11,87,146);
+	color: white;
+	box-shadow: 0 0 .5px #000;
+	cursor: pointer;
+}
+
+#form_register_forgot{
+	float:left;
+	margin-left: 25px;
+	margin-right:0;
+	font-size:1.1em;
+	margin-top:15px;
+}
+
+#form_register_forgot a{
+	font-style: oblique;
+	font-size: 1.2em;
+	color:#15619C;
+}
+
+#emblem{
+	width:85%;
+}
+/* 
+sign in form overlay
+====================
+ */
+ 
+ .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* 
+navigation
+==========
+ */
+ 
+ #nav2{
+ 	display:none;
+ }
+ 
+nav.row{
+	 padding:0; 
+	 margin-top: 98px;
+	 float: left;
+	 clear: both;
+	 background: white;
+	 width: 100%;
+	 overflow:hidden;
+}
+
+nav ul{
+	display: inline-block;
+	min-height:10px;
+	text-align: center;
+	width: 100%;
+	clear: both;
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:0;
+	border-top: 1px solid rgb(237,155,67);
+	border-bottom: 1px solid rgb(237,155,67);
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	text-align: center; 
+	text-transform: uppercase;
+	font-weight: bold; 
+	float: left;
+	line-height:1px;
+	font-size: 1em;
+}
+
+nav ul li a{
+	width:210px;
+}
+
+nav ul li:hover{
+	background-color:rgba(237,155,67,.8);
+}
+
+ nav ul li a{
+	text-decoration: none;
+	color: #15619C;
+	display: inline-block;
+	height: 46px;
+	line-height:46px;
+}
+
+nav ul li:hover a{
+	color:rgb(245,245,245);
+}
+
+
+/* 
+font styles/sizes
+=================
+ */
+
+
+h2{
+	font-size:2.2em;
+	margin:0;
+	padding:0;
+}
+
+h3{
+	font-size:1.8em;
+	margin-top:0;
+}
+
+p{
+	font-size: 1.6em;
+}
+
+/* 
+form styles
+===========
+ */
+ 
+ form#contact{
+ 	width: 100%;
+ 	min-height: 50px;
+ 	overflow: hidden;
+ 	clear: both;
+ 	background: linear-gradient(rgb(250, 250, 250), rgb(255, 255, 255));
+ }
+ 
+form#contact img{
+ 	position: absolute;
+ 	top: 95px;
+ }
+ 
+#sign_up_header{
+	 width: 100%;
+	 color: #15619C;
+	 font-size: 3em;
+	 padding-top: 40px;
+	 padding-bottom: 10px;
+	 margin-left: 3px;
+	 float: left;
+}
+ 
+#personal{
+	position:relative;
+	width: 99%;
+	border-radius: 5px;
+	overflow: hidden;
+	float: left;
+	clear:left;
+	margin-left: 5px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	background-color:rgba(247,215,122, 0.1);
+	color: #15619C;
+	margin-bottom: 10px;
+	box-shadow: 0 0 2px #000;
+}
+
+ 
+
+form#contact textarea{
+	min-height: 105px;
+	max-height: 250px;
+	max-width: 100%;
+	min-width:50%;
+	padding-top: 5px;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+}
+
+
+form#contact input:focus{
+	background:rgba(21,97,156, .1);
+}
+
+form#contact label{
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+ 
+.red{
+ 	color: red;
+ }
+ 
+ .textfield_heading{
+ 	margin-top:10px;
+ 	margin-bottom:5px;
+ 	color:#4D4D4D;
+ 	font-size:1.4em;
+ }
+ 
+ p#btn{
+ 	width: 210px;
+ 	margin: 0 auto;
+ }
+ 
+form#contact #btn{
+ 	float:left;
+ 	margin-top: 30px;
+ 	width:100%;
+ }
+ 
+form#contact #submit{
+ 	font-size: 2em;
+ 	font-weight: bold;
+ 	width: 210px;
+ 	height: 60px;
+ 	background-color:rgb(237,155,67);
+	color: rgb(245,245,255);
+	border-radius: 10px;
+	text-transform: uppercase;
+	display:block;
+	margin: 0 auto;
+	border: none;
+ }
+ 
+form#contact #submit:hover{
+ 	background-color:rgb(233,153,55);
+	color: white;
+	cursor: pointer;
+	text-shadow: 0 0 0 white;
+ }
+
+
+/* 
+footer
+======
+ */
+
+footer.row{
+	width: 100%;
+	text-align: left;
+	padding-top: 15px;
+	clear:both;
+	color:#0C6298;
+	clear:both;
+	border-top: 1px solid rgba(11,87,146, .3);;
+	margin-top: 84px;
+}
+ 
+footer p{
+	clear: both;
+	padding-top:5px;
+	margin-top: 0px;
+	color:#0C6298;
+}
+
+p#copyright{
+	text-align: center;
+	background:linear-gradient(rgb(12,98,152),rgb(2,88,142) );
+	color:rgb(245,245,245);
+	padding: 10px 0;
+	margin-bottom:0;
+	font-size: 1.4em;
+}
+
+#faq{
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+#social_networks{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#contact_us{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#terms{
+	padding-left: 30px;
+	padding-right: 0;
+}
+
+#faq h3, #links h3, #social_networks h3, #contact_us h3, #terms h3 {
+	/* color:#0C6298; */
+	color:rgb(237,155,67);
+	padding-bottom: 5px;
+	margin-bottom:0;
+}
+
+footer a{
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover{
+	color: black;
+}
+
+
+/* 
+Media Queries Start
+===================
+ */
+
+@media only screen and (max-width: 2000px){
+	#hamburger_menu{
+		display:none;
+	}
+	
+	#icon_logo{
+		display:none;
+	}
+	
+}
+
+@media only screen and (max-width: 1024px){
+
+	#personal{
+		width: 98.5%;
+	}
+
+}
+
+@media only screen and (max-width: 808px){
+	#faq, #social_networks, #contact_us, #terms{
+		display:none;  
+	}
+	footer.row{
+		border:none;
+	}
+}
+
+
+@media only screen and (max-width: 755px){
+	#sign_in,#register {
+		display:none;
+	}
+	
+	#hamburger_menu{
+		display:block;
+	}
+}
+
+@media only screen and (max-width:641px) {
+	body{
+		width:100%;
+		padding-top:0;
+	}
+	
+	#image{
+		display:none;
+	}
+	
+	#icon_logo{
+		display:block;
+		width:40px;
+		margin-top: 10px;
+		margin-left:20px;
+	}
+	#signIn_signUp{
+		margin-top: 15px;
+	}
+	
+	#hamburger_menu{
+		margin-right: 20px;
+	}
+	
+	#header_div{
+		position:fixed;
+		box-shadow:0 2px 3px #000;
+		z-index:3;
+		background-color: rgba(243,243,243,.9);
+		height:60px;
+	}
+	
+	#nav1{
+		display:none;
+	 }
+	
+	#nav2{
+		display:block;
+	}
+	nav.row{
+		margin-top:63px;
+	}
+	
+	nav ul{
+ 		font-size: 1rem; 
+ 		border:none;
+ 		color:rgb(245,245,245);
+	}
+	
+	nav ul li {
+		border-bottom: 1px solid #fff;
+		background-color:rgba(237,155,67,.8);
+	}
+	
+	nav ul li:first-child{
+		border-top: 1px solid rgba(237,155,67,.8);
+	}
+	
+	nav ul li:last-of-type{
+		border-bottom: 1px solid rgba(237,155,67,.8);
+	}
+	
+	nav ul li a{
+		color:rgb(245,245,245);
+	}
+	
+	nav ul li:active a{
+		color: #15619C;
+		background-color:white;
+	}
+	
+	nav ul li:active{
+		background-color:white;
+	}
+	
+	nav ul li:hover a{
+		color: #15619C;
+	}
+	
+	nav ul li:hover{
+		background-color:white;
+	}
+	
+	#sign_up_header{
+		text-align:center;
+		margin-left:0;
+		 background-color: rgba(247, 215, 122, 0.1);
+	}
+	
+	#personal{
+		width: 100%;
+		border:none;
+		box-shadow:none;
+		margin:0;
+		padding-bottom:84px;
+	}
+	
+	form#contact{
+		margin-bottom:0;
+		padding-top:63px;
+	}
+
+	
+	footer.row{
+		margin-top:0px;
+		padding-top:0;
+	}
+	
+	#contact_us, #terms{
+		display:none;
+
+	}
+}
+
+
+
+
+
+
+
+

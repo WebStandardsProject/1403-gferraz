@@ -780,7 +780,7 @@ dialogue box
 }
 
 #dialog_membership hr{
-	margin-bottom: 15px;
+	margin:0;
 }
 
 #dialog_membership:hover{
@@ -808,7 +808,7 @@ dialogue box
 }
 
 #become_member{
-	margin-left: 185px;
+	margin-left: 160px;
 	background-color:rgb(243,163,73);
 	color: white;
 	font-size: 1.9em;
