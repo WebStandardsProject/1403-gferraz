@@ -9,6 +9,7 @@
 	$('#dialog-confirm').hide();
 	$('#dialog_membership').hide();
 	$('.overlay_dialog').hide();
+// 	$('#jobs').accordion();
 	
 // ADMIN PAGE
 // 	==========
@@ -63,6 +64,47 @@ $(function(){
 	$('#universities').css("position","relative");
 	$('#states').css("position","relative");
 });
+
+
+// HOME PAGE SEARCH
+// ================
+
+$('#submit_hp').click(function(e){
+	e.preventDefault();
+	
+	$keyword = $('#key_word').val();
+	$location = $('#location').val();
+	$('#section_one').css('display','block');
+	$('#sidebar').css('display','block');
+	
+	if($keyword== ''){
+		alert("This search generated no results. Please enter a keyword");
+		$keyword= $('#key_word').val('');//clears the input field
+		$location=$('#location').val('');//clears the input fields
+		console.log('if statement 1');
+	} else if($keyword.toLowerCase()!== 'engineering'){
+		alert("This search generated no results. Please enter a different keyword(hint: engineering)" +":)");
+		$keyword= $('#key_word').val('');
+		$location=$('#location').val('');
+		console.log('if statement 1');
+	} else if($keyword.toLowerCase()=="engineering" && $location.toLowerCase()=="florida"){
+		$('#section_one').css('z-index','1');
+		$('#engineering').slideDown();
+		$('html, body').animate({scrollTop: $('#section3').offset().top},1800);
+		// $('#jobs').accordion();
+		$keyword= $('#key_word').val('');
+		$location=$('#location').val('');
+		console.log('if statement 2');
+	} else if($keyword.toLowerCase()== "engineering" && $location== ""){
+		// $('#jobs').accordion();
+		$('#section_one').css({zIndex:'1', paddingTop:'20px'});
+		$('#engineering').slideDown();
+		$('html, body').animate({scrollTop: $('#section3').offset().top},1800);
+		$keyword= $('#key_word').val('');
+		$location=$('#location').val('');
+	}	
+});//closes the click function ($('#submit_hp').click(function(e))
+//===============
 
 
 //hover on divs field, university, effects - added on the WSP project

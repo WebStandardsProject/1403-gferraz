@@ -658,6 +658,10 @@ Media Queries Start
 		margin-top: 10px;
 		margin-left:20px;
 	}
+	
+	#avatar{
+		width:25%;
+	}
 
 	#gear ul{
 		top: 39px;
