@@ -659,6 +659,14 @@ Media Queries Start
 		margin-left:20px;
 	}
 	
+	header>div.row{
+		position:fixed;
+		box-shadow:0 2px 3px #000;
+		z-index:3;
+		background-color: rgba(243,243,243,.9);
+		height:60px;
+	}
+	
 	#avatar{
 		width:25%;
 	}
