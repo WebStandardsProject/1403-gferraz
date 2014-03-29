@@ -35,6 +35,17 @@ article{
 	background-color: none;
 }
 
+#print_results{
+	float:left;
+	margin-left:10px;
+}
+
+#print_results h2{
+	color: #0C6298;
+}
+
+
+
 
 /* 
 header elements
@@ -60,6 +71,10 @@ h1{
 	top:15px;
 	left:10px;
 	width: 290px;
+}
+
+#icon_logo{
+	display:none;
 }
 
 /* 
@@ -324,7 +339,7 @@ section one
  */
 
 #section_one{
-	width:581px;
+	width:100%;
 	padding: 10px;
 	padding-top:0;
 	margin-bottom: 30px;
@@ -333,7 +348,7 @@ section one
 	float: left;
 	clear: left;
 	overflow: hidden;
-	display: none; 
+	display:none;
 }
 
 /* 
@@ -625,11 +640,64 @@ Media Queries Start
 	#job_icons_manage img:first-of-type{
 		margin-left:9%;
 	}
+	#image{
+		display:none;
+	}
+	#icon_logo{
+		display:block;
+		width:40px;
+		margin-top: 10px;
+		margin-left:20px;
+	}
+
+	#gear ul{
+		top: 39px;
+	}
+
+	#first_gear{
+		top:14px;
+	}
+
+	#second_gear{
+		top:14px;
+	}
+	
+	#folder ul{
+		top: 42px;
+	}
+
+	#first_folder{
+		top:17px;
+	}
+
+	#second_folder{
+		top:17px;
+	}
+	
+	#alert_number{
+		top:12px;
+	}
 }
 
 @media only screen and (max-width: 390px){
 	p#admin_welcome{
 		font-size:3.5em;
+	}
+	
+	#folder ul{
+		top: 42px;
+	}
+
+	#first_folder{
+		margin-left: 20px;
+	}
+
+	#second_folder{
+		margin-left: 20px;
+	}
+	
+	#alert_number{
+		right: 63px;
 	}
 }
 

@@ -211,6 +211,10 @@ navigation
 ==========
  */
  
+ #nav2{
+ 	display:none;
+ }
+ 
 nav.row{
 	 padding:0; 
 	 margin-top: 98px;
@@ -542,9 +546,15 @@ Media Queries Start
 		height:60px;
 	}
 	
+	#nav1{
+		display:none;
+	 }
+	
+	#nav2{
+		display:block;
+	}
 	nav.row{
 		margin-top:63px;
-		z-index:-1;
 	}
 	
 	nav ul{
@@ -603,6 +613,7 @@ Media Queries Start
 	
 	form#contact{
 		margin-bottom:0;
+		padding-top:63px;
 	}
 
 	

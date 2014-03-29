@@ -5,6 +5,8 @@ div hidden job results
  
  #search_results{
  	z-index: 10;
+ 	width:100%;
+ 	
  }
 
 #search_results h2{
@@ -13,9 +15,7 @@ div hidden job results
 }
 
 #print_results h2{
-	float: left;
 	color: rgb(12, 98, 152);
-	display: block;
 }
 
  #job_results{
@@ -27,6 +27,7 @@ div hidden job results
 }
 
 .full_result{
+	width:100%;
 	float: left;
 	border: 1px solid rgb(237,155,67);
 	border-radius: 5px;
@@ -88,7 +89,7 @@ div hidden job results
 .save_job{
 	color:#15619C;
 	opacity: .85;
-	margin-left: 305px;
+	margin-left: 605px;
 	font-Style: normal;
 	font-weight: bold;
 }

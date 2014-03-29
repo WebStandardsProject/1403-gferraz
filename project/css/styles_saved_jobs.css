@@ -22,10 +22,11 @@ html{
 }
 
 body{
-	width:960px;
+	width:74.5%;
 	margin: 0 auto;
 	font-family: arial, verdana, sans-serif;
 	font-size:62.5%; /* changes the default to 10px*/
+	background-image: url('../images/light_background(80percent).png');
 }
 
 article{
@@ -41,7 +42,8 @@ header elements
 
 header{
 	position:relative;
-	padding-bottom: 150px;
+	padding-bottom: 110px;
+	background: none;
 }
 
 h1{
@@ -75,20 +77,21 @@ gear/menu
 
 #gear ul{
 	padding-left: 0;
-	margin: 5px 0;
+	margin-top: 5px;
+	margin-left:14%;
 	position: absolute;
 	top: 53px;
-	left: 855px;
-	width: 105px;
+	width: 110px;
 	z-index: 2;
 }
 
 #gear ul li{
 	list-style:none;
-	width: 80px;
-	padding: 15px 5px 15px 20px;
+	width: 100px;
+	padding: 15px 5px 15px 18px;
 	background: rgb(67, 137, 196);
 	color: rgb(245,245,245);
+	font-size: .8em;
 }
 
 #gear ul li:first-child{
@@ -102,6 +105,7 @@ gear/menu
 	background: rgb(47, 117, 176);
 	color: rgb(250,250,250);
 	cursor: pointer;
+	list-style:none;
 }
 
 #gear{
@@ -140,10 +144,9 @@ jobs folder/menu
 
 #folder ul{
 	padding-left: 0;
-	/* text-align: center; */
 	margin: 5px auto;
 	position: absolute;
-	top: 53px;
+	top: 51px;
 	z-index: 2;
 }
 
@@ -151,13 +154,16 @@ jobs folder/menu
 	list-style:none;
 	width: 110px;
 	padding: 15px 0px 15px 20px;
-	background: rgb(67, 137, 196);
-	/* border-bottom: 1px solid #000; */	
+	background: rgb(67, 137, 196);	
 	color: rgb(245,245,245);
 }
 
+#folder #saved_jobs a{
+	color:white;
+}
+
 #folder ul li:first-child{
-	height: 3px;
+	height: 4px;
 	opacity:0;
 	padding:0;
 }
@@ -165,7 +171,6 @@ jobs folder/menu
 #folder ul li:hover{
 	background: rgb(47, 117, 176);
 	color: rgb(250,250,250);
-	/* text-shadow: 0 0 6px #000; */
 	cursor: pointer;
 }
 
@@ -174,6 +179,7 @@ jobs folder/menu
 	padding-left:0;
 	padding-right:0;
 	height: 32px;
+	list-style: none;
 }
 
 #first_folder{
@@ -181,14 +187,14 @@ jobs folder/menu
 	height: 26px;
 	margin-left: 50px;
 	position:absolute;
-	top:32px;
+	top:30px;
 }
 
 #alert_number{
 	float:right; 
 	position:absolute; 
-	top:27px; 
-	right:134px; 
+	top:25px; 
+	right:33px; 
 	color:rgb(250,250,250); 
 	z-index:2; 
 	background:red; 
@@ -215,7 +221,16 @@ jobs folder/menu
 	height: 26px;
 	margin-left: 50px;
 	position:absolute;
-	top:32px;
+	top:30px;
+}
+
+#folder ul li{
+	font-size: .8em;
+	width:125px;
+}
+
+#second_gear ul li{
+	width:100px;
 }
 
 .accordion_p img{
@@ -229,6 +244,10 @@ h2#saved_jobs_header{
 
 h2#saved_jobs_message{
 	margin-bottom: 10px;
+}
+
+li#profile a, li#logout a{
+	color:white;
 }
 
 
@@ -261,7 +280,7 @@ div hidden job results
 	border-radius: 5px;
 	padding: 0 0 5px 10px;
 	margin-bottom: 10px;
-	width:945px;
+	width:100%;
 }
 
 .full_result p{
@@ -332,6 +351,7 @@ div hidden job results
 .jobs_links{
 	display: block;
 	margin-top: 10px;
+	width:100%;
 }
 
 
@@ -363,58 +383,66 @@ footer
 ======
  */
 
-footer{
-	width: 960px;
+footer.row{
+	width: 100%;
 	text-align: left;
-	padding: 10px 0;
+	padding-top: 15px;
 	clear:both;
 	color:#0C6298;
-	padding:0;
 	clear:both;
-	background-color:rgb(248,248,248);
-/* 	margin-top:100px; */
+	border-top: 1px solid rgba(11,87,146, .3);;
+	margin-top: 84px;
 }
-
-#faq, #links, #social_networks, #contact_us, #terms{
-	width:150px;
-	height: 100px;
-	float: left;
-	margin:1.041666666% 1.1% 2.541666666%  2.45666666% ;  /* 10px */;
-	padding:.528333333%  .641666666%;  /* 10px */;
-}
-
- #terms{
- 	width: 120px;
- }
-
+ 
 footer p{
 	clear: both;
 	padding-top: 5px;
 	margin-top: 0px;
+	color:#0C6298;
 }
 
 p#copyright{
 	text-align: center;
-	/* background: linear-gradient(rgb(51,51,51), rgb(37,37,37)); */
 	background:linear-gradient(rgb(12,98,152),rgb(2,88,142) );
 	color:rgb(245,245,245);
-	padding: 20px 0;
+	padding: 10px 0;
 	margin-bottom:0;
 	font-size: 1.4em;
 }
 
-footer a{
-	color:#0C6298;
-	text-decoration: none;
+#faq{
+	padding-left: 0;
+	padding-right: 30px;
 }
 
-footer a:visited{
-	color:#0C6298;
+#social_networks{
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
-footer h3{
-	margin-bottom: 0px;
+#contact_us{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#terms{
+	padding-left: 30px;
+	padding-right: 0;
+}
+
+#faq h3, #links h3, #social_networks h3, #contact_us h3, #terms h3 {
+	/* color:#0C6298; */
+	color:rgb(237,155,67);
 	padding-bottom: 5px;
+	margin-bottom:0;
 }
 
+footer a{
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover{
+	color: black;
+}
 

@@ -555,7 +555,19 @@ $('#saved_jobs_li').click(function(){
 });
 
 $('#logout').click(function(){
+	window.location.assign("index.html");
+});
+
+$('#profile').click(function(){
 	window.location.assign("admin.html");
+});
+
+$('#terms_of_use').click(function(){
+	window.location.assign("terms.html");
+});
+
+$('#dashboard_index').click(function(){
+	window.location.assign("index.html");
 });
 
 
