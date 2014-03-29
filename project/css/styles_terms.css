@@ -309,6 +309,7 @@ section one
 	border:1px solid  #0C6298;
 	border-radius: 10px;
 	box-shadow: inset 0 0 5px #000;
+	overflow:hidden;
 }
 
 #section_one scrollbar{

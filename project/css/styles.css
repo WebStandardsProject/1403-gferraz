@@ -953,6 +953,10 @@ Media Queries Start
 	.arrow{
 		display:none;
 	}
+	
+	nav.row{
+		margin-top:7%;
+	}
 }
 
 @media only screen and (max-width: 1272px){
@@ -972,7 +976,8 @@ Media Queries Start
 	div#fields, div#universities, div#states{
 		width:100%;
 		font-size: 1.5em;
-		padding-bottom:2%;
+		padding-top: 0;	
+		padding-bottom: 0;
 	} 
 	div#fields h2, div#universities h2, div#states h2{
 		margin-bottom:20px;
@@ -1003,22 +1008,22 @@ Media Queries Start
 	}
 	#fields .arrow{
 	position: absolute;
-	top: 30%;
-	left:88%;
+	top: 23%;
+	left:90%;
 	display:block;
 }
 
 #universities .arrow{
 	position: absolute;
-	top: 30%;
-	left:88%;
+	top: 23%;
+	left:90%;
 	display:block;
 }
 
 #states .arrow{
 	position: absolute;
-	top: 30%;
-	left:88%;
+	top: 23%;
+	left:90%;
 	display:block;
 }
 }

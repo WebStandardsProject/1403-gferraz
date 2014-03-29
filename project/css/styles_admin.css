@@ -640,6 +640,15 @@ Media Queries Start
 	#job_icons_manage img:first-of-type{
 		margin-left:9%;
 	}
+	
+	#job_icons_manage div:first-of-type{
+		margin-bottom: 7%
+	}
+	
+	#job_icons_manage div:first-of-type + div{
+		margin-bottom: 7%
+	}
+
 	#image{
 		display:none;
 	}
@@ -676,6 +685,10 @@ Media Queries Start
 	
 	#alert_number{
 		top:12px;
+	}
+	
+	footer.row{
+		border:none;
 	}
 }
 
