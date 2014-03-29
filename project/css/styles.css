@@ -247,6 +247,19 @@ p#search_boxes{
 	font-size: 1.1em;
  }
 
+
+
+/* 
+hamburger nav
+=============
+ */
+ 
+ #hamburger_nav ul li{
+ 	float:left;
+ }
+ 
+ 
+ 
 /* 
 form register
 ========
@@ -576,7 +589,6 @@ section 1
 } 
  
  #resources{
-	/* width:625.3px65.13541667%; */
 	padding: 0 10px 0 0;
 	margin-right: 20px;
 	margin-bottom: 0;

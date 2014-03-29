@@ -439,6 +439,13 @@ $('#no_membership').click(function(){
 });
 
 
+$('#save_folder').click(function(){
+	$('.overlay_dialog').fadeIn();
+	$('#dialog_membership').fadeIn().draggable();
+});
+
+
+
 
 //ADMIN PAGE 
 //function that displays the hidden ul li on clicking the gear
