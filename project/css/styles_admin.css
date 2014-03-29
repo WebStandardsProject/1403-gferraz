@@ -38,13 +38,30 @@ article{
 #print_results{
 	float:left;
 	margin-left:10px;
+	width:100%;
 }
 
 #print_results h2{
 	color: #0C6298;
 }
 
+#job_results{
+	width:95%;
+}
 
+/* 
+#jobs_links a{
+ 	float:left;
+}
+ */
+/* 
+
+#jobs_links .save_job{
+	float:right;
+	margin-right: 10%;
+	margin-left:0;
+}
+ */
 
 
 /* 
@@ -629,6 +646,19 @@ Media Queries Start
 	}
 }
 
+@media only screen and (max-width: 741px){
+
+	form#search_inputs{
+		margin-left: 11%;
+	}
+	#key_word, #location, #submit{
+		width:90%;
+		clear:both;
+		margin:10px 5%;
+	}
+
+}
+
 @media only screen and (max-width: 641px){
 	body{
 		width:100%;
@@ -699,10 +729,27 @@ Media Queries Start
 		top:12px;
 	}
 	
+	form#search_inputs{
+		width:100%;
+		margin-left:0;
+	}
+	#key_word, #location, #submit{
+		width:90%;
+		clear:both;
+		margin:10px 5%;
+	}
+	
 	footer.row{
 		border:none;
 	}
 }
+
+@media only screen and (max-width: 440px){
+	#call_to_search{
+		font-size:2.5em;
+	}
+}
+
 
 @media only screen and (max-width: 390px){
 	p#admin_welcome{
@@ -724,11 +771,17 @@ Media Queries Start
 	#alert_number{
 		right: 63px;
 	}
+	
+
 }
 
 @media only screen and (max-width: 360px){
 	p#admin_welcome{
 		font-size:3em;
+	}
+	
+#call_to_search{
+		font-size:2.2em;
 	}
 }
 
@@ -739,6 +792,10 @@ Media Queries Start
 
 	p#manage{
 		font-size:1.4em;
+	}
+		
+#call_to_search{
+		font-size:2em;
 	}
 	
 }
