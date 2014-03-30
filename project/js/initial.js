@@ -552,7 +552,7 @@ var indexToggle=1;
 $('#search').click(function(e){	
 	e.preventDefault();
 	if(indexToggle%2!=0){
-		$('html,body').animate({scrollTop: $('footer').offset().top},1300);
+		$('html,body').animate({scrollTop: $('footer').offset().top},2000);
 		
 		if(indexToggle>1){
 			$('#middle_column').html('<p id="p_middleColumn">Perform a search and save jobs to this area. Jobs will automatically be saved to your "Saved Jobs" main tab</p>');
@@ -568,15 +568,15 @@ $('#search').click(function(e){
 			$('#print_results').html('');
 			$('#middle_column').html('');
 		});
-		$('html, body').animate({scrollTop: $('#profile_gear').offset().top},1500);
+		$('html, body').animate({scrollTop: $('#profile_gear').offset().top},2000);
 		//window.location.replace("#welcome_section");
 	}
 	indexToggle++;
 });
 
 $('#close_search').click(function(){
-	$('html, body').animate({scrollTop: $('#profile_gear').offset().top},1500);
-	$('#section_one, #sidebar').slideUp(1500, function(){
+	$('html, body').animate({scrollTop: $('#profile_gear').offset().top},2000);
+	$('#section_one, #sidebar').slideUp(1300, function(){
 		$('#print_results').html('');
 		$('#middle_column').html('');
 	});
@@ -724,11 +724,20 @@ $('#submit').click(function(e){
 	} else if($keyword.toLowerCase()=="engineering" && $location.toLowerCase()=="florida"){
 		$('#print_results').load('results_page.html').hide().fadeIn();
 		$('.full_result').css('background','blue');
+		$('html,body').animate({scrollTop: $('#section_one').offset().top},1300);
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
 		console.log('if statement 2');
 	} else if($keyword.toLowerCase()== "engineering" && $location== ""){
-		$('#print_results').load('results_page.html', function(){	
+		$('#print_results').load('results_page.html').hide().fadeIn();
+		$('.full_result').css('background','blue');
+		$('html,body').animate({scrollTop: $('#section_one').offset().top},1300);
+		$keyword= $('#key_word').val('');
+		$location=$('#location').val('');
+	}
+		
+		
+	/*(	$('#print_results').load('results_page.html', function(){	
 			$('.save_job').each(function(){		
 				$(this).click(function(){
 
@@ -847,11 +856,13 @@ $('#submit').click(function(e){
 					});//closes the delete_link .each function
 			});//closes the inner .click() function - (the click on the "save job", not the click on the submit button)
 		});	//closes the .each() function
-	}).hide().fadeIn('slow');// the "})" in this line closes the .load() function
-		 $keyword= $('#key_word').val('');
-		 $location=$('#location').val('');
-		console.log('if statement 3');
-	} else if($keyword.toLowerCase()== "engineering" && $location!== "florida"){
+	}).hide().fadeIn('slow');// the "})" in this line closes the .load() function */
+		 // $keyword= $('#key_word').val('');
+// 		 $location=$('#location').val('');
+// 		console.log('if statement 3');
+// 	}
+	
+	 else if($keyword.toLowerCase()== "engineering" && $location!== "florida"){
 		$('#print_results').html('<h2>This search generated no results. Please try a different location (hint: florida) :)</h2>').css("color","#0C6298").hide().fadeIn();
 		$keyword= $('#key_word').val('');
 		 $location=$('#location').val('');
