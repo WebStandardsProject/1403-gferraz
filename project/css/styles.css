@@ -675,6 +675,7 @@ div hidden job results - accordion
 }
 
 #jobs h3{
+	width:100%;
 	margin-bottom:0;
 	margin-top:10px;
 	float: left;
@@ -704,6 +705,7 @@ div hidden job results - accordion
 .accordion_p{ /* this is the div, not the p */
 	float:left;
 	width:100%;
+	clear:both;
 } 
 
 .accordion_p p{

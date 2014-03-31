@@ -9,7 +9,6 @@
 	$('#dialog-confirm').hide();
 	$('#dialog_membership').hide();
 	$('.overlay_dialog').hide();
-// 	$('#jobs').accordion();
 	
 // ADMIN PAGE
 // 	==========
@@ -105,6 +104,7 @@ $('#submit_hp').click(function(e){
 		$('#section_one, #section_two').hide();
 		$('#engineering').slideDown();
 		$('html, body').animate({scrollTop: $('#section3').offset().top},1800);
+		$('#jobs').accordion();
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
 		$mobile_input=$('#placehoder_mobile').val('');
@@ -124,6 +124,7 @@ $('#submit_hp').click(function(e){
 	} else if($keyword.toLowerCase()=="engineering" && $location.toLowerCase()=="florida" && $mobile_input==""){
 		$('#section_one').css('z-index','1');
 		$('#engineering').slideDown();
+		$('#jobs').accordion();
 		$('html, body').animate({scrollTop: $('#section3').offset().top},1800);
 		// $('#jobs').accordion();
 		$keyword= $('#key_word').val('');
@@ -134,6 +135,7 @@ $('#submit_hp').click(function(e){
 		$('#section_one').css({zIndex:'1', paddingTop:'20px'});
 		$('#engineering').slideDown();
 		$('html, body').animate({scrollTop: $('#section3').offset().top},1800);
+		$('#jobs').accordion();
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
 		$mobile_input=$('#placehoder_mobile').val('')
