@@ -151,9 +151,6 @@ header p{
 }
 
 
-
-
-
 /* 
 form search starts
 =============
@@ -254,6 +251,7 @@ hamburger nav
 =============
  */
  
+
  #hamburger_nav ul li{
  	float:left;
  }
@@ -772,7 +770,7 @@ dialogue box
 	border: 1px solid #000;
 	border-radius: 5px;
 	position: fixed;
-	left: 473px;
+	left:38%;
 	top: 40%;
 	height:180px;
 	font-size: .8em;
@@ -808,24 +806,21 @@ dialogue box
 }
 
 #become_member{
-	margin-left: 160px;
+	margin-left: 60%;
 	background-color:rgb(243,163,73);
+	margin-top: 6.2px;
 	color: white;
-	font-size: 1.9em;
+	font-size: 1.2em;
+	text-shadow: 0 0 1px white;
+	letter-spacing: 1.8px;
 	border-radius: 5px;
-	padding: 4.5px;
-	line-height: 23px;
+	padding: 6px 12px;
+	float:left;
 }
 
 #become_member:hover{
 	box-shadow: 0 0 2px #000;
 	cursor: pointer;
-}
-
-#div_no_membership{
-	float: right;
-	height: 30px;
-	line-height: 30px;
 }
 
 #no_membership{
@@ -836,6 +831,7 @@ dialogue box
 	font-size: 1.2em;
 	border-radius: 5px;
 	padding: 6px;
+	float:left;
 }
 
 #no_membership:hover{
@@ -945,7 +941,6 @@ p#copyright{
 }
 
 #faq h3, #links h3, #social_networks h3, #contact_us h3, #terms h3 {
-	/* color:#0C6298; */
 	color:rgb(237,155,67);
 	padding-bottom: 5px;
 	margin-bottom:0;
@@ -990,7 +985,6 @@ Media Queries Start
 
 }
 
-
 @media only screen and (max-width: 1027px){
 
 	#personal{
@@ -1031,25 +1025,28 @@ Media Queries Start
 		margin-top:25px;
 	}
 	#fields .arrow{
-	position: absolute;
-	top: 23%;
-	left:90%;
-	display:block;
-}
+		position: absolute;
+		top: 23%;
+		left:90%;
+		display:block;
+	}
+	
+	#universities .arrow{
+		position: absolute;
+		top: 23%;
+		left:90%;
+		display:block;
+	}
 
-#universities .arrow{
-	position: absolute;
-	top: 23%;
-	left:90%;
-	display:block;
-}
-
-#states .arrow{
-	position: absolute;
-	top: 23%;
-	left:90%;
-	display:block;
-}
+	#states .arrow{
+		position: absolute;
+		top: 23%;
+		left:90%;
+		display:block;
+	}
+	#dialog_membership{
+		left:34%;
+	}
 }
 
 @media only screen and (max-width: 1005px){
@@ -1113,6 +1110,9 @@ Media Queries Start
 	#submit_hp{
 		font-size:1.1em;
 	}
+	#dialog_membership{
+		left:31%;
+	}
 }
 
 @media only screen and (max-width: 887px){
@@ -1154,6 +1154,9 @@ Media Queries Start
 	#submit_hp{
 		font-size:.9em;
 	}
+	#dialog_membership{
+		left:29%;
+	}
 }
 
 @media only screen and (max-width: 745px){
@@ -1177,22 +1180,30 @@ Media Queries Start
 		background: url("../images/background-mobile.png") no-repeat center center fixed;
 		background-size:cover;
 	}
-	
 	header ul#social_media{
 		display: none;
 	}
 	#content_mobile{
 		overflow:hidden;
 	}
-	
 	article{
 		display:none;
 	}
-	
+	#engineering{
+		overflow:hidden;
+		padding-top:40px;
+	}
+	article section#section3.row{
+		width:95%;
+		padding-top:90px;
+	}
 	#image{
 		display:none;
 	}
 	
+	#dialog_membership{
+		left:27%;
+	}
 	p#search_boxes a{
 		display:block:
 		width: 100%;
@@ -1202,7 +1213,6 @@ Media Queries Start
 		width:90%;
 		margin:0 auto 60px;
 	}
-	
 	#icon_logo{
 		display:block;
 		width:40px;
@@ -1212,11 +1222,9 @@ Media Queries Start
 	#signIn_signUp{
 		margin-top: 15px;
 	}
-	
 	#sign_up_header{
 		margin-top: 40px;
 	}
-	
 	#hamburger_menu{
 		margin-right: 20px;
 	}
@@ -1228,11 +1236,9 @@ Media Queries Start
 		background-color: rgba(243,243,243,.9);
 		height:60px;
 	}
-	
 	#call_to_search, #call_to_search_p{
 		display:none;
 	}
-	
 	#placehoder_mobile{
 		display:block;
 		width:90%;
@@ -1246,7 +1252,6 @@ Media Queries Start
 		border-radius:5px;
 		margin: 0 auto 60px;
 	}
-	
 	#key_word{
 		display:none;
 	}
@@ -1255,11 +1260,9 @@ Media Queries Start
 		margin-top:120px;
 		width:100%;
 	}
-
 	#location{
 		display:none;
 	}
-	
 	#submit_hp{
 		width:150px;
 		max-width:100%;
@@ -1272,26 +1275,21 @@ Media Queries Start
 		display:block;
 		float:none;
 	}
-	
 	nav.row{
 		margin-top:60px;
 	}
-	
 	nav ul{
  		font-size: 1rem; 
  		border:none;
  		color:rgb(245,245,245);
 	}
-	
 	nav ul li {
 		border-bottom: 1px solid #fff;
 		background-color:rgba(237,155,67,.8);
 	}
-	
 	nav ul li:first-child{
 		border-top: 1px solid rgba(237,155,67,.8);
 	}
-	
 	nav ul li:last-of-type{
 		border-bottom: 1px solid rgba(237,155,67,.8);
 	}
@@ -1299,42 +1297,33 @@ Media Queries Start
 	nav ul li a{
 		color:rgb(245,245,245);
 	}
-	
 	nav ul li:active a{
 		color: #15619C;
 		background-color:white;
 	}
-	
 	nav ul li:active{
 		background-color:white;
 	}
-	
 	nav ul li:hover a{
 		color: #15619C;
 	}
-	
 	nav ul li:hover{
 		background-color:white;
 	}
-	
 	ul{
 		margin-bottom:0;
 	}
-	
 	#section_two{
 		width:99%;
 		margin-left:10px;
 		margin-right:10px;
 	}
-
 	footer.row{
 		margin-top:0px;
 		padding-top:0;
 	}
-	
 	#contact_us, #terms{
 		display:none;
-
 	}
 }
 
@@ -1342,11 +1331,21 @@ Media Queries Start
 	#placehoder_mobile{
 		font-size: 1.1em;
 	}
+	#dialog_membership{
+		left:15%;
+	}
 }
 
 @media only screen and (max-width:350px) {
 	#placehoder_mobile{
 		font-size: .8em;
+	}
+	#dialog_membership{
+		width:95%;
+		left:1%;
+	}
+	#become_member{
+		margin-left:50%;
 	}
 }
 

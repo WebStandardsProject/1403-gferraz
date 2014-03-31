@@ -381,7 +381,7 @@ dialogue box
 	border: 1px solid #000;
 	border-radius: 5px;
 	position: fixed;
-	left: 473px;
+	left:38%;
 	top: 40%;
 	height:180px;
 	font-size: .8em;
@@ -417,24 +417,21 @@ dialogue box
 }
 
 #become_member{
-	margin-left: 160px;
+	margin-left: 60%;
 	background-color:rgb(243,163,73);
+	margin-top: 6.2px;
 	color: white;
-	font-size: 1.9em;
+	font-size: 1.2em;
+	text-shadow: 0 0 1px white;
+	letter-spacing: 1.8px;
 	border-radius: 5px;
-	padding: 4.5px;
-	line-height: 23px;
+	padding: 6px 12px;
+	float:left;
 }
 
 #become_member:hover{
 	box-shadow: 0 0 2px #000;
 	cursor: pointer;
-}
-
-#div_no_membership{
-	float: right;
-	height: 30px;
-	line-height: 30px;
 }
 
 #no_membership{
@@ -445,15 +442,13 @@ dialogue box
 	font-size: 1.2em;
 	border-radius: 5px;
 	padding: 6px;
+	float:left;
 }
 
 #no_membership:hover{
 	box-shadow: 0 0 2px #000;
 	cursor: pointer;
 }
-
-
-
 
 
 /* 
@@ -534,19 +529,24 @@ Media Queries Start
 	#hamburger_menu{
 		display:none;
 	}
-	
 	#icon_logo{
 		display:none;
 	}
-	
 }
 
 @media only screen and (max-width: 1024px){
-
 	#personal{
 		width: 98.5%;
 	}
+	#dialog_membership{
+		left:34%;
+	}
+}
 
+@media only screen and (max-width: 900px){
+	#dialog_membership{
+		left:31%;
+	}
 }
 
 @media only screen and (max-width: 808px){
@@ -555,7 +555,7 @@ Media Queries Start
 	}
 	footer.row{
 		border:none;
-	}
+	}	
 }
 
 
@@ -563,9 +563,11 @@ Media Queries Start
 	#sign_in,#register {
 		display:none;
 	}
-	
 	#hamburger_menu{
 		display:block;
+	}
+	#dialog_membership{
+		left:29%;
 	}
 }
 
@@ -604,7 +606,9 @@ Media Queries Start
 		background-color: rgba(243,243,243,.9);
 		height:60px;
 	}
-	
+	#dialog_membership{
+		left:27%;
+	}
 	#nav1{
 		display:none;
 	 }
@@ -748,31 +752,34 @@ Media Queries Start
 		margin-left:25%;
 		margin-right:0%;
 	} 
-	
-
+	#dialog_membership{
+		left:15%;
+	}
 }
 
 @media only screen and (max-width:360px) {
-
 	article.row div h2{
 		font-size: 1.3em
 	}
-
 	article.row div h2 span{
 		font-size: .8em;
 	}
-	
 	#social_media_icons img{
-	float:left;
-	margin-right:10px;
-	width: 30px;
-}
-
-#social_media_icons #save_folder{
-	margin-left:13%;
-	width: 40px;
-}
-	
+		float:left;
+		margin-right:10px;
+		width: 30px;
+	}
+	#social_media_icons #save_folder{
+		margin-left:13%;
+		width: 40px;
+	}
+	#dialog_membership{
+		width:95%;
+		left:1%;
+	}	
+	#become_member{
+		margin-left:50%;
+	}
 }
 
 

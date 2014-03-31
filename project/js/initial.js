@@ -15,13 +15,22 @@
 // 	==========
 	$('#profile_gear ul').hide();
 	$('#second_gear').hide();
-	
 	$('#jobs_folder ul').hide();
 	$('#second_folder').hide();		
 		
 //onload function wraps all JS and jQuery
 // ===============
 $(window).load(function(){
+
+// HAMBURGER MENU
+// ==============
+
+  $('#hamburger_menu').hover(function(){
+  	$('#hamburger_menu').css({outline:'1px solid black', cursor: 'pointer', background: 'rgb(200,200,200)'});
+  }, function(){
+	$('#hamburger_menu').css({outline:'none', background: 'rgb(250,250,250)'});
+  });
+ 
 
 
 //HOME PAGE - animates the social network icons on hover
@@ -74,34 +83,60 @@ $('#submit_hp').click(function(e){
 	
 	$keyword = $('#key_word').val();
 	$location = $('#location').val();
+	$mobile_input = $('#placehoder_mobile').val();
 	$('#section_one').css('display','block');
 	$('#sidebar').css('display','block');
 	
-	if($keyword== ''){
+	if($keyword== '' && $mobile_input.toLowerCase()=='engineering' || $keyword.toLowerCase()== 'engineering' && $mobile_input==''){
+		$('#section3').css({zIndex:'1', paddingTop:'20px'});
+		$('article').show();
+		$('#section_one, #section_two').hide();
+		$('#engineering').slideDown();
+		$('html, body').animate({scrollTop: $('#section3').offset().top},1800);
+		$keyword= $('#key_word').val('');
+		$location=$('#location').val('');
+		$mobile_input=$('#placehoder_mobile').val('')
+	} else if ($keyword=='' || $mobile_input==''){
 		alert("This search generated no results. Please enter a keyword");
 		$keyword= $('#key_word').val('');//clears the input field
 		$location=$('#location').val('');//clears the input fields
+		$mobile_input=$('#placehoder_mobile').val('');//clears the input fields
 		console.log('if statement 1');
-	} else if($keyword.toLowerCase()!== 'engineering'){
+	} else if($keyword.toLowerCase()!== 'engineering' || $mobile_input.toLowerCase()!== 'engineering'){
 		alert("This search generated no results. Please enter a different keyword(hint: engineering)" +":)");
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
+		$mobile_input=$('#placehoder_mobile').val('');
 		console.log('if statement 1');
-	} else if($keyword.toLowerCase()=="engineering" && $location.toLowerCase()=="florida"){
+	} else if($keyword.toLowerCase()!== 'engineering' && $mobile_input == ''){
+		alert("This search generated no results. Please enter a different keyword(hint: engineering)" +":)");
+		$keyword= $('#key_word').val('');
+		$location=$('#location').val('');
+		$mobile_input=$('#placehoder_mobile').val('');
+		console.log('if statement 1');
+	} else if($keyword.toLowerCase()== 'engineering' && $location.toLowerCase()!="florida" && $mobile_input==''){
+		alert("This search generated no results. Please enter a different location(hint: Florida)" +":)");
+		$keyword= $('#key_word').val('');
+		$location=$('#location').val('');
+		$mobile_input=$('#placehoder_mobile').val('');
+		console.log('if statement 1');
+	} else if($keyword.toLowerCase()=="engineering" && $location.toLowerCase()=="florida" && $mobile_input==""){
 		$('#section_one').css('z-index','1');
 		$('#engineering').slideDown();
 		$('html, body').animate({scrollTop: $('#section3').offset().top},1800);
 		// $('#jobs').accordion();
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
+		$mobile_input=$('#placehoder_mobile').val('')
 		console.log('if statement 2');
-	} else if($keyword.toLowerCase()== "engineering" && $location== ""){
+	} else if($keyword.toLowerCase()== "engineering" && $location== "" || $mobile_input.toLowerCase()== "engineering"){
 		// $('#jobs').accordion();
 		$('#section_one').css({zIndex:'1', paddingTop:'20px'});
 		$('#engineering').slideDown();
 		$('html, body').animate({scrollTop: $('#section3').offset().top},1800);
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
+		$mobile_input=$('#placehoder_mobile').val('')
 	}	
 });//closes the click function ($('#submit_hp').click(function(e))
 //===============
