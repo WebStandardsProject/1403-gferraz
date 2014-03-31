@@ -78,6 +78,11 @@ $(function(){
 // HOME PAGE SEARCH
 // ================
 
+
+
+// HOME PAGE SEARCH
+// ================	
+
 $('#submit_hp').click(function(e){
 	e.preventDefault();
 	
@@ -87,7 +92,14 @@ $('#submit_hp').click(function(e){
 	$('#section_one').css('display','block');
 	$('#sidebar').css('display','block');
 	
-	if($keyword== '' && $mobile_input.toLowerCase()=='engineering' || $keyword.toLowerCase()== 'engineering' && $mobile_input==''){
+	 if($keyword=='' && $mobile_input==''){
+		alert("This search generated no results. Please enter a keyword");
+		$keyword= $('#key_word').val('');//clears the input field
+		$location=$('#location').val('');//clears the input fields
+		$mobile_input=$('#placehoder_mobile').val('');//clears the input fields
+		console.log('if statement 1');
+	} else if($keyword== '' && $mobile_input.toLowerCase()=='engineering' && $location.toLowerCase()=='' || 			 
+		$keyword.toLowerCase()=='engineering' && $mobile_input=='' && $location.toLowerCase()==''){
 		$('#section3').css({zIndex:'1', paddingTop:'20px'});
 		$('article').show();
 		$('#section_one, #section_two').hide();
@@ -95,31 +107,20 @@ $('#submit_hp').click(function(e){
 		$('html, body').animate({scrollTop: $('#section3').offset().top},1800);
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
-		$mobile_input=$('#placehoder_mobile').val('')
-	} else if ($keyword=='' && $mobile_input==''){
-		alert("This search generated no results. Please enter a keyword");
-		$keyword= $('#key_word').val('');//clears the input field
-		$location=$('#location').val('');//clears the input fields
-		$mobile_input=$('#placehoder_mobile').val('');//clears the input fields
-		console.log('if statement 1');
-	} else if($keyword.toLowerCase()!== 'engineering' && $mobile_input.toLowerCase()!== 'engineering'){
-		alert("This search generated no results. Please enter a different keyword(hint: engineering)" +":)");
-		$keyword= $('#key_word').val('');
-		$location=$('#location').val('');
 		$mobile_input=$('#placehoder_mobile').val('');
-		console.log('if statement 1');
+		console.log('if statement 2');
 	} else if($keyword.toLowerCase()!== 'engineering' && $mobile_input == ''){
 		alert("This search generated no results. Please enter a different keyword(hint: engineering)" +":)");
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
 		$mobile_input=$('#placehoder_mobile').val('');
-		console.log('if statement 1');
-	} else if($keyword.toLowerCase()== 'engineering' && $location.toLowerCase()!="florida" && $mobile_input==''){
+		console.log('if statement 4');
+	} else if($keyword.toLowerCase()== 'engineering' && $location.toLowerCase()!=="florida"){
 		alert("This search generated no results. Please enter a different location(hint: Florida)" +":)");
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
 		$mobile_input=$('#placehoder_mobile').val('');
-		console.log('if statement 1');
+		console.log('if statement 5');
 	} else if($keyword.toLowerCase()=="engineering" && $location.toLowerCase()=="florida" && $mobile_input==""){
 		$('#section_one').css('z-index','1');
 		$('#engineering').slideDown();
@@ -128,16 +129,22 @@ $('#submit_hp').click(function(e){
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
 		$mobile_input=$('#placehoder_mobile').val('')
-		console.log('if statement 2');
+		console.log('if statement 6');
 	} else if($keyword.toLowerCase()== "engineering" && $location== "" || $mobile_input.toLowerCase()== "engineering"){
-		// $('#jobs').accordion();
 		$('#section_one').css({zIndex:'1', paddingTop:'20px'});
 		$('#engineering').slideDown();
 		$('html, body').animate({scrollTop: $('#section3').offset().top},1800);
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
 		$mobile_input=$('#placehoder_mobile').val('')
-	}	
+		console.log('if statement 7');
+	} else if($mobile_input.toLowerCase !== 'engineering'){
+		alert("This search generated no results. Please enter a different keyword(hint: engineering)" +":)");
+		$keyword= $('#key_word').val('');
+		$location=$('#location').val('');
+		$mobile_input=$('#placehoder_mobile').val('');
+		console.log('if statement 4');
+	}
 });//closes the click function ($('#submit_hp').click(function(e))
 //===============
 
