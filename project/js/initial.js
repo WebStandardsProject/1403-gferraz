@@ -96,13 +96,13 @@ $('#submit_hp').click(function(e){
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
 		$mobile_input=$('#placehoder_mobile').val('')
-	} else if ($keyword=='' || $mobile_input==''){
+	} else if ($keyword=='' && $mobile_input==''){
 		alert("This search generated no results. Please enter a keyword");
 		$keyword= $('#key_word').val('');//clears the input field
 		$location=$('#location').val('');//clears the input fields
 		$mobile_input=$('#placehoder_mobile').val('');//clears the input fields
 		console.log('if statement 1');
-	} else if($keyword.toLowerCase()!== 'engineering' || $mobile_input.toLowerCase()!== 'engineering'){
+	} else if($keyword.toLowerCase()!== 'engineering' && $mobile_input.toLowerCase()!== 'engineering'){
 		alert("This search generated no results. Please enter a different keyword(hint: engineering)" +":)");
 		$keyword= $('#key_word').val('');
 		$location=$('#location').val('');
