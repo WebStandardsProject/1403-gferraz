@@ -204,7 +204,7 @@ p#search_boxes{
 	width:35%;
 	height:45px;
 	border: 2px solid rgb(237,155,67);
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: rgb(130,130,130);
 	background: rgba(255,255,255,.6);
 	font-style: oblique;
@@ -1106,7 +1106,7 @@ Media Queries Start
 	}
 	
 	#key_word, #location{
-		font-size:1.5em;
+		font-size:1.4em;
 	}
 	
 	#submit_hp{
