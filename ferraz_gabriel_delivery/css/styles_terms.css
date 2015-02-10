@@ -1,0 +1,583 @@
+
+/* 
+main body
+=========
+ */
+
+html{
+	background-color: rgb(253, 253, 253);
+}
+
+body{
+	width:74.5%;
+	margin:0 auto;
+	padding-top: 10px;
+	font-family: arial, verdana, sans-serif;
+	font-size:62.5%; /* changes the default to 10px*/
+}
+
+header{
+	position:relative;	
+	overflow: hidden;
+}
+
+article{
+	width: 100%;
+	background: linear-gradient(rgb(250, 250, 250), rgb(255, 255, 255));
+}
+
+
+/* 
+header elements
+===============
+ */
+
+
+h1{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	float: left;
+	display:none;
+}
+
+#image{
+	position: absolute;
+	top:5px;
+	left:10px;
+	width: 290px;
+}
+
+header p{
+	text-align: right;
+	margin-right:20px;
+	margin-top:30px;
+	float: right;
+}
+
+#signIn_signUp{
+	margin-top: 30px;
+	margin-right:0;
+}
+
+#register a{
+	margin-right: 10px;
+	margin-left: 12px;
+	font-size:1em;
+	text-decoration:none;
+	background-color:rgb(237,155,67);
+	border-radius:5px;
+	padding: 12px 16px;
+	color: white;
+}
+
+#register a:hover{
+	background-color:rgb(233,153,55);
+	color: white;
+	text-shadow: 0 0 0 white;
+}
+
+#sign_in a{
+	font-size:1em;
+	text-decoration:none;
+	color: #15619C;
+	padding: 12px 16px;
+	text-shadow: 0 0 0 #15619C;
+	border-right: 1px solid black;
+}
+
+#sign_in a:hover{
+	color:rgb(1,77,136);
+	text-decoration: underline;
+}
+
+
+
+/* 
+form register
+========
+ */
+ 
+ header form p {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom:0;
+    text-align: left;
+}
+
+header form p:nth-child(2) {
+	margin-top:10px;
+}
+
+header form input#login_name, header form input#password {
+	height: 30px;
+	width: 241px;	
+}
+ 
+ #form_register{
+ 	position: fixed;
+ 	z-index: 10;
+ 	top: 80px;
+ 	right: 100px;
+ 	width: 285px;
+ 	height: 210px;
+ 	background-color:rgb(253,173,83);
+ 	color: #15619C;
+ 	border: 2px solid rgb(5,40,101);
+	border-radius: 5px;
+
+ }
+ 
+  #login_name{
+ -moz-box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-family: inherit;
+    font-size: 0.875rem;
+    height: 2.3125rem;
+    margin: 0;
+    padding: 0;
+    transition: box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;
+    width: 100%;
+ }
+ 
+ #btn_register{
+ 	margin:0 15px;
+ }
+ 
+ #register_submit{
+ 	font-size:0.8em;
+	text-decoration:none;
+	background-color: #15619C;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius:5px;
+	padding: 10px 15px;
+	color: rgb(245,245,245);
+ }
+ 
+#register_submit:hover{
+  	background-color:rgb(11,87,146);
+	color: white;
+	box-shadow: 0 0 .5px #000;
+	cursor: pointer;
+}
+
+#form_register_forgot{
+	float:left;
+	margin-left: 25px;
+	margin-right:0;
+	font-size:1.1em;
+	margin-top:15px;
+}
+
+#form_register_forgot a{
+	font-style: oblique;
+	font-size: 1.2em;
+	color:#15619C;
+}
+
+
+/* 
+article
+====================
+ */
+ 
+#terms_div{
+ 	padding-left: 0;
+ 	padding-right: 0;
+ 	width: 100%;
+ }
+
+
+/* 
+sign in form overlay
+====================
+ */
+ 
+ .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+}
+
+
+
+/* 
+navigation
+==========
+ */
+ 
+ #nav2{
+		display:none;
+	}
+ 
+nav.row{
+	 padding:0; 
+	 margin-top: 98px;
+	 float: left;
+	 clear: both;
+	 background: white;
+	 width: 100%;
+	 overflow:hidden;
+}
+
+nav ul{
+	display: inline-block;
+	min-height:10px;
+	/* padding:23px 0 23px; */
+	text-align: center;
+	width: inherit;
+	clear: both;
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:0;
+	border-top: 1px solid rgb(237,155,67);
+	border-bottom: 1px solid rgb(237,155,67);
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	text-align: center; 
+	text-transform: uppercase;
+	font-weight: bold; 
+	float: left;
+	line-height:1px;
+	font-size: 1em;
+}
+
+nav ul li a{
+	width:210px;
+}
+
+nav ul li:hover{
+	background-color:rgba(237,155,67,.8);
+}
+
+ nav ul li a{
+	text-decoration: none;
+	color: #15619C;
+	display: inline-block;
+	height: 46px;
+	line-height:46px;
+}
+
+nav ul li:hover a{
+	color:rgb(245,245,245);
+}
+
+
+/* 
+font styles/sizes
+=================
+ */
+
+
+h2{
+	font-size:2.2em;
+	margin:0;
+	padding:0;
+}
+
+h3{
+	font-size:1.8em;
+	margin-top:0;
+}
+
+p{
+	font-size: 1.6em;
+}
+
+/* 
+section one
+===========
+ */
+
+#section_one{
+	background:white;
+	width: 100%;
+	height: 500px;
+	margin: 0  auto 20px;
+	border:1px solid  #0C6298;
+	border-radius: 10px;
+	box-shadow: inset 0 0 5px #000;
+	overflow:hidden;
+}
+
+#section_one scrollbar{
+	background: blue;
+}
+
+#section_one:hover{
+	 overflow: scroll;
+}
+
+
+article h2{
+	color:#15619C;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+
+#section_one h3{
+	color:#15619C;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+}
+
+
+#section_one p{
+	margin: 5px 15px 5px;
+	color:#0C6298;
+}
+
+#section_one p:last-child{
+	margin-bottom: 20px;
+}
+
+/* 
+footer
+======
+ */
+
+footer.row{
+	width: 100%;
+	text-align: left;
+	padding-top: 15px;
+	clear:both;
+	color:#0C6298;
+	clear:both;
+	border-top: 1px solid rgba(11,87,146, .3);;
+	margin-top: 84px;
+}
+ 
+footer p{
+	clear: both;
+	padding-top: 5px;
+	margin-top: 0px;
+	color:#0C6298;
+}
+
+p#copyright{
+	text-align: center;
+	background:linear-gradient(rgb(12,98,152),rgb(2,88,142) );
+	color:rgb(245,245,245);
+	padding: 10px 0;
+	margin-bottom:0;
+	font-size: 1.4em;
+}
+
+#faq{
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+#social_networks{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#contact_us{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#terms{
+	padding-left: 30px;
+	padding-right: 0;
+}
+
+#faq h3, #links h3, #social_networks h3, #contact_us h3, #terms h3 {
+	/* color:#0C6298; */
+	color:rgb(237,155,67);
+	padding-bottom: 5px;
+	margin-bottom:0;
+}
+
+footer a{
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover{
+	color: black;
+}
+
+
+/* 
+Media Queries Start
+===================
+ */
+
+@media only screen and (max-width: 2000px){
+	#hamburger_menu{
+		display:none;
+	}
+	
+	#icon_logo{
+		display:none;
+	}
+}
+
+
+@media only screen and (max-width: 808px){
+	#faq, #social_networks, #contact_us, #terms{
+		display:none;  
+	}
+	footer.row{
+		border:none;
+	}
+}
+
+
+@media only screen and (max-width: 755px){
+	#sign_in,#register {
+		display:none;
+	}
+	
+	#hamburger_menu{
+		display:block;
+	}
+}
+
+@media only screen and (max-width:641px) {
+	body{
+		width:100%;
+		padding-top:0;
+	}
+	
+	#image{
+		display:none;
+	}
+	
+	#icon_logo{
+		display:block;
+		width:40px;
+		margin-top: 10px;
+		margin-left:20px;
+	}
+	#signIn_signUp{
+		margin-top: 15px;
+	}
+	
+	#sign_up_header{
+		margin-top: 40px;
+	}
+	
+	#hamburger_menu{
+		margin-right: 20px;
+	}
+	
+	#section_one{
+		height: 85%;
+	}
+	
+	#section_one:hover{
+		overflow:none;
+	}
+
+	#terms_div{
+		padding-top:63px;
+	}
+	
+	#header_div{
+		position:fixed;
+		box-shadow:0 2px 3px #000;
+		z-index:3;
+		background-color: rgba(243,243,243,.9);
+		height:60px;
+	}
+	
+	#nav1{
+		display:none;
+	}
+	 
+	#nav2{
+		display:inline-block;
+		margin-left:0;
+		margin-right:0;
+		width:100%;
+	}
+	
+	nav ul{
+ 		font-size: 1rem; 
+ 		border:none;
+ 		color:rgb(245,245,245);
+	}
+	
+	nav ul li {
+		border-bottom: 1px solid #fff;
+		background-color:rgba(237,155,67,.8);
+	}
+	
+	nav ul li:first-child{
+		border-top: 1px solid rgba(237,155,67,.8);
+	}
+	
+	nav ul li:last-of-type{
+		border-bottom: 1px solid rgba(237,155,67,.8);
+	}
+	
+	nav ul li a{
+		color:rgb(245,245,245);
+	}
+	
+	nav ul li:active a{
+		color: #15619C;
+		background-color:white;
+	}
+	
+	nav ul li:active{
+		background-color:white;
+	}
+	
+	nav ul li:hover a{
+		color: #15619C;
+	}
+	
+	nav ul li:hover{
+		background-color:white;
+	}
+	#terms_div{
+		padding-right:0;
+	}
+	
+	#terms_div h2{
+		text-align:center;
+		margin-left:0;
+		font-size: 3em;
+		background-color: rgba(247, 215, 122, 0.1);
+		margin-top:0;
+		margin-bottom:0;
+		padding-top:40px;
+		padding-bottom:10px;
+	}
+	
+	#section_one{
+		box-shadow:none;
+		border:none;
+		background-color: rgba(247, 215, 122, 0.1);
+		margin-bottom:0;
+	}
+
+	footer.row{
+		margin-top:0px;
+		padding-top:0;
+	}
+	
+	#contact_us, #terms{
+		display:none;
+
+	}
+}
+
+

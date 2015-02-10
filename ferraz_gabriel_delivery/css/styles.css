@@ -1,0 +1,1353 @@
+
+/* 
+main body
+=========
+ */
+
+html{
+	background-color: rgb(253, 253, 253);
+}
+
+body{
+	width:74.5%;
+	margin: 0 auto;
+	padding-top: 10px;
+	font-family: arial, verdana, sans-serif;
+	font-size:62.5%; /* changes the default to 10px*/
+}
+
+header{
+	background: url("../images/header6_gradient1(inverted).png");
+	/* 
+	-moz-transform: scaleX(-1); this is really cool. It flips the element to which it is applied
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+ */
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: top 220px center;
+	background-color: white;
+	overflow: hidden;
+	width:100%;
+}
+
+article{
+	width: 100%;
+	background: linear-gradient(rgb(250, 250, 250), rgb(255, 255, 255));
+	/* margin:200px 0 0 0; */
+}
+
+
+/* 
+social network icons
+=================
+ */
+ 
+ header ul:first-child{
+ 	margin-bottom:0;
+ }
+
+header ul li{
+	list-style: none;
+}
+
+#facebook{
+ height:42px;
+ position:fixed;
+ top:140px;
+ left:-30px;
+}
+
+#google_plus{
+ height:42px;;
+ position:fixed;
+ top:183px;
+ left:-30px; 
+}
+
+#twitter{
+ height:42px;
+ position:fixed;
+ top:226px;
+ left:-30.5px;
+}
+
+#linkedin{
+ height:42px;
+ position:fixed;
+ top:269px;
+ left:-30px;
+}
+
+/* 
+header elements
+===============
+ */
+
+
+h1{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	float: left;
+	display:none;
+}
+
+#image{
+	position: absolute;
+	top:5px;
+	left:10px;
+	width: 290px;
+}
+
+#image2{
+	display:none;
+}
+
+header p{
+	text-align: right;
+	margin-right:20px;
+	margin-top:30px;
+	float: right;
+}
+
+#signIn_signUp{
+	margin-top: 30px;
+	margin-right:0;
+}
+
+#register a{
+	margin-right: 10px;
+	margin-left: 12px;
+	font-size:1em;
+	text-decoration:none;
+	background-color:rgb(237,155,67);
+	border-radius:5px;
+	padding: 12px 16px;
+	color: white;
+}
+
+#register a:hover{
+	background-color:rgb(233,153,55);
+	color: white;
+	text-shadow: 0 0 0 white;
+}
+
+#sign_in a{
+	font-size:1em;
+	text-decoration:none;
+	color: #15619C;
+	padding: 12px 16px;
+	text-shadow: 0 0 0 #15619C;
+	border-right: 1px solid black;
+}
+
+#sign_in a:hover{
+	color:rgb(1,77,136);
+	text-decoration: underline;
+}
+
+
+
+
+
+/* 
+form search starts
+=============
+ */
+
+#search_inputs{
+	margin-top:40px;
+	margin-bottom:26px;
+	float:left;
+	clear:both;
+}
+
+#call_to_search{
+	width:100%;
+	margin-bottom: 0;
+	margin-top: 55px;
+	margin-left:0;
+	float:left;
+	text-align:center;
+	font-size:4em;
+	letter-spacing:0.4px;
+	font-weight: bold;	
+	color: #15619C;
+}
+
+#call_to_search_p{
+	font-size:2em;
+	color:#15619C;
+	font-style:oblique;
+	margin-left:0;
+	margin-right:0;
+	text-align:justify;
+	line-height:30px;
+	float:left;
+}
+
+#underline{
+	text-decoration: underline;
+}
+
+p#search_boxes{
+	float: left;
+	clear:both;
+	margin-top:30px;
+	margin-right:0;
+	margin-left:0;
+	width:100%;
+}
+
+#key_word, #location{
+	width:35%;
+	height:45px;
+	border: 2px solid rgb(237,155,67);
+	font-size: 1.5em;
+	color: rgb(130,130,130);
+	background: rgba(255,255,255,.6);
+	font-style: oblique;
+	text-indent: 5px;
+	border-radius:5px;
+	float:left;
+	margin-right: 2.5%;
+}
+
+#submit_hp{
+	width:25%;
+	height:45px;
+	padding-top: 3px;
+	text-align: center;
+	background-color:rgb(243,163,73);
+	border: 1px solid rgb(237,155,67);
+	text-transform: uppercase;
+	font-size: 1.3em;
+	text-align: center;
+	color: white;
+	border-radius:5px;
+	float:left;
+}
+
+#submit_hp:hover{
+	background-color:rgb(233,153,55);
+	cursor:pointer;
+}
+
+#placehoder_mobile{
+	display:none;
+}
+
+ #check_membership a{
+	color:rgb(237,155,67);
+	font-style: oblique;
+	font-size: 1.1em;
+ }
+
+
+
+/* 
+hamburger nav
+=============
+ */
+ 
+ #hamburger_nav ul li{
+ 	float:left;
+ }
+ 
+ 
+ 
+/* 
+form register
+========
+ */
+ 
+ header form p {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom:0;
+    text-align: left;
+}
+
+header form p:nth-child(2) {
+	margin-top:10px;
+}
+
+header form input#login_name, header form input#password {
+	height: 30px;
+	width: 241px;	
+}
+ 
+ #form_register{
+ 	position: fixed;
+ 	z-index: 10;
+ 	top: 80px;
+ 	right: 100px;
+ 	width: 285px;
+ 	height: 210px;
+ 	background-color:rgb(253,173,83);
+ 	color: #15619C;
+ 	border: 2px solid rgb(5,40,101);
+	border-radius: 5px;
+
+ }
+ 
+  #login_name{
+ -moz-box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-family: inherit;
+    font-size: 0.875rem;
+    height: 2.3125rem;
+    margin: 0;
+    padding: 0;
+    transition: box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;
+    width: 100%;
+ }
+ 
+ #btn_register{
+ 	margin:0 15px;
+ }
+ 
+ #register_submit{
+ 	font-size:0.8em;
+	text-decoration:none;
+	background-color: #15619C;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius:5px;
+	padding: 10px 15px;
+	color: rgb(245,245,245);
+ }
+ 
+#register_submit:hover{
+  	background-color:rgb(11,87,146);
+	color: white;
+	box-shadow: 0 0 .5px #000;
+	cursor: pointer;
+}
+
+#form_register_forgot{
+	float:left;
+	margin-left: 25px;
+	margin-right:0;
+	font-size:1.1em;
+	margin-top:15px;
+}
+
+#form_register_forgot a{
+	font-style: oblique;
+	font-size: 1.2em;
+	color:#15619C;
+}
+
+/* 
+overlay
+=======
+ */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* 
+navigation
+==========
+ */
+ 
+nav.row{
+	 padding:0; 
+	 margin-top: 7%;
+	 clear: both;
+	 background: white;
+	 width: 100%;
+	 overflow:hidden;
+}
+
+nav ul{
+	display: inline-block;
+	min-height:10px;
+	text-align: center;
+	width: inherit;
+	clear: both;
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:0;
+	border-top: 1px solid rgb(237,155,67);
+	border-bottom: 1px solid rgb(237,155,67);
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	text-align: center; 
+	text-transform: uppercase;
+	font-weight: bold; 
+	float: left;
+	line-height:1px;
+	font-size: 1em;
+}
+
+nav ul li a{
+	width:210px;
+}
+
+nav ul li:hover{
+	background-color:rgba(237,155,67,.8);
+}
+
+ nav ul li a{
+	text-decoration: none;
+	color: #15619C;
+	display: inline-block;
+	height: 46px;
+	line-height:46px;
+}
+
+nav ul li:hover a{
+	color:rgb(245,245,245);
+}
+
+/* 
+font styles/sizes
+=================
+ */
+ 
+
+h1{
+	font-size: 2.6em;
+}
+
+h2{
+	font-size:2.2em;
+	margin:0;
+	padding:0;
+}
+
+h3{
+	font-size:1.8em;
+	margin-top:0;
+}
+
+p{
+	font-size: 1.6em;
+}
+
+
+/* 
+article
+=======
+ */
+
+article{
+	overflow: hidden;
+}
+
+ 
+/* 
+search options divs - (orange circles)
+=============
+ */
+
+#fields, #universities, #states{
+	width:/* 260px  */29.0833333%;
+	padding:10px;
+	padding-bottom:4.5%;
+	border-radius: 10px;
+	margin-bottom:20px;
+	background:rgb(243,163,73);
+	float:left;
+}
+
+#fields, #universities{
+	margin-right:/* 80px */ 6.3%;
+}
+
+#fields img, #universities img, #states img{
+	display: block;
+	margin: 20px auto 0;
+	padding-bottom: 10px;
+}
+
+#fields:hover,#universities:hover,#states:hover{
+	cursor: pointer;
+}
+
+#fields h2, #universities h2, #states h2, #hot_searches_heading{
+	text-align: center;
+	margin-bottom: 35px;
+    margin-top: 25px;
+	color:#0C6298;
+}
+
+#fields .arrow{
+	display:none;
+}
+
+#universities .arrow{
+	display:none;
+}
+
+#states .arrow{
+	display:none;
+}
+
+#section3{
+	z-index:6;
+	overflow:hidden;
+	width:100%;
+}
+
+
+
+ /* 
+hidden divs
+==============
+ */
+
+.hidden_div1, .hidden_div2, .hidden_div3 {
+	width:260px;
+	height: 242px;
+	padding:10px;
+	border-radius: 10px;
+	margin-bottom:20px;
+	background-color:rgb(240,240,240);
+	float:left;
+}
+
+.hidden_div1{
+	position: absolute;
+}
+
+.hidden_div2{
+	position: absolute;
+	top:60px;
+	left:350px;
+}
+
+.hidden_div3{
+	position: absolute;
+	top:60px;
+	left:695px;
+}
+
+.dropbox{
+	width: 200px;
+	float: left;
+	margin-left:25px;
+	margin-top:10px;
+	font-size: 1.2em;
+}
+
+.bttn_register {
+	margin-left: 15px;
+	margin-top: 0;
+	float:left;
+}
+
+.register_submit{
+	margin-left: 50px;
+ 	font-size:0.8em;
+	text-decoration:none;
+	background-color: #15619C;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius:5px;
+	padding: 10px;
+	color: rgb(245,245,245);
+}
+
+ /* 
+section 1
+==============
+ */
+ 
+ #section_one{
+ 	padding-top: 40px;
+ 	position:relative;
+ 	width:100%;
+ }
+ 
+ #resources_heading{
+	text-align: left;
+	color:rgb(1,77,136);
+	margin-bottom: 10px;
+	margin-top:10px;
+	width: 593px;
+	font-size:2.2em;
+	text-shadow: 0 0 0 rgb(1,77,136);
+} 
+ 
+ #resources{
+	padding: 0 10px 0 0;
+	margin-right: 20px;
+	margin-bottom: 0;
+	float: left;
+	clear: left;
+	overflow: hidden;
+}
+
+#resources h3{
+	color:rgb(1,77,136);
+	font-size:1.8em;
+	text-shadow: 0 0 0 rgb(1,77,136);
+}
+
+#resources a{
+	color:rgb(237,155,67);
+	text-decoration:none;
+	font-style: oblique;
+}
+
+/* 
+div resources - inner divs
+==============
+ */
+ 
+ #section_two{
+ 	margin-top:23px;
+ 	width:100%;
+ }
+
+#cv {
+	padding: 10px 0px 0px 15px;
+	float: left;
+	margin-right: 15px;
+}
+
+ #tp{
+	padding: 10px 0 0 15px;
+	float: left;
+}
+
+#resources #cv h3, #cl h3, #tp h3{
+	margin-bottom:5px;
+}
+
+ #cv p, #cl p, #tp p{
+	margin-top:5px;
+	color:#0C6298;
+}
+
+#tp{
+	margin-right:0;
+	margin-top: 10px;
+}
+ 
+#search_options{
+	overflow: hidden;
+	clear: both; 
+	padding-top:20px;
+ }
+
+#search_options img{
+	height: 90px;
+}
+
+/* 
+div hidden job results - accordion
+======================
+ */
+
+#engineering h2{
+	color:#15619C;
+	margin-bottom: 19px;
+	padding-top: 30px;
+	
+}
+ #jobs{
+	width:100%;
+	padding: 0 10px 10px 0;
+	margin-right: 20px; 
+	margin-bottom: 20px;
+	float: left;
+	clear: left;
+	/* background-color:rgb(245,245,245); */
+	/* overflow: scroll; */
+}
+
+#jobs h3{
+	margin-bottom:0;
+	margin-top:10px;
+	float: left;
+}
+
+#jobs h3 a{
+	color:rgb(51,127,186); /* color:#0C6298; */
+	font-family: arial, verdana, sans-serif;
+	font-style: none;
+	text-decoration:none;
+	width:100%;
+	float:left;
+	clear
+}
+
+#jobs h3 a:hover{
+	color:rgb(11,87,146);
+}
+
+#jobs h3 span{
+	display: block;
+	font-size: .8em;
+	width: 100%;
+	font-weight: normal;
+}
+
+.accordion_p{ /* this is the div, not the p */
+	float:left;
+	width:100%;
+} 
+
+.accordion_p p{
+	margin-bottom: 10px;
+}
+
+.accordion_p a{
+	color:rgb(237,155,67);
+	text-decoration:none;
+	font-style: oblique;
+	margin-top: 5px;
+}
+
+.accordion_p a:hover{
+	color:rgb(227,145,57);
+}
+
+.save_job_hp{
+	color:#15619C;
+	opacity: .85;
+	float:right;
+	margin-right:3%;
+	font-Style: normal;
+	font-weight: bold;
+}
+
+.save_job_hp:hover{
+	cursor:pointer;
+	opacity:1; 
+}
+
+.jobs_links{
+	display: block;
+	margin-top: 10px;
+	width:100%;
+}
+
+.border_bottom{
+	width: 100%;
+	border-bottom: 1px solid #15619C;
+	opacity: .2;
+}
+
+
+/* 
+dialogue box
+============
+ */
+ 
+.overlay_dialog{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	background-color: rgba(0,0,0,0.6);
+}
+ 
+#dialog_membership{
+	width: 300px;
+	padding: 10px;
+	background-color: rgb(240,240,240);
+	border: 1px solid #000;
+	border-radius: 5px;
+	position: fixed;
+	left: 473px;
+	top: 40%;
+	height:180px;
+	font-size: .8em;
+	z-index: 10;
+}
+
+#dialog_membership hr{
+	margin-bottom: 15px;
+}
+
+#dialog_membership:hover{
+	cursor:move;
+}
+
+#dialogue_header{
+ 	background:linear-gradient(rgb(160, 160, 160), rgb(240, 240, 240));
+ 	border: 1px solid #000;
+ 	border-radius: 5px;
+ 	margin-top: 0;
+ 	padding: 5px;
+ 	font-weight: bold;
+
+}
+.overlay_one{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+}
+
+#become_member{
+	margin-left: 185px;
+	background-color:rgb(243,163,73);
+	color: white;
+	font-size: 1.9em;
+	border-radius: 5px;
+	padding: 4.5px;
+	line-height: 23px;
+}
+
+#become_member:hover{
+	box-shadow: 0 0 2px #000;
+	cursor: pointer;
+}
+
+#div_no_membership{
+	float: right;
+	height: 30px;
+	line-height: 30px;
+}
+
+#no_membership{
+	margin-left: 5px;
+	margin-top: 6.2px;
+	background-color: #15619C;
+	color: white;
+	font-size: 1.2em;
+	border-radius: 5px;
+	padding: 6px;
+}
+
+#no_membership:hover{
+	box-shadow: 0 0 2px #000;
+	cursor: pointer;
+}
+
+
+/* 
+divs section 2
+==============
+ */
+ 
+#section_two{
+	overflow:hidden;
+	padding-top:0;
+}
+
+#hot_searches{
+	width:/* 280px */ 29.166666%;
+	height: 257px;
+	margin: 10px 0  20px 0;
+	padding-left:18px;
+	
+}
+
+#hot_searches h3{
+	margin-bottom: 5px;
+	color: rgb(1,77,136);
+	text-shadow: 0 0 0 rgb(1,77,136);
+}
+
+#hot_searches h3:last-of-type{
+	margin-top: 20px;
+}
+
+
+#hot_searches p{
+	font-size: 1.4em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 15.5px;
+}
+
+#hot_searches p a{
+	color:rgb(237,155,67);
+	text-decoration:none;
+}
+
+#hot_searches .load_more{
+	margin-bottom: 10px;
+	font-style: oblique;
+	text-decoration: underline;
+}
+
+
+/* 
+footer
+======
+ */
+
+footer.row{
+	width: 100%;
+	text-align: left;
+	padding-top: 15px;
+	clear:both;
+	color:#0C6298;
+	clear:both;
+	border-top: 1px solid rgba(11,87,146, .3);;
+	margin-top: 84px;
+}
+ 
+footer p{
+	clear: both;
+	padding-top: 5px;
+	margin-top: 0px;
+	color:#0C6298;
+}
+
+p#copyright{
+	text-align: center;
+	background:linear-gradient(rgb(12,98,152),rgb(2,88,142) );
+	color:rgb(245,245,245);
+	padding: 10px 0;
+	margin-bottom:0;
+	font-size: 1.4em;
+}
+
+#faq{
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+#social_networks{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#contact_us{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#terms{
+	padding-left: 30px;
+	padding-right: 0;
+}
+
+#faq h3, #links h3, #social_networks h3, #contact_us h3, #terms h3 {
+	/* color:#0C6298; */
+	color:rgb(237,155,67);
+	padding-bottom: 5px;
+	margin-bottom:0;
+}
+
+footer a{
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover{
+	color: black;
+}
+
+/* 
+Media Queries Start
+===================
+ */
+
+@media only screen and (max-width: 2000px){
+	#hamburger_menu{
+		display:none;
+	}
+	
+	#icon_logo{
+		display:none;
+	}
+	
+	.arrow{
+		display:none;
+	}
+	
+	nav.row{
+		margin-top:7%;
+	}
+}
+
+@media only screen and (max-width: 1272px){
+	nav.row{
+		margin-top:4%;
+	}
+
+}
+
+
+@media only screen and (max-width: 1027px){
+
+	#personal{
+		width: 98.5%;
+	}
+	 
+	div#fields, div#universities, div#states{
+		width:100%;
+		font-size: 1.5em;
+		padding-top: 0;	
+		padding-bottom: 0;
+	} 
+	div#fields h2, div#universities h2, div#states h2{
+		margin-bottom:20px;
+		margin-top:25px;
+		float:right;
+	} 
+	
+	div#fields h2{
+		margin-right:/*  254px */35.8%;
+	} 
+	div#universities h2{
+		margin-right: /* 215px  */26.395833%;
+	}
+	
+	div#states h2{
+		margin-right: /* 247px */ 35%;
+	} 
+	
+	div#fields img, div#universities img, div#states img{
+		float:left;
+		margin-left: 20px;
+		width:60px;
+		height:60px;
+	} 
+	
+	div#states img{
+		margin-top:25px;
+	}
+	#fields .arrow{
+	position: absolute;
+	top: 23%;
+	left:90%;
+	display:block;
+}
+
+#universities .arrow{
+	position: absolute;
+	top: 23%;
+	left:90%;
+	display:block;
+}
+
+#states .arrow{
+	position: absolute;
+	top: 23%;
+	left:90%;
+	display:block;
+}
+}
+
+@media only screen and (max-width: 1005px){
+
+	#call_to_search {
+		font-size: 3.5em;
+		letter-spacing: 0.4px;
+	}
+	
+	#call_to_search_p {
+		color: #15619C;
+		font-size: 1.8em;	
+	}
+}
+@media only screen and (max-width: 900px){
+
+	html{
+		position:relative;
+	}
+	
+	body{
+	 	width:90%;
+	 	position:static;
+	 }
+	 header{
+	 	position:static;
+	 }
+	 
+	 #social_media{
+	 	position:absolute;
+		left: -40px;
+	 	top: 192px;
+	 }
+	 
+	#facebook, #google_plus, #twitter, #linkedin{
+		position:static;
+		margin-top:1px;
+	}
+	
+	#twitter{
+		width:69px;
+		margin-top:1.5px;
+	}
+
+
+	#call_to_search {
+		font-size: 3.5em;
+		letter-spacing: 0.4px;
+	}
+	
+	#call_to_search_p {
+		color: #15619C;
+		font-size: 1.8em;
+		
+	}
+	
+	#key_word, #location{
+		font-size:1.5em;
+	}
+	
+	#submit_hp{
+		font-size:1.1em;
+	}
+}
+
+@media only screen and (max-width: 887px){
+	#call_to_search{
+		font-size: 3em;
+	}
+}
+
+@media only screen and (max-width: 808px){
+	#faq, #social_networks, #contact_us, #terms{
+		display:none;  
+	}
+	footer.row{
+		border:none;
+	}
+	#submit_hp{
+		font-size:1em;
+	}
+	
+}
+@media only screen and (min-width: 641px) and (max-width: 800px){
+	nav.row{
+			margin-top:4%;
+		}
+}
+
+@media only screen and (max-width: 755px){
+	 
+	#sign_in,#register {
+		display:none;
+	}
+	div#fields h2, div#universities h2, div#states h2{
+		font-size:1.8em;
+	} 
+	
+	#hamburger_menu{
+		display:block;
+	}
+	#submit_hp{
+		font-size:.9em;
+	}
+}
+
+@media only screen and (max-width: 745px){
+	#call_to_search{
+		font-size: 2.8em;
+	}
+}
+
+@media only screen and (max-width: 724px){
+	#call_to_search{
+		font-size: 2.43em;
+	}
+}
+
+@media only screen and (max-width:641px) {
+	body{
+		width:100%;
+		padding-top:0;
+	}
+	header{
+		background: url("../images/background-mobile.png") no-repeat center center fixed;
+		background-size:cover;
+	}
+	
+	header ul#social_media{
+		display: none;
+	}
+	#content_mobile{
+		overflow:hidden;
+	}
+	
+	article{
+		display:none;
+	}
+	
+	#image{
+		display:none;
+	}
+	
+	p#search_boxes a{
+		display:block:
+		width: 100%;
+	}
+	#image2{
+		display:block;
+		width:90%;
+		margin:0 auto 60px;
+	}
+	
+	#icon_logo{
+		display:block;
+		width:40px;
+		margin-top: 10px;
+		margin-left:20px;
+	}
+	#signIn_signUp{
+		margin-top: 15px;
+	}
+	
+	#sign_up_header{
+		margin-top: 40px;
+	}
+	
+	#hamburger_menu{
+		margin-right: 20px;
+	}
+	
+	#header_div{
+		position:fixed;
+		box-shadow:0 2px 3px #000;
+		z-index:3;
+		background-color: rgba(243,243,243,.9);
+		height:60px;
+	}
+	
+	#call_to_search, #call_to_search_p{
+		display:none;
+	}
+	
+	#placehoder_mobile{
+		display:block;
+		width:90%;
+		height:45px;
+		border: 2px solid rgb(237,155,67);
+		font-size: 1.5em;
+		color: rgb(140,140,140);
+		background: rgba(255,255,255,.65);
+		font-style: oblique;
+		text-indent: 5px;
+		border-radius:5px;
+		margin: 0 auto 60px;
+	}
+	
+	#key_word{
+		display:none;
+	}
+
+	#search_inputs{
+		margin-top:120px;
+		width:100%;
+	}
+
+	#location{
+		display:none;
+	}
+	
+	#submit_hp{
+		width:150px;
+		max-width:100%;
+		height:150px;
+		max-height:100%;
+		border: 3px solid rgb(198, 120, 36);
+		border-radius:50%;
+		font-size: 1.55em;
+		margin: 0 auto;
+		display:block;
+		float:none;
+	}
+	
+	nav.row{
+		margin-top:60px;
+	}
+	
+	nav ul{
+ 		font-size: 1rem; 
+ 		border:none;
+ 		color:rgb(245,245,245);
+	}
+	
+	nav ul li {
+		border-bottom: 1px solid #fff;
+		background-color:rgba(237,155,67,.8);
+	}
+	
+	nav ul li:first-child{
+		border-top: 1px solid rgba(237,155,67,.8);
+	}
+	
+	nav ul li:last-of-type{
+		border-bottom: 1px solid rgba(237,155,67,.8);
+	}
+	
+	nav ul li a{
+		color:rgb(245,245,245);
+	}
+	
+	nav ul li:active a{
+		color: #15619C;
+		background-color:white;
+	}
+	
+	nav ul li:active{
+		background-color:white;
+	}
+	
+	nav ul li:hover a{
+		color: #15619C;
+	}
+	
+	nav ul li:hover{
+		background-color:white;
+	}
+	
+	ul{
+		margin-bottom:0;
+	}
+	
+	#section_two{
+		width:99%;
+		margin-left:10px;
+		margin-right:10px;
+	}
+
+	footer.row{
+		margin-top:0px;
+		padding-top:0;
+	}
+	
+	#contact_us, #terms{
+		display:none;
+
+	}
+}
+
+@media only screen and (max-width:465px) {
+	#placehoder_mobile{
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max-width:350px) {
+	#placehoder_mobile{
+		font-size: .8em;
+	}
+}
+
+

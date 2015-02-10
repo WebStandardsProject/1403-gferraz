@@ -5,12 +5,262 @@
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
 	<meta charset="utf-8">
 	<title>Gabriel Ferraz - WPS1403</title>
+	<style>	
+		body{
+			margin-bottom: 40px;
+			position: relative;
+		}
+		table{
+			border-collapse: collapse;
+			border: 1px solid black;
+			width: 100%;
+		}
+		#second_table th, #second_table td{
+			width:14.4444%;
+		}
+		#fourth_table th, #fourth_table td{
+			width:100%;
+		}
+		
+		#adt2{
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+		
+		
+		#first_table th, #first_table td{
+			width:14.444%;
+		}
+		
+		#third_table th, #third_table td{
+			width:25%;
+		}
+		
+		#fourth_table th, #fourth_table td{
+			width:33%;
+		}
+		
+		th, td{
+			border: 1px solid black;
+			text-align: center;
+			width:33%;
+			height: 100px;
+			font-size: 1.5em;
+			color:rgb(240,240,240);
+		}
+		a{
+			text-decoration: none;
+			color:rgb(240,240,240);
+			font-size: 1.65em;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+		table, #second_table, #third_table,  #fourth_table{
+			width: 80%;
+			margin: 0 auto;
+		 	background-color: rgba(0,0,0, .7);
+		 	border: 1px solid black;
+		 }
+		h1{
+			text-align: center;
+			margin-top: 50px;
+			color: rgb(0,6,77);
+			font-size: 2.5em;
+		}
+		h2{
+			color: rgb(0,6,77);
+			margin-left: 130px;
+			margin-bottom:10px;
+			padding-bottom: 0px;
+			font-size: 2em;
+		}
+		h3{
+			color: rgb(0,6,77);
+			margin-left: 130px;
+			padding-bottom: 0px;
+			margin-bottom: 5px;
+			font-size: 1.5em;	
+			margin-top:10px;
+		}
+		#second_h3, #third_h3 {
+			margin-top:20px;
+		}
+		#project_title{
+			text-align: center;
+			margin-left:0;
+		}
+		#modal{
+			position: absolute;
+			top: 41%;
+			left: 48%;
+			background-color: rgba(0,0,0, .9);
+			color: white;
+			font-size: 1.2em;
+			text-align: center;
+			box-shadow: 0 0 2px #000;
+			z-index: 5;
+			width: 300px;
+			height: 90px;
+		}
+		#modal p{
+			margin:10px;
+		}
+		#overlay{
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: url("university_lecture.jpg") top center no-repeat;
+			opacity: .5;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			z-index: -1;
+		}		
+	</style>
 </head>
 
 	<body>
-			<!-- Project -->
-			
-			<!-- Assignments -->
+		<div id="overlay"></div>
+		<h1>Gabriel Ferraz's Landing Page</h1>
+		<h2 id="project_title">Project Title: Academic Job Search</h2>
+		<h2>WPS</h2>
+		<section id="wps">
+			<table id="first_table">
+				<tr>
+					<th>1. UX Plan</th>
+					<th>2. Git Live Page</th>
+					<th>3. Pinterest</th>
+					<th>4. Inspiration UI</th>
+					<th>5. Sass Page</th>
+					<th>6. Sass Files Directory</th>
+					<th>7. Questions</th>
+				</tr>
+				<tr>
+					<td>
+						<a href ="https://www.dropbox.com/s/tmxv7rhlzjjbz9y/ADT_ferraz_gabriel_UXPlan.docx" target="_blank">Link</a>
+					</td>
+				
+					<td>
+						<a  href = "http://webstandardsproject.github.io/1403-gferraz/project/index.html" target="_blank">Link</a>
+					</td>
+				
+					<td>
+						<a id="pinterest" href = "http://www.pinterest.com/zapmusico/inspiration-ux" target="_blank">Link</a>
+					</td>
+					<td>
+						<a id="dropbox" href = "https://www.dropbox.com/s/gek90mjoop0g8v3/ferraz_gabriel_inspiration_ui.pdf" target="_blank">Link</a>
+					</td>
+					<td>
+						<a id="dropbox" href = "http://webstandardsproject.github.io/1403-gferraz/sass/index.html" target="_blank">Link</a>
+					</td> 
+					<td>
+						<a id="dropbox" href = "https://github.com/WebStandardsProject/1403-gferraz/tree/gh-pages/sass" target="_blank">Link</a>
+					</td> 
+					
+					<td>
+						<a id="dropbox" href = "https://www.dropbox.com/s/8887wsnfkq59vnb/ferraz_gabriel_quality_assurance_questions.pdf" target="_blank">Link</a>
+					</td> 
+				
+				</tr>
+			</table>
+		</section>
+		<h2>ADT</h2>
+		<section id="adt">
+			<h3>Tests</h3>
+			<table id="second_table">
+				<tr>
+					<th>Usability Hub Test 1</th>
+					<th>Usability Hub Test 2</th>
+					<th>Usability Hub Test 3</th>
+					<th>Usability Hub Test 4</th>
+					<th>Prototype <br> Alpha Test</th>
+				</tr>
+				<tr>
+					<td>
+						<a href ="https://usabilityhub.com/do/4c4835f356ca/79ec" target="_blank">Link</a>
+					</td>
+				
+					<td>
+						<a  href ="https://usabilityhub.com/do/7218d3b07aac/33a9" target="_blank">Link</a>
+					</td>
+				
+					<td>
+						<a  href ="https://usabilityhub.com/do/3d09546ab1ac/cfac" target="_blank">Link</a>
+					</td>
+					<td>
+						<a  href ="https://usabilityhub.com/do/9d14e9457a61/1091" target="_blank">Link</a>
+					</td>
+					<td><a  href ="https://www.dropbox.com/s/85jsygde1ginyrx/ferraz_gabriel_usertestreport1.pdf" target="_blank">Link</a>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section id="adt2">	
+			<h3 id="second_h3">Test Results</h3>
+			<table id="third_table">
+				<tr>
+					<th>Usability Hub Test Result 1</th>
+					<th>Usability Hub Test Result 2</th>
+					<th>Usability Hub Test Result 3</th>
+					<th>Usability Hub Test Result 4</th>
+				</tr>
+				<tr>
+					<td>
+						<a href = "https://usabilityhub.com/tests/4c4835f356ca/results/827e0b14b45a" target="_blank">Link</a>
+					</td>
+				
+					<td>
+						<a  href ="https://usabilityhub.com/tests/7218d3b07aac/results/ba2c9a2dc916" target="_blank">Link</a>
+					</td>
+				
+					<td>
+						<a  href ="https://usabilityhub.com/tests/3d09546ab1ac/results/7b5df5dfe041" target="_blank">Link</a>
+					</td>
+					<td>
+						<a  href ="https://usabilityhub.com/tests/9d14e9457a61/results/d5e61dbe26af" target="_blank">Link</a>
+					</td>
+				</tr>
+			</table>
+				<h3 id="third_h3">Comps</h3>
+			<table id="fourth_table">
+				<tr>
+					<th>Style Tile</th>
+					<th>Mobile Comps</th>
+					<th>Desktop Comps</th>
+				</tr>
+				<tr>
+					<td><a  href ="https://www.dropbox.com/s/d6ypuyegc1v76ua/ferraz_gabriel_style_tile.jpg" target="_blank">Link</a>
+					</td>
+					
+					<td><a  href ="https://www.dropbox.com/sh/wv9antlo3fwi5m1/7kxnIflE9u" target="_blank">Link</a>
+					</td>
+					
+					
+					<td><a  href ="https://www.dropbox.com/sh/llutiqth9zc5czl/GAQuURZyN2" target="_blank">Link</a>
+					</td> 
+					
+				</tr>
+			</table>
+		</section>
+		<!-- 
+<div id="modal">
+			<p>For some reason this link only works when you right click it. <br> p.s. Pinterest sucks</p>
+		</div>
+ -->
 
+		<script type ="text/javascript" src= "js/jquery-1.11.0.min.js"></script>
+		<script>
+		$('#modal').hide();
+		console.log("#modal");
+		$('#pinterest').hover(function(){
+			$('#modal').slideDown();
+		}, function(){
+			$('#modal').slideUp();
+				});
+		</script>
 	</body>
 </html>
